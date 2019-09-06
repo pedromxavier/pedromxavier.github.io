@@ -1,1 +1,1 @@
-[link to page](pedromxavier.github.io)
+[link to page](http://pedromxavier.github.io)

@@ -43,16 +43,9 @@ a:hover {
 	text-decoration: underline;
 }
 
-#info {
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	text-align: center;
-}
-
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
   margin-right: 600px;
+  text-align: justify;
+  text-justify: inter-word;
 }

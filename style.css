@@ -4,18 +4,36 @@ body {
 	font-family: Monospace;
 	font-size: 14px;
 	line-height: 24px;
+	height: 100%;
+	width : 100%;
+}
+
+.photo {
+	position: relative;
+	left : 20px;
+	top  : 20px;
+	width : 100px;
+	height: 100px;
+}
+
+.doc{
+	background-color: #111111;
+	height: 100%;
+	width : 50%;
+	margin-left: 12%;
+	position: absolute;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 * The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 12%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: #; /* Black */
   padding-top: 20px;
 }
 
@@ -25,6 +43,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   color: #818181;
+  width : 12%;
   display: block;
 }
 
@@ -41,11 +60,4 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  margin-right: 600px;
-  text-align: justify;
-  text-justify: inter-word;
 }

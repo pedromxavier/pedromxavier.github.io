@@ -20,7 +20,7 @@ body {
 	background-color: #111111;
 	height: 100%;
 	width : 720px;
-	margin-left: 12%;
+	margin-left: 160px;
 	position: absolute;
 	text-align: justify;
 	text-justify: inter-word;
@@ -57,8 +57,8 @@ body {
   text-decoration: none;
   font-size: 18px;
   color: #818181;
-  width : 12%;
   display: block;
+  text-align : left;
 }
 
 /* When you mouse over the navigation links, change their color */

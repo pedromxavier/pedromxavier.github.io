@@ -8,7 +8,7 @@ body {
 	width : 100%;
 }
 
-body.sidenav {
+.sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -20,7 +20,7 @@ body.sidenav {
 }
 
 /* The navigation menu links */
-body.sidenav a {
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
@@ -30,12 +30,12 @@ body.sidenav a {
 }
 
 /* When you mouse over the navigation links, change their color */
-body.sidenav a:hover {
+.sidenav a:hover {
   text-decoration: underline;
   color: #aaaaaa;
 }
 
-body.photo {
+.photo {
 	position: relative;
 	left : 20px;
 	top  : 20px;
@@ -43,7 +43,7 @@ body.photo {
 	height: 100px;
 }
 
-body.doc{
+.doc{
 	background-color: #111111;
 	height: 100%;
 	width : 720px;
@@ -53,7 +53,7 @@ body.doc{
 	text-justify: inter-word;
 }
 
-body.poem {
+.poem {
   	background-color: #111111;
 	width : 50%;
 	position: relative;
@@ -62,7 +62,7 @@ body.poem {
 	overflow : hidden;
 }
 
-body.poem p {
+.poem p {
 	text-align: right;
 	font-style: italic;
 }

@@ -6,6 +6,7 @@ body {
 	line-height: 24px;
 	height: 100%;
 	width : 100%;
+	overflow : hidden;
 }
 
 .photo {
@@ -49,6 +50,7 @@ body {
   left: 0;
   background-color: #; /* Black */
   padding-top: 20px;
+  overflow : hidden;
 }
 
 /* The navigation menu links */

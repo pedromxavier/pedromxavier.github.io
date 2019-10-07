@@ -26,6 +26,20 @@ body {
 	text-justify: inter-word;
 }
 
+.poem {
+  	background-color: #111111;
+	height: 100%;
+	width : 50%;
+	position: absolute;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.poem p {
+	text-align: right;
+	font-style: italic;
+}
+
 * The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */

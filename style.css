@@ -32,6 +32,7 @@ body {
 	position: relative;
 	text-align: justify;
 	text-justify: inter-word;
+	overflow : hidden;
 }
 
 .poem p {

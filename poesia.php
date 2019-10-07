@@ -11,7 +11,7 @@
                 <div class="doc">
                         <h1>Poesia</h1>
 			<br>
-			<!--#include virtual="../poesia/triangulo.html" -->
+			<?php include("../poesia/triangulo.html"); ?>
                 </div>
 
                 <div class="sidenav">

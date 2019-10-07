@@ -19,7 +19,7 @@ body {
 .doc{
 	background-color: #111111;
 	height: 100%;
-	width : 50%;
+	width : 400px;
 	margin-left: 12%;
 	position: absolute;
 	text-align: justify;
@@ -43,7 +43,7 @@ body {
 * The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 12%; /* Set the width of the sidebar */
+  width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   top: 0; /* Stay at the top */
   left: 0;

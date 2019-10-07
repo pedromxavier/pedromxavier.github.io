@@ -18,7 +18,6 @@ body {
 
 .doc{
 	background-color: #111111;
-	height: 100%;
 	width : 720px;
 	margin-left: 160px;
 	position: absolute;
@@ -49,7 +48,6 @@ body {
   left: 0;
   background-color: #; /* Black */
   padding-top: 20px;
-  overflow : hidden;
 }
 
 /* The navigation menu links */

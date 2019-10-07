@@ -29,7 +29,7 @@ body {
 .poem {
   	background-color: #111111;
 	width : 50%;
-	position: absolute;
+	position: relative;
 	text-align: justify;
 	text-justify: inter-word;
 }

@@ -19,6 +19,16 @@ body {
   overflow : hidden;
 }
 
+.doc{
+	background-color: #111111;
+	height: 100%;
+	width : 720px;
+	margin-left: 160px;
+	position: absolute;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -41,16 +51,6 @@ body {
 	top  : 20px;
 	width : 100px;
 	height: 100px;
-}
-
-.doc{
-	background-color: #111111;
-	height: 100%;
-	width : 720px;
-	margin-left: 160px;
-	position: absolute;
-	text-align: justify;
-	text-justify: inter-word;
 }
 
 .poem {

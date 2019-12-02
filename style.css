@@ -10,7 +10,7 @@ body {
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   top: 0; /* Stay at the top */
   left: 0;
@@ -24,7 +24,7 @@ body {
 	background-color: #111111;
 	height: 100%;
 	width : 720px;
-	margin-left: 160px;
+	margin-left: 20px;
 	position: absolute;
 	text-align: justify;
 	text-justify: inter-word;
@@ -50,8 +50,8 @@ body {
 	position: relative;
 	left : 20px;
 	top  : 20px;
-	width : 100px;
-	height: 100px;
+	width : 180px;
+	height: 180px;
 }
 
 .poem {

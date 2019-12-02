@@ -16,6 +16,7 @@ body {
   left: 0;
   background-color: #; /* Black */
   padding-top: 20px;
+  text-align : left;
   overflow : hidden;
 }
 

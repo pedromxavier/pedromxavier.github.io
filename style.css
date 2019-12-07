@@ -37,16 +37,6 @@ body {
   width: 100%;
 }
 
-.bottomnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;

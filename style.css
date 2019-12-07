@@ -37,6 +37,16 @@ body {
   width: 100%;
 }
 
+.bottomnav a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.bottomnav a:hover {
+  text-decoration: underline;
+  color: #aaaaaa;
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;

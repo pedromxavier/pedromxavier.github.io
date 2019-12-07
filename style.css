@@ -8,6 +8,16 @@ body {
 	width : 100%;
 }
 
+.doc{
+	background-color: #111111;
+	height: 100%;
+	width : 720px;
+	margin-left: 200px;
+	position: absolute;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 200px; /* Set the width of the sidebar */
@@ -22,7 +32,6 @@ body {
 
 .bottomnav{
   overflow: hidden;
-  background-color: #333;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -36,16 +45,6 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-
-.doc{
-	background-color: #111111;
-	height: 100%;
-	width : 720px;
-	margin-left: 200px;
-	position: absolute;
-	text-align: justify;
-	text-justify: inter-word;
 }
 
 /* The navigation menu links */

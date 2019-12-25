@@ -1,6 +1,5 @@
 body {
-	background-image: url('https://pedromxavier.github.io/files/wallpaper.png');
-	background-size: cover;
+	background-color: #111111;
 	color: #ffffff;
 	font-family: Monospace;
 	font-size: 14px;
@@ -10,7 +9,8 @@ body {
 }
 
 .doc{
-	background-color: #111111;
+	background-image: url('https://pedromxavier.github.io/files/wallpaper.png');
+	background-size: cover;
 	height: 100%;
 	width : 720px;
 	margin-left: 200px;

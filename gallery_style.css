@@ -9,6 +9,7 @@ body {
 }
 
 .doc{
+	background-color: rgba(0, 0, 0, 0);
 	background-image: url('https://pedromxavier.github.io/files/wallpaper.png');
 	background-size: cover;
 	height: 100%;

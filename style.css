@@ -10,6 +10,7 @@ body {
 
 .wallpaper{
 	width: 100%;
+	height: 100%;
 	background-image: url('https://pedromxavier.github.io/files/wallpaper.png');
 	background-size: cover;
 }

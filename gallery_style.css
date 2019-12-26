@@ -5,6 +5,8 @@
 	background-color: rgba(0, 0, 0, 0);
 	background-image: url('https://pedromxavier.github.io/files/wallpaper.png');
 	background-size: cover;
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
 }
 
 .art{

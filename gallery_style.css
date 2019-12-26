@@ -20,6 +20,11 @@ body {
 	text-justify: inter-word;
 }
 
+.art{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .sidenav {
 	height: 100%; /* Full-height: remove this if you want "auto" height */
 	width: 200px; /* Set the width of the sidebar */

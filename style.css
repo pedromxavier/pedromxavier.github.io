@@ -9,12 +9,20 @@ body {
 }
 
 table, th, td {
+  font-size: 16px;
   border: 1px solid white;
   border-collapse: collapse;
 }
 
 th, td {
   padding: 5px;
+}
+
+th {
+  text-align: center;
+}
+
+td {
   text-align: left;
 }
 

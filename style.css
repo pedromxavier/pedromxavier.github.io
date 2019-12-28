@@ -72,6 +72,9 @@ td {
 		margin:0;
 		border:none;
 	}
+	.sidenav li{
+		float: left;
+	}
 }
 
 .bottomnav{

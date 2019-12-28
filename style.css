@@ -30,6 +30,19 @@ td {
   text-align: left;
 }
 
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .doc { width:67%; }
+    .sidenav { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    .doc { width:100%; }
+    .sidenav { width:100%; margin:0; border:none; }
+}
+
 .doc{
 	background-color: #111111;
 	height: 100%;

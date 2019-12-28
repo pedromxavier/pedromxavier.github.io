@@ -63,6 +63,10 @@ td {
 
 /* Tabled Portrait */
 @media screen and (min-width: 900px) {
+	.body {
+		margin: 0 3%;
+	}
+
     .doc { 
 		width:720px; 
 		height: 100%;

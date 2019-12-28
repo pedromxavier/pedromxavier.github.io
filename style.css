@@ -141,6 +141,9 @@ a:hover {
 		margin:0;
 		border:none;
 	}
+	.sidenav photo{
+		float: left;
+	}
 	.sidenav a{
 		float: left;
 	}

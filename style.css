@@ -54,7 +54,7 @@ td {
 		margin:0;
 		border:none;
 	}
-	.sidenav li{
+	.sidenav a{
 		float: left;
 	}
 }

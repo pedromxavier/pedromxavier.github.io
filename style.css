@@ -117,6 +117,7 @@ a:hover {
 		height: 100%;
 		width : 720px;
 		margin-left: 200px;
+		text-align: justify;
 		position: absolute;
 	}
 

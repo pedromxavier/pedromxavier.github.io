@@ -42,46 +42,7 @@ td {
   text-align : left;
 }
 
-/* Tablet Landscape */
-@media screen and (max-width: 800px) {
-    .doc {
-		width:100%;
-	}
-    .sidenav {
-		height: 200px;
-		width:100%;
-		margin:0;
-		border:none;
-	}
-	.sidenav a{
-		float: left;
-	}
-	.sidenav ul{
-		float: left;
-	}
-}
 
-/* Tabled Portrait */
-@media screen and (min-width: 800px) {
-
-    .doc { 
-		margin: 0 20px;
-		width:720px; 
-		height: 100%;
-		width : 720px;
-		margin-left: 200px;
-		position: absolute;
-	}
-
-    .sidenav {
-		height: 100%; /* Full-height: remove this if you want "auto" height */
-		width: 200px; /* Set the width of the sidebar */
-		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-		top: 0; /* Stay at the top */
-		left: 0;
-		overflow : hidden;
-	}
-}
 
 .bottomnav{
   overflow: hidden;
@@ -145,4 +106,48 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+/* Tabled Portrait */
+@media screen and (min-width: 800px) {
+
+    .doc { 
+		margin: 0 20px;
+		width:720px; 
+		height: 100%;
+		width : 720px;
+		margin-left: 200px;
+		position: absolute;
+	}
+
+    .sidenav {
+		height: 100%; /* Full-height: remove this if you want "auto" height */
+		width: 200px; /* Set the width of the sidebar */
+		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		top: 0; /* Stay at the top */
+		left: 0;
+		overflow : hidden;
+	}
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 800px) {
+    .doc {
+		width:100%;
+	}
+    .sidenav {
+		height: 200px;
+		width:100%;
+		margin:0;
+		border:none;
+	}
+	.sidenav a{
+		float: left;
+	}
+	.sidenav ul{
+		float: left;
+	}
+	.poem {
+		width : 90%;
+	}
 }

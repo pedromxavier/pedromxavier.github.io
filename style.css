@@ -44,7 +44,7 @@ td {
 }
 
 /* Tablet Landscape */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 768px) {
     .doc { 
 		width:720px; 
 		height: 100%;
@@ -62,7 +62,7 @@ td {
 }
 
 /* Tabled Portrait */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .doc {
 		width:100%;
 	}

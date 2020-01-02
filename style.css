@@ -135,6 +135,7 @@ a:hover {
 @media screen and (max-width: 800px) {
     .doc {
 		width:95%;
+		font-size: 12px;
 	}
     .sidenav {
 		height: 200px;

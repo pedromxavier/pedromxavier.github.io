@@ -120,6 +120,7 @@ a:hover {
 
 .tex, .latex, .tex sub, .latex sub {
   font-size: 1em;
+  font-family: Serif;
 }
 
 .latex sup {

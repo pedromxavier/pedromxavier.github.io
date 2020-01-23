@@ -34,6 +34,7 @@ td {
 	background-color: #111111;
 	text-align: justify;
 	text-justify: inter-word;
+	width: 100%;
 }
 
 .sidenav {

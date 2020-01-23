@@ -1,11 +1,11 @@
 body {
-	background-color: #111111;
-	color: #ffffff;
-	font-family: Monospace;
-	font-size: 14px;
-	line-height: 24px;
-	height: 100%;
-	width : 100%;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Monospace;
+  font-size: 14px;
+  line-height: 24px;
+  height: 100%;
+  width : 100%;
 }
 
 table {
@@ -31,10 +31,10 @@ td {
 }
 
 .doc{
-	background-color: #111111;
-	text-align: justify;
-	text-justify: inter-word;
-	width: 100%;
+  background-color: #111111;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
 }
 
 .sidenav {

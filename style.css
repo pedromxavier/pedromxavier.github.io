@@ -1,181 +1,83 @@
-body {
-  background-color: #111111;
-  color: #ffffff;
-  font-family: Monospace;
-  font-size: 14px;
-  line-height: 24px;
-  height: 100%;
-  width : 100%;
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-table {
-  margin: 0 auto;
-}
-
-table, th, td {
+#container {
+  font-family: 'Raleway';
   font-size: 16px;
-  border: 1px solid white;
-  border-collapse: collapse;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 44em;
+  line-height: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-th, td {
-  padding: 5px;
+#name {
+  font-size: 35pt;
+  line-height: 1;
+  font-weight: lighter;
 }
 
-th {
-  text-align: center;
+#sec {
+  font-size: 22pt;
+  line-height: 1;
+  font-weight: lighter;
 }
 
-td {
-  text-align: left;
+#left {
+  margin-bottom: 1.15em;
 }
 
-.doc{
-  background-color: #111111;
-  text-align: justify;
-  text-justify: inter-word;
-  width: 100%;
+#right {
+  flex-grow: 1;
 }
 
-.sidenav {
-  background-color: #000000; /* Black */
-  padding-top: 10px;
-  text-align : left;
+#headshot {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
 }
 
-
-
-.bottomnav{
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 120px;
+#research {
+  width: 200px;
+  margin-bottom: 0.5em;
 }
 
-.bottomnav a {
-  text-align: center;
-  text-decoration: none;
-}
-
-.bottomnav a:hover {
-  text-decoration: underline;
-  color: #aaaaaa;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  text-align : left;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  text-decoration: underline;
-  color: #aaaaaa;
-}
-
-.photo {
-	position: relative;
-	left : 20px;
-	top  : 20px;
-	width : 180px;
-	height: 180px;
-}
-
-.poem {
-  	background-color: #111111;
-	width : 50%;
-	position: relative;
-	text-align: justify;
-	text-justify: inter-word;
-	overflow : hidden;
-}
-
-.poem p {
-	text-align: right;
-	font-style: italic;
-}
 
 a {
-	color: #bbbbbb;
-	text-decoration: none;
+  text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
+#links p {
+  margin-bottom: 0.0em;
 }
 
-.tex sub, .latex sub, .latex sup {
-  text-transform: uppercase;
+#links {
+  /*font-size: 18pt;*/
 }
 
-.tex sub, .latex sub {
-      vertical-align: -0.5ex;
-      margin-left: -0.1667em;
-      margin-right: -0.125em;
+p {
+  margin-top: 0em;
 }
 
-.tex, .latex, .tex sub, .latex sub {
-  font-size: 1em;
-  font-family: Serif;
-}
-
-.latex sup {
-      font-size: 0.85em;
-      vertical-align: 0.15em;
-      margin-left: -0.36em;
-      margin-right: -0.15em;
-}
-
-/* Tabled Portrait */
 @media screen and (min-width: 800px) {
+  #container {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 
-    .doc { 
-		margin: 0 20px;
-		width:720px; 
-		height: 100%;
-		width : 720px;
-		margin-left: 200px;
-		text-align: justify;
-		position: absolute;
-	}
+  #leftright {
+    display: flex;
+  }
 
-    .sidenav {
-		height: 100%; /* Full-height: remove this if you want "auto" height */
-		width: 200px; /* Set the width of the sidebar */
-		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-		top: 0; /* Stay at the top */
-		left: 0;
-		overflow : hidden;
-	}
-}
-
-/* Tablet Landscape */
-@media screen and (max-width: 800px) {
-    .doc {
-		width:95%;
-		font-size: 12px;
-	}
-    .sidenav {
-		height: 200px;
-		width:100%;
-		margin:0;
-		border:none;
-	}
-	.sidenav photo{
-		float: left;
-	}
-	.sidenav a{
-		float: left;
-	}
-	.sidenav ul{
-		float: left;
-	}
-	.poem {
-		width : 90%;
-	}
+  #left {
+    margin-right: 1.15em;
+  }
 }

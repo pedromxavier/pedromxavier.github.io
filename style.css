@@ -32,48 +32,6 @@ td {
   text-align: left;
 }
 
-.sidenav {
-  /* Black */
-  background-color: #000000;
-  padding-top: 10px;
-  text-align : left;
-}
-
-
-
-.bottomnav{
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 120px;
-}
-
-.bottomnav a {
-  text-align: center;
-  text-decoration: none;
-}
-
-.bottomnav a:hover {
-  text-decoration: underline;
-  color: #aaaaaa;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  text-align : left;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  text-decoration: underline;
-  color: #aaaaaa;
-}
-
 .photo {
 	position: relative;
 	left : 20px;
@@ -92,7 +50,8 @@ td {
 }
 
 .poem p {
-	text-align: right;
+  text-align: right;
+  font-family: Monospace;
 	font-style: italic;
 }
 
@@ -194,6 +153,7 @@ a {
 }
 
 #links {
+  font-family: Monospace;
   font-size: 18pt;
 }
 

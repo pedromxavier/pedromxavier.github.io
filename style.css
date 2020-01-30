@@ -143,6 +143,11 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
+#horoscope {
+  font-family: "Times New Roman";
+  font-size: 20pt;
+}
+
 
 a {
   text-decoration: none;

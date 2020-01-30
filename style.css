@@ -144,10 +144,11 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
-#horoscope th, td{
+#horoscope th{
     text-align: center;
   }
 #horoscope td{
+    text-align: center;
     font-family: Monospace;
     font-size: 30pt;
   }

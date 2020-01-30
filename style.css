@@ -7,7 +7,10 @@ body {
   font-size: 14px;
   line-height: 24px;
   height: 100%;
-  width : 100%;
+}
+
+footer{
+  text-align: center;
 }
 
 table {
@@ -52,7 +55,6 @@ td {
 .poem p {
   text-align: right;
   font-family: Monospace;
-	font-style: italic;
 }
 
 a {
@@ -63,8 +65,6 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-
-
 
 /* Tabled Portrait */
 @media screen and (min-width: 800px) {
@@ -198,3 +198,4 @@ p {
       margin-left: -0.36em;
       margin-right: -0.15em;
 }
+

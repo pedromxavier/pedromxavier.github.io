@@ -146,6 +146,7 @@ a:hover {
 #horoscope th, tr{
     width: 40%;
     font-family: Monospace;
+    text-align: center;
     font-size: 20pt;
   }
 

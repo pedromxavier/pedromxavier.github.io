@@ -143,12 +143,9 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
-#horoscope {
-  font-family: "Times New Roman";
-  font-size: 20pt;
-}
-  #horoscope th, tr{
+#horoscope th, tr{
     width: 40%;
+    font-family: Monospace;
     font-size: 20pt;
   }
 

@@ -67,28 +67,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Tabled Portrait */
-@media screen and (min-width: 800px) {
-
-    .doc { 
-		margin: 0 20px;
-		width:720px; 
-		height: 100%;
-		width : 720px;
-		margin-left: 200px;
-		text-align: justify;
-		position: absolute;
-	}
-}
-
-/* Tablet Landscape */
-@media screen and (max-width: 800px) {
-    .doc {
-		width:95%;
-		font-size: 12px;
-	}
-}
-
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -172,6 +150,7 @@ p {
   margin-top: 0em;
 }
 
+/* Tabled Portrait */
 @media screen and (min-width: 800px) {
   #container {
     padding-left: 28px;
@@ -187,8 +166,15 @@ p {
   }
 
   .poem {
-    width: 100%;
+    width: 50%;
   }
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 800px) {
+  .poem {
+		width:100%;
+	}
 }
 
 /* LaTeX stuff */

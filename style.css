@@ -144,8 +144,12 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
+#horoscope tr {
+  width: 100%;
+}
+
 #horoscope th, td{
-    width: 40%;
+    width: 70%;
     text-align: center;
   }
 #horoscope td{

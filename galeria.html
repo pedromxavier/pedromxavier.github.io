@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html>
-        <head>
-			<title>Galeria</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<head> 
+		<title>Galeria</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
 
-        <link type="text/css" rel="stylesheet" href="gallery_style.css">
-		
-        </head>
+		<link type="text/css" rel="stylesheet" href="style.css">
+    </head>
 
-        <body>
+    <body>
 
-		<!-- SIDENAV -->
-		<div class="sidenav">
-				<div class = "photo">
-						<a href="../pedro.png">
-								<img src="../pedro.png" alt="pedro" height="150px" width="150px">
-						</a>
-				</div>
-				<br>
-				<ul>
-						<a href="../index.html">home</a>
-
-						<a href="http://github.com/pedromxavier">github</a>
-
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8611762T6">lattes</a>
-
-						<a href="../contato.html">contato</a>
-
-						<a href="../monitoria.html">monitoria</a>
-						
-						<a href="../poesia.html">poesia</a>
-				</ul>
+	<!-- SIDENAV -->
+	<div id=container>
+		<center>
+		  <h1 id=name>Galeria</h1>
+		</center>
+	
+		<div id=leftright>
+		  <div id=left>
+			<center>
+			  <img id=headshot src="photos/pedro.png"><br/>
+			  <div id=links>
+				<p><a href="index.html">home</a></p>
+				<p><a href="http://github.com/pedromxavier">github</a></p>
+				<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8611762T6">lattes</a></p>
+				<p><a href="contato.html">contato</a></p>
+				<p><a href="monitoria.html">monitoria</a></p>
+				<p><a href="poesia.html">poesia</a></p>
+			  </div>
+			</center>
+		  </div>
+	
+		  <div id=right>
+			<p>Olá! Meu nome é Pedro e eu sou aluno de Engenharia de Computação e Informação (ECI) da UFRJ. Eu acho muito legal a ideia de ter um site. Quando eu era pequeno, isso era uma coisa incrível e que só coisas suficientemente oficiais podiam ter, como empresas e sites de jogos.</p>
+			<p>Olha só, Pedro do passado, onde você chegou!</p>
+			<p>Agora em 2020, faço parte da diretoria do <a href="https://gremio-eci.github.io">Grêmio de ECI</a>.</p>
+		  </div>
+	
 		</div>
-		<!-- SIDENAV -->
-		
-		<div class="doc">
-			<h1>Galeria</h1>
-			<br>
-			<!-- Youtube embeding -->
-			<div class="art">
-				<h2>Primeiro dia de aula na UFRJ</h2>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/neX_V26ks4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+	</div>
 
-			<div class="art">
-				<h2>Autorretrato</h2>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/XWM6XAJfiOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-
-			<div class="art">
-				<h2> Capa do disco</h2>
-				<img src="../files/wallpaper.png" alt="figure" width="400" height="400">
-			</div>
+	<div id=container>
+		<div class="art">
+			<h1 id=sec>Primeiro dia de aula na UFRJ</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/neX_V26ks4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		</body>
+	</div>
+
+	<div id=container>
+		<div class="art">
+			<h1 id=sec>Autorretrato</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XWM6XAJfiOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div id=container>
+		<div class="art">
+			<h1 id=sec> Capa do disco</h1>
+			<img src="files/wallpaper.png" alt="figure" width="400" height="400">
+		</div>
+	</div>
+	</body>
+
+	<footer>
+		&copy; Rio de Janeiro, 2020
+	</footer>
 </html>

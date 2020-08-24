@@ -24,12 +24,11 @@ function buildMeets(path) {
         for (let i=0; i<data.length; i++) {
             let json = data[i];
             innerHTML.push(`
-			  <!--start button, nothing above this is necessary -->
 			  <div class="svg-wrapper">
 				<svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
 				  <rect id="shape" height="40" width="150" />
 				  <div id="text">
-					<a href="${json['meet']}"><span class="spot"></span>Meet - ${json['title']}</a>
+					<a href=""><span class="spot"></span>Meet 1</a>
 				  </div>
 				</svg>
               </div>

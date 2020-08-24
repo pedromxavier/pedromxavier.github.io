@@ -24,6 +24,9 @@ function buildMeets(path) {
         for (let i=0; i<data.length; i++) {
             let json = data[i];
             innerHTML.push(`
+            <div>
+            <h1>${json['title']}</h1>
+            <h2>${json['teacher']}</h2>
             <div class="position">
 			  <!--start button, nothing above this is necessary -->
 			  <div class="svg-wrapper">
@@ -34,6 +37,7 @@ function buildMeets(path) {
 				  </div>
 				</svg>
               </div>
+            </div>
             </div>
             `)
         }

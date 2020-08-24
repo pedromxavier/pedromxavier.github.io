@@ -20,11 +20,10 @@ function loadJSON(path, success, error)
 function buildMeets(path) {
     loadJSON(path, function( data ) {
         let element = document.getElementById("workarea");
-        let innerHTML = []
+        let innerHTML = [`<div class="position">`]
         for (let i=0; i<data.length; i++) {
             let json = data[i];
             innerHTML.push(`
-            <div class="position">
 			  <!--start button, nothing above this is necessary -->
 			  <div class="svg-wrapper">
 				<svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
@@ -34,9 +33,9 @@ function buildMeets(path) {
 				  </div>
 				</svg>
               </div>
-            </div>
             `)
         }
+        innerHTML.push(`</div>`)
         element.innerHTML = innerHTML.join("");
     }, function ( error ){
         console.log(error)

@@ -13,6 +13,7 @@
   }
   
   .position {
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -23,7 +24,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #1e1a3e;
+	background-color: #222222;
 	font-family: 'rawline', Arial, Helvetica, sans-serif;
   }
   

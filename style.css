@@ -48,6 +48,7 @@ td {
 
 .poem {
   background-color: #111111;
+  border-bottom: 1pt solid gray;
 	width : 50%;
 	position: relative;
 	text-align: justify;
@@ -69,6 +70,26 @@ a:hover {
 	text-decoration: underline;
 }
 
+a.link {
+  /* same as h1 */
+  font-family: Serif;
+  font-size: 2em;
+}
+
+a.link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.link l {
+  font-size: 0.75em;
+  display: none;
+}
+
+a.link:hover l {
+  display: inline;
+}
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -76,6 +97,17 @@ a:hover {
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
+.event {
+  border-bottom: 1pt solid gray;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+}
+
+.event h2 {
+  font-family: Serif;
+}
+
 
 #container {
   font-family: 'rawline', Arial, Helvetica, sans-serif;
@@ -89,6 +121,14 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+.timeline {
+  border-left: 1pt solid gray;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 50px;
+}
+
 
 #name {
   font-size: 35pt;
@@ -128,12 +168,14 @@ a:hover {
 #horoscope th{
     width: 50%;
     text-align: center;
+    padding: 0.5em;
   }
 #horoscope td{
     width: 50%;
     text-align: center;
     font-family: Monospace;
     font-size: 32pt;
+    padding: 0.5em;
   }
 
 a {
@@ -177,6 +219,12 @@ p {
   .poem {
 		width:100%;
 	}
+}
+
+.suploz {
+  font-size: 16px;
+  vertical-align: 1.0ex;
+  color: gold;
 }
 
 /* LaTeX stuff */

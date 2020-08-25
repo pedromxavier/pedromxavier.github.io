@@ -8,16 +8,30 @@
   
   html,
   css {
+	color: white;
 	width: 100%;
 	height: 100%;
   }
+
+  table {
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+
+  table th, table td {
+	padding: 3em;
+	margin-left: 5em;
+  }
   
   .position {
-	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	margin-top: 15%;
+  }
+
+  .position h1 {
+	  font-size: 1em;
   }
   
   #workarea {
@@ -25,6 +39,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: #222222;
+	font-size: 0.6em;
 	font-family: 'rawline', Arial, Helvetica, sans-serif;
   }
   
@@ -96,7 +111,7 @@
 	color: white;
 	text-decoration: none;
 	font-weight: 100;
-	font-size: 1.1em;
+	font-size: 1.2em;
   }
   /* 
 	  Changing the shape on hover. I change the color of the stroke,

@@ -43,25 +43,42 @@
 
 	<div id=container>
 		<div class="event">
-			<a class="link" href="#">Minerva <l>&#128279;</l></a>
+			<a class="link" href="#minerva">Minerva <l>&#128279;</l></a>
 
-			<p> Implementado em Python, oferece uma interface por linha de comando para renovar os empréstimos na biblioteca da UFRJ.
-			</p>
-			<p>O uso é muito simples:
-			</p>
-			<pre>/unix$ minerva [...]</pre>
-			<pre>\windows> python -m minerva [...]</pre>
+			<p> Implementado em Python, oferece uma interface por linha de comando para renovar os empréstimos na biblioteca da UFRJ.</p>
+
+			<h2>Instalação:</h2>
+			<pre>$ git clone <a href="https://github.com/pedromxavier/minerva">repo</a>
+$ cd minerva
+$ python3 setup.py install</pre>
+		
+			<p>A instalação pode demandar privilégios de admnistrador. Isso requer o uso do comando <code>sudo</code> em sistemas Unix ou executar o prompt de comando como administrador no Windows.</p>
+
+			<h2>Uso:</h2>
+			<ul>
+				<li>Linux, OSx:</li>
+				<pre>$ minerva [...]</pre>
+				<li>Windows:</li>
+				<pre>> python -m minerva [...]</pre>
+			</ul>
+			As opções são:
+			</ul>
+			<ul>
+				<li>Renovar os livros:<pre>minerva [login] [senha]</pre></li>
+				<li>Renovar e armazenar as credenciais:<pre>minerva -c [login] [senha]</pre> </li>
+				<li>Renovar os livros das credenciais armazenadas:<pre>minerva -r</pre> </li>
+			</ul>
 		</div>
 
 		<div class="event">
-			<a class="link" href="#">Word<span class="latex">A<sup>r</sup>T<sub>e</sub>X</span> <l>&#128279;</l></a>
+			<a class="link" href="#wordartex">Word<span class="latex">A<sup>r</sup>T<sub>e</sub>X</span> <l>&#128279;</l></a>
 
 			<p> Um pacote para <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> que permite inserir o clássico layout de títulos WordArt, presente no Word 97-2003, em documentos pdf.
 			</p>
 		</div>
 
 		<div class="event">
-			<a class="link" href="#">Brafman-Assembly <l>&#128279;</l></a>
+			<a class="link" href="#brafman-assembly">Brafman-Assembly <l>&#128279;</l></a>
 
 			<p> Um pequeno compilador conforme a linguagem das notas de aula de Sistemas Digitais, ministradas pelo prof. Brafman.
 			</p>

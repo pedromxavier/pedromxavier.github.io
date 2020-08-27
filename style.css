@@ -72,8 +72,9 @@ a:hover {
 
 a.link {
   /* same as h1 */
+  display: inline;
   font-family: Serif;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 a.link:hover {
@@ -87,6 +88,7 @@ a.link l {
 }
 
 a.link:hover l {
+  color: #ffffff;
   display: inline;
 }
 
@@ -105,9 +107,20 @@ a.link:hover l {
 }
 
 .event h2 {
-  font-family: Serif;
+  /*font-family: Serif;*/
+  color: #bbbbbb;
 }
 
+.event ul {
+  list-style-type: square;
+}
+
+.event pre {
+  display: block;
+  text-align: left;
+  border-left: 1pt solid gray;
+  padding-left: 10pt;
+}
 
 #container {
   font-family: 'rawline', Arial, Helvetica, sans-serif;

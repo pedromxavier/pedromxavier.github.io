@@ -8,6 +8,7 @@
   
   html,
   css {
+	background-color: #222222;
 	color: white;
 	width: 100%;
 	height: 100%;
@@ -17,16 +18,20 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-top: 15%;
+	width: 50%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-bottom: 1pt solid gray;
   }
 
   .position h1 {
-	  margin-bottom: 1em;
-	  font-size: 2em;
+	
+	margin-bottom: 1em;
+	font-size: 2em;
   }
 
   .position h2 {
-	font-size: 4em;
+	font-size: 5em;
 }
   
   #workarea {
@@ -75,7 +80,7 @@
 	display: inline-block;
 	border-radius: 3px;
 	margin-left: 5px;
-	margin-right: 5px
+	margin-right: 5px;	
   }
   
   .svg-wrapper a {

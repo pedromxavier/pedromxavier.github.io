@@ -1,20 +1,43 @@
 [
     {
-        "title" : "Algoritmos e Grafos",
+        "title" : "Geometria Diferencial",
         "time" : "Ter, Qui: 8h - 10h",
-        "teacher" : "Franklin, Celina",
-        "meet" : ""
+        "teacher" : "Walcy Santos",
+        "links" : [
+            {   
+                "title" : "Meets", 
+                "link": "https://meet.google.com/tci-moth-ddh"
+            },
+            {   
+                "title" : "Class", 
+                "link": "https://classroom.google.com/u/0/c/MTcyNjc4OTIzMDQ1"
+            }
+        ]
     },
     {
-        "title" : "Algoritmos e Grafos",
-        "time" : "Ter, Qui: 8h - 10h",
-        "teacher" : "Franklin, Celina",
-        "meet" : ""
+        "title" : "Redes Complexas",
+        "time" : "Ter, Qui: 15h - 17h",
+        "teacher" : "Daniel Ratton",
+        "links" : [
+            {   
+                "title" : "Meets", 
+                "link": "https://meet.google.com/cww-nswv-kqg"
+            },
+            {   
+                "title" : "Page", 
+                "link": "https://www.cos.ufrj.br/~daniel/rc/"
+            }
+        ]
     },
     {
-        "title" : "Algoritmos e Grafos",
-        "time" : "Ter, Qui: 8h - 10h",
-        "teacher" : "Franklin, Celina",
-        "meet" : ""
+        "title" : "Química Experimental",
+        "time" : "Qua: 13h - 17h",
+        "teacher" : "Eliane D'Elia",
+        "links" : [
+            {   
+                "title" : "Teams", 
+                "link": "https://classroom.google.com/u/0/c/MTcyNjc4OTIzMDQ1"
+            }
+        ]
     }
 ]

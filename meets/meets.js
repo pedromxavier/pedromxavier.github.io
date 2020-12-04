@@ -53,12 +53,12 @@ function template( data ) {
 
 function buildMeets(path) {
     loadJSON(path, function( data ) {
-        $('#workarea').html(`
+        document.getElementById('workarea').innerHTML = `
             <div class="position">
                 <h2>2020.1</h2>
             </div>
             ${template( data )}
-        `);
+        `;
     }, function ( error ){
         console.log(error)
     });

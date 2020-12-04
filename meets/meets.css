@@ -25,16 +25,19 @@
   }
 
 	.position h1 {
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 		font-size: 2em;
 	}
 
 	.position h2 {
+		color: lightgrey;
+		margin-bottom: 0.5em;
 		font-size: 1.5em;
 	}
 
 	.position h2 {
-		font-size: 1 em;
+		margin-top: 0.5em;
+		font-size: 1em;
 	}
   
   #workarea {

@@ -26,18 +26,18 @@
 
 	.position h1 {
 		margin-bottom: 0.5em;
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	.position h2 {
 		color: lightgrey;
 		margin-bottom: 0.5em;
-		font-size: 1.8em;
+		font-size: 2.2em;
 	}
 
 	.position h3 {
-		margin-top: 0.5em;
-		font-size: 1em;
+		margin-top: 1.5em;
+		font-size: 1.5em;
 	}
   
   #workarea {

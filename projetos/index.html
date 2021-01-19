@@ -8,6 +8,7 @@
 		<meta name="HandheldFriendly" content="true">
 
 		<link type="text/css" rel="stylesheet" href="../style.css">
+		<script type="module" src="../js/color-mode.js"></script>
     </head>
 
     <body>
@@ -89,6 +90,13 @@ $ python3 setup.py install</pre>
 	</div>
 
 	<footer>
-		&copy; Rio de Janeiro, 2021
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
 	</footer>
+
+	</body>
+
+	<script type="text/javascript">
+		initColorScheme();
+	</script>
 </html>

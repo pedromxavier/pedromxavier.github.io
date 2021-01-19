@@ -2,10 +2,11 @@
 <html class="dark-mode">
 	
         <head>
-		<title>Poesia</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+			<title>Poesia</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 
-        <link type="text/css" rel="stylesheet" href="../style.css">
+			<link type="text/css" rel="stylesheet" href="../style.css">
+			<script type="module" src="../js/color-mode.js"></script>
         </head>
 
 		<body>
@@ -200,9 +201,15 @@
 	<p>junho de 2014</p>
 	</div>
 	</div>
-	</body>
 
 	<footer>
-		&copy; Rio de Janeiro, 2021
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
 	</footer>
+
+	</body>
+
+	<script type="text/javascript">
+		initColorScheme();
+	</script>
 </html>

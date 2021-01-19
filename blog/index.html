@@ -7,6 +7,8 @@
 		<meta name="HandheldFriendly" content="true">
 
 		<link type="text/css" rel="stylesheet" href="../style.css">
+		<script type="text/javascript" src="../js/phrase.js"></script>
+		<script type="module" src="../js/color-mode.js"></script>
     </head>
 
     <body>
@@ -75,10 +77,15 @@
 			&copy; Rio de Janeiro, 2021
 		</footer>
 
+	<footer>
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+	</footer>
+
 	</body>
-	
-	<script type="text/javascript" src="phrase.js"></script>
+
 	<script type="text/javascript">
+		initColorScheme();
 		randomPhrase();
 	</script>
 	

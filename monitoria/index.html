@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 
 		<link type="text/css" rel="stylesheet" href="../style.css">
+		<script type="module" src="../js/color-mode.js"></script>
 		
     </head>
 
@@ -154,9 +155,15 @@
 			<div id=container>
 				<p><sup class="suploz">&loz;</sup> Monitor bolsista.</p>
 			</div>
-	</body>
-
-	<footer>
-		&copy; Rio de Janeiro, 2021
-	</footer>
+			
+			<footer>
+				&copy; Rio de Janeiro, 2021 <br />
+				<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+			</footer>
+		
+			</body>
+		
+			<script type="text/javascript">
+				initColorScheme();
+			</script>
 </html>

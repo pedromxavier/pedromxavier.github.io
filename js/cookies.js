@@ -19,7 +19,7 @@ function setCookie(json, days=1) {
   document.cookie = pairs.join(";");
 }
   
-function getCookie(items) {
+function getCookie() {
   let items = document.cookie.split(";");
   let json = {};
 

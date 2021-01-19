@@ -1,7 +1,8 @@
 var PHRASES = [
     "Uma vista do chão do Universo.",
     "Uma história até que bem contada.",
-    "Um retrato sereno demais."
+    "Um retrato sereno demais.",
+    "Não passa de uma goteira."
 ]
 
 function randint(min, max) {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="dark-mode">
 	<head> 
 		<title>Home</title>
 		<meta name="robots" content="noindex">
@@ -8,6 +8,7 @@
 		<meta name="HandheldFriendly" content="true">
 
 		<link type="text/css" rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="js/color-mode.js"></script>
     </head>
 
     <body>
@@ -91,9 +92,14 @@
 		</ol>
 	</div>
 
+	<footer>
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+	</footer>
+
 	</body>
 
-	<footer>
-		&copy; Rio de Janeiro, 2021
-	</footer>
+	<script type="text/javascript">
+		initColorScheme();
+	</script>
 </html>

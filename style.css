@@ -1,8 +1,41 @@
 @import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
 
+/* Define color variables */
+.light-mode:root {
+  /* Body */
+  --body-backgroud-color: #eeeeee;
+  --body-color: #000000;
+  /* Table */
+  --table-border: 1px solid black;
+  /* a tag */
+  --a-color: #444444;
+  /* Poem */
+  --poem-backgroud-color: #eeeeee;
+  --poem-border-bottom: 1pt solid gray;
+}
+
+.dark-mode:root {
+  /* Body */
+  --body-backgroud-color: #111111;
+  --body-color: #ffffff;
+  /* Table */
+  --table-border: 1px solid white;
+  /* a tag */
+  --a-color: #bbbbbb;
+  /* Poem */
+  --poem-backgroud-color: #111111;
+  --poem-border-bottom: 1pt solid gray;
+}
+
 body {
-  background-color: #111111;
-  color: #ffffff;
+  background-color: var(--body-backgroud-color);
+  color: var(--body-color);
+
+  /* Color transition */
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  
   font-family: Monospace;
   text-align: justify;
   text-justify: inter-word;
@@ -22,7 +55,7 @@ table {
 
 table, th, td {
   font-size: 16px;
-  border: 1px solid white;
+  border: var(--table-border);
   border-collapse: collapse;
 }
 
@@ -47,8 +80,8 @@ td {
 }
 
 .poem {
-  background-color: #111111;
-  border-bottom: 1pt solid gray;
+  background-color: var(--poem-background-color);
+  border-bottom: var(--poem-border-bottom);
 	width : 50%;
 	position: relative;
 	text-align: justify;
@@ -62,7 +95,7 @@ td {
 }
 
 a {
-	color: #bbbbbb;
+	color: var(--a-color);
 	text-decoration: none;
 }
 
@@ -101,14 +134,19 @@ a.link:hover l {
 }
 
 .event {
-  border-bottom: 1pt solid gray;
+  /* border-bottom: 1pt solid gray; */
   padding-top: 10pt;
   padding-bottom: 10pt;
 }
 
 .event h2 {
-  /*font-family: Serif;*/
+  font-family: Serif;
+  font-size: 2em;
   color: #bbbbbb;
+}
+
+.event h2:hover {
+  color: #dddddd;
 }
 
 .event ul {
@@ -235,7 +273,7 @@ p {
 }
 
 .suploz {
-  font-size: 16px;
+  font-size: 25px;
   vertical-align: 1.0ex;
   color: gold;
 }

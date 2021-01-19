@@ -1,4 +1,4 @@
-import {getCookie, setCookie} from "./cookies";
+import {getCookie, setCookie} from "./cookies.js";
 
 window.colorScheme = "light"; // Default
 

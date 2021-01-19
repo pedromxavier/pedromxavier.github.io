@@ -36,7 +36,7 @@ function setDarkMode() {
 
 function saveColorScheme() {
     let json = {"color_scheme": window.colorScheme};
-    setCookie(json, days=1);
+    setCookie(json, 1);
 }
 
 function toggleColorScheme() {

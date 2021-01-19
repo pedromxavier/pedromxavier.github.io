@@ -34,8 +34,8 @@ function setDarkMode() {
     saveColorScheme();
 }
 
-function saveColorScheme(json) {
-    json = {"color_scheme": window.colorScheme};
+function saveColorScheme() {
+    let json = {"color_scheme": window.colorScheme};
     setCookie(json, days=1);
 }
 
@@ -48,7 +48,7 @@ function toggleColorScheme() {
 }
 
 function initColorScheme() {
-    cookie = getCookie();
+    let cookie = getCookie();
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         if (e.matches) { // Dark Mode

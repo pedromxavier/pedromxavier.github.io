@@ -46,6 +46,9 @@ function saveColorScheme() {
 }
 
 function toggleColorScheme() {
+    // Enable fading
+    document.body.className = "fade";
+
     if (window.colorScheme == "dark") {
         setLightIcon();
         setLightMode();
@@ -53,6 +56,9 @@ function toggleColorScheme() {
         setDarkIcon();
         setDarkMode();
     }
+
+    // Disable fading
+    document.body.className = "";
 }
 
 function loadColorScheme() {
@@ -71,15 +77,12 @@ function loadColorScheme() {
 }
 
 function initColorScheme() {
-    
+
     if (window.colorScheme == 'dark') {
         setDarkIcon();
     } else if (window.colorScheme == 'light') {
         setLightIcon();
     }
-
-    // Enable fading
-    document.body.className = "fade";
 }
 
 export {toggleColorScheme, loadColorScheme, initColorScheme};

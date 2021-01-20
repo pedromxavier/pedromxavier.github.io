@@ -1,20 +1,33 @@
-export function expires(days=1) {
+function expires(days=1) {
     var date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     return date.toUTCString();
 }
 
+
+
 function setCookie(json, days=1) {
-  let keys = Object.keys(json);
+  let COOKIE_JSON = {
+    'SameSite': 'Lax',
+    'expires': expires(days),
+    'path': '/'
+  }
 
   let pairs = [];
+
+  let keys = Object.keys(json);
   for (let i=0; i<keys.length; i++) {
       let key = keys[i];
       let pair = `${key}=${json[key]}`;
       pairs.push(pair);
   }
-  pairs.push(`expires=${expires(days)}`);
-  pairs.push(`path=/`);
+
+  let COOKIE_KEYS = Object.keys(COOKIE_JSON);
+  for (let i=0; i<KEYS.length; i++) {
+    let key = COOKIE_KEYS[i];
+    let pair = `${key}=${COOKIE_JSON[key]}`;
+    pairs.push(pair);
+  }
   
   document.cookie = pairs.join(";");
 }

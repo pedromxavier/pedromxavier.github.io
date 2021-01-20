@@ -7,7 +7,11 @@
 		<meta name="HandheldFriendly" content="true">
 
 		<link type="text/css" rel="stylesheet" href="../style.css">
-		<script type="module" src="../js/color-mode.js"></script>
+		<script type="module">
+			import {toggleColorScheme} from  "./js/color-mode.js";
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
     </head>
 
     <body>
@@ -178,8 +182,10 @@
 
 	</body>
 
-	<script type="text/javascript">
-		window.initColorScheme();
+	<script type="module">
+		import {initColorScheme} from  "./js/color-mode.js";
+		// Add as window property
+		initColorScheme();
 	</script>
 </html>
 

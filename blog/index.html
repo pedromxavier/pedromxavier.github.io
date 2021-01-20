@@ -8,7 +8,11 @@
 
 		<link type="text/css" rel="stylesheet" href="../style.css">
 		<script type="text/javascript" src="../js/phrase.js"></script>
-		<script type="module" src="../js/color-mode.js"></script>
+		<script type="module">
+			import {toggleColorScheme} from  "./js/color-mode.js";
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
     </head>
 
     <body>
@@ -79,14 +83,18 @@
 
 	<footer>
 		&copy; Rio de Janeiro, 2021 <br />
-		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+		<a style="cursor: pointer;" onclick="window.toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
 	</footer>
 
 	</body>
 
-	<script type="text/javascript">
+	<script type="module">
+		import {initColorScheme} from  "./js/color-mode.js";
+		// Add as window property
 		initColorScheme();
+	</script>
+
+	<script type="text/javascript">
 		randomPhrase();
 	</script>
-	
 </html>

@@ -7,8 +7,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
 
-		<link type="text/css" rel="stylesheet" href="../style.css">
-		<script type="module" src="../js/color-mode.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script type="module">
+			import {toggleColorScheme} from  "./js/color-mode.js";
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
     </head>
 
     <body>
@@ -91,13 +95,14 @@ $ python3 setup.py install</pre>
 
 	<footer>
 		&copy; Rio de Janeiro, 2021 <br />
-		<a style="cursor: pointer;" onclick="toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+		<a style="cursor: pointer;" onclick="window.toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
 	</footer>
 
 	</body>
 
 	<script type="module">
-		import {initColorScheme} from "../js/color-mode.js";
+		import {initColorScheme} from  "./js/color-mode.js";
+		// Add as window property
 		initColorScheme();
 	</script>
 </html>

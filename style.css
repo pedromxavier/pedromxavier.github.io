@@ -19,6 +19,8 @@
   --event-h2: #dddddd;
   --event-h2-hover: #bbbbbb;
   --event-pre: 1pt solid dimgray;
+  /* Suploz Dagger */
+  --suploz-color: crimson;
 }
 
 .dark-mode:root {
@@ -39,6 +41,8 @@
   --event-h2: #bbbbbb;
   --event-h2-hover: #dddddd;
   --event-pre: 1pt solid gray;
+  /* Suploz Dagger */
+  --suploz-color: gold;
 }
 
 body.fade {
@@ -291,7 +295,7 @@ p {
 .suploz {
   font-size: 25px;
   vertical-align: 1.0ex;
-  color: gold;
+  color: var(--suploz-color);
 }
 
 /* LaTeX stuff */

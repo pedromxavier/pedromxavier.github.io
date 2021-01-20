@@ -23,15 +23,21 @@ function setColorScheme(cookie=null) {
 function setLightMode() {
     window.colorScheme = "light";
     document.documentElement.className = "light-mode";
-    document.getElementById("colorscheme-button").innerHTML = "&#9788;";
     saveColorScheme();
+}
+
+function setLightIcon() {
+    document.getElementById("colorscheme-button").innerHTML = "&#9788;";
 }
 
 function setDarkMode() {
     window.colorScheme = "dark";
     document.documentElement.className = "dark-mode";
-    document.getElementById("colorscheme-button").innerHTML = "&#9790;";
     saveColorScheme();
+}
+
+function setDarkIcon() {
+    document.getElementById("colorscheme-button").innerHTML = "&#9790;";
 }
 
 function saveColorScheme() {
@@ -41,13 +47,15 @@ function saveColorScheme() {
 
 function toggleColorScheme() {
     if (window.colorScheme == "dark") {
+        setLightIcon();
         setLightMode();
     } else if (window.colorScheme == "light") {
+        setDarkIcon();
         setDarkMode();
     }
 }
 
-function initColorScheme() {
+function loadColorScheme() {
     let cookie = getCookie();
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
@@ -60,9 +68,18 @@ function initColorScheme() {
     });
 
     setColorScheme(cookie);
-
-    // Enable fading
-    // document.body.className = "fade";
 }
 
-export {toggleColorScheme, initColorScheme};
+function initColorScheme() {
+    
+    if (window.colorScheme == 'dark') {
+        setDarkIcon();
+    } else if (window.colorScheme == 'light') {
+        setLightIcon();
+    }
+
+    // Enable fading
+    document.body.className = "fade";
+}
+
+export {toggleColorScheme, loadColorScheme, initColorScheme};

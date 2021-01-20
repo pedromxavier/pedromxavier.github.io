@@ -12,13 +12,13 @@
   --a-link-hover: #000000;
   /* Poem */
   --poem-backgroud-color: #eeeeee;
-  --poem-border-bottom: 1pt solid dimgray;
+  --poem-border-bottom: 1pt solid black;
   /* Timeline */
-  --timeline: 1pt solid dimgray;
+  --timeline: 1pt solid black;
   /* Event */
-  --event-h2: #dddddd;
-  --event-h2-hover: #bbbbbb;
-  --event-pre: 1pt solid dimgray;
+  --event-h2: black;
+  --event-h2-hover: dimgray;
+  --event-pre: 1pt solid black;
   /* Suploz Dagger */
   --suploz-color: crimson;
 }
@@ -166,7 +166,7 @@ a.link:hover l {
 
 .event h2:hover {
   color: var(--event-h2-hover);
-  cursor: none;
+  cursor: default;
 }
 
 .event ul {

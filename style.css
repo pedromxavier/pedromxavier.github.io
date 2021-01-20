@@ -1,6 +1,30 @@
 @import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
 
 /* Define color variables */
+
+:root {
+  /* Body */
+  --body-backgroud-color: #777777;
+  --body-color: #000000;
+  /* Table */
+  --table-border: 1px solid black;
+  /* a tag */
+  --a-color: #444444;
+  --a-link-hover: #000000;
+  /* Poem */
+  --poem-backgroud-color: #777777;
+  --poem-border-bottom: 1pt solid black;
+  /* Timeline */
+  --timeline: 1pt solid black;
+  /* Event */
+  --event-h2: black;
+  --event-h2-hover: dimgray;
+  --event-pre: 1pt solid black;
+  /* Suploz Dagger */
+  --suploz-color: crimson;
+}
+
+
 .light-mode:root {
   /* Body */
   --body-backgroud-color: #eeeeee;

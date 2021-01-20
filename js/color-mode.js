@@ -46,22 +46,19 @@ function saveColorScheme() {
 }
 
 function toggleColorScheme() {
-    // Enable fading
-    document.body.className = "fade";
-
     if (window.colorScheme == "dark") {
         setLightIcon();
         setLightMode();
     } else if (window.colorScheme == "light") {
         setDarkIcon();
         setDarkMode();
-    }
-
-    // Disable fading
-    document.body.className = "";
+    }   
 }
 
 function loadColorScheme() {
+    // Disable fading
+    document.body.className = "";
+
     let cookie = getCookie();
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
@@ -83,6 +80,9 @@ function initColorScheme() {
     } else if (window.colorScheme == 'light') {
         setLightIcon();
     }
+
+    // Enable fading
+    document.body.className = "fade";
 }
 
 export {toggleColorScheme, loadColorScheme, initColorScheme};

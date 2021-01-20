@@ -12,13 +12,13 @@
   --a-link-hover: #000000;
   /* Poem */
   --poem-backgroud-color: #eeeeee;
-  --poem-border-bottom: 1pt solid darkgray;
+  --poem-border-bottom: 1pt solid dimgray;
   /* Timeline */
-  --timeline: 1pt solid darkgray;
+  --timeline: 1pt solid dimgray;
   /* Event */
-  --event-h2: #bbbbbb;
-  --event-h2-hover: #dddddd;
-  --event-pre: 1pt solid darkgray;
+  --event-h2: #dddddd;
+  --event-h2-hover: #bbbbbb;
+  --event-pre: 1pt solid dimgray;
 }
 
 .dark-mode:root {

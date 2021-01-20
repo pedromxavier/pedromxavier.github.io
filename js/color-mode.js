@@ -62,7 +62,7 @@ function initColorScheme() {
     setColorScheme(cookie);
 
     // Enable fading
-    //document.body.className = "fade";
+    // document.body.className = "fade";
 }
 
 export {toggleColorScheme, initColorScheme};

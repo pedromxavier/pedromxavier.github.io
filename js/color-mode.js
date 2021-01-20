@@ -61,3 +61,5 @@ function initColorScheme() {
 
     setColorScheme(cookie);
 }
+
+export {toggleColorScheme, initColorScheme};

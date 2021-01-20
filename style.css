@@ -9,9 +9,16 @@
   --table-border: 1px solid black;
   /* a tag */
   --a-color: #444444;
+  --a-link-hover: #000000;
   /* Poem */
   --poem-backgroud-color: #eeeeee;
-  --poem-border-bottom: 1pt solid gray;
+  --poem-border-bottom: 1pt solid darkgray;
+  /* Timeline */
+  --timeline: 1pt solid darkgray;
+  /* Event */
+  --event-h2: #bbbbbb;
+  --event-h2-hover: #dddddd;
+  --event-pre: 1pt solid darkgray;
 }
 
 .dark-mode:root {
@@ -22,9 +29,16 @@
   --table-border: 1px solid white;
   /* a tag */
   --a-color: #bbbbbb;
+  --a-link-hover: #ffffff;
   /* Poem */
   --poem-backgroud-color: #111111;
   --poem-border-bottom: 1pt solid gray;
+  /* Timeline */
+  --timeline: 1pt solid gray;
+  /* Event */
+  --event-h2: #bbbbbb;
+  --event-h2-hover: #dddddd;
+  --event-pre: 1pt solid gray;
 }
 
 body.fade {
@@ -112,7 +126,7 @@ a.link {
 }
 
 a.link:hover {
-  color: #ffffff;
+  color: var(--a-link-hover);
   text-decoration: none;
 }
 
@@ -122,7 +136,7 @@ a.link l {
 }
 
 a.link:hover l {
-  color: #ffffff;
+  color: var(--a-link-hover);
   display: inline;
 }
 
@@ -143,11 +157,11 @@ a.link:hover l {
 .event h2 {
   font-family: Serif;
   font-size: 2em;
-  color: #bbbbbb;
+  color: var(--event-h2);
 }
 
 .event h2:hover {
-  color: #dddddd;
+  color: var(--event-h2-hover);
 }
 
 .event ul {
@@ -157,7 +171,7 @@ a.link:hover l {
 .event pre {
   display: block;
   text-align: left;
-  border-left: 1pt solid gray;
+  border-left: var(--event-pre);
   padding-left: 10pt;
 }
 
@@ -175,7 +189,7 @@ a.link:hover l {
 }
 
 .timeline {
-  border-left: 1pt solid gray;
+  border-left: var(--timeline);
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 50px;

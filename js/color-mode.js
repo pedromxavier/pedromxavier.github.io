@@ -62,4 +62,6 @@ function initColorScheme() {
     setColorScheme(cookie);
 }
 
-export { initColorScheme, toggleColorScheme };
+// Add as window property
+window.toggleColorScheme = toggleColorScheme;
+window.initColorScheme = initColorScheme;

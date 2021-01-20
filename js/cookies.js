@@ -4,8 +4,6 @@ function expires(days=1) {
     return date.toUTCString();
 }
 
-
-
 function setCookie(json, days=1) {
   let COOKIE_JSON = {
     'SameSite': 'Lax',
@@ -23,7 +21,7 @@ function setCookie(json, days=1) {
   }
 
   let COOKIE_KEYS = Object.keys(COOKIE_JSON);
-  for (let i=0; i<KEYS.length; i++) {
+  for (let i=0; i<COOKIE_KEYS.length; i++) {
     let key = COOKIE_KEYS[i];
     let pair = `${key}=${COOKIE_JSON[key]}`;
     pairs.push(pair);

@@ -27,15 +27,16 @@
   --poem-border-bottom: 1pt solid gray;
 }
 
-body {
-  background-color: var(--body-backgroud-color);
-  color: var(--body-color);
-
+body.fade {
   /* Color transition */
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
-  
+}
+
+body {
+  background-color: var(--body-backgroud-color);
+  color: var(--body-color);
   font-family: Monospace;
   text-align: justify;
   text-justify: inter-word;

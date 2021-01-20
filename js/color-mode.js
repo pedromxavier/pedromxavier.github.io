@@ -3,7 +3,7 @@ import {getCookie, setCookie} from "./cookies.js";
 window.colorScheme = "light"; // Default
 
 function setColorScheme(cookie=null) {
-    if (cookie !== null) {
+    if (cookie !== null && cookie != undefined) {
         if (cookie['color_scheme'] == 'dark') {
             setDarkMode();
             return;
@@ -60,6 +60,9 @@ function initColorScheme() {
     });
 
     setColorScheme(cookie);
+
+    // Enable fading
+    document.body.className = "fade";
 }
 
 export {toggleColorScheme, initColorScheme};

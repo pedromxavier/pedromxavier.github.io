@@ -162,6 +162,7 @@ a.link:hover l {
 
 .event h2:hover {
   color: var(--event-h2-hover);
+  cursor: none;
 }
 
 .event ul {

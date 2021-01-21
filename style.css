@@ -183,7 +183,8 @@ a.link:hover l {
 }
 
 .event h2 {
-  font-family: Serif;
+  /* font-family: Serif; */
+  text-align: left;
   font-size: 2em;
   color: var(--event-h2);
 }

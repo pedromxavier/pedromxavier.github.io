@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="dark-mode">
+	<head> 
+		<title>Home</title>
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+
+		<link type="text/css" rel="stylesheet" href="../style.css">
+		<script type="module">
+			import {loadColorScheme, toggleColorScheme} from  "../js/color-mode.js";
+			// Call load
+			loadColorScheme();
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
+    </head>
+
+    <body>
+
+	<!-- SIDENAV -->
+	<div id=container>
+		<center>
+		  <h1 id=name>Projetos</h1>
+		</center>
+	
+		<div id=leftright>
+		  <div id=left>
+			<center>
+			  <img id=headshot src="../photos/pedro.png"><br/>
+			  <div id=links>
+				<p><a href="../index.html">home</a></p>
+				<p><a href="http://github.com/pedromxavier">github</a></p>
+				<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8611762T6">lattes</a></p>
+				<p><a href="../contato/">contato</a></p>
+				<p><a href="../monitoria/">monitoria</a></p>
+				<p><a href="../projetos/">projetos</a></p>
+				<p><a href="../poesia/">poesia</a></p>
+			  </div>
+			</center>
+		  	</div>
+	
+		  	<div id=right>
+		  	Nessa página você pode acessar ou saber um pouco mais sobre os projetos que tenho em andamento.
+			</div>
+	
+		</div>
+	</div>
+
+	<div id=container>
+		<div class="event">
+			<a class="link" href="#minerva">Minerva <l>&#128279;</l></a>
+
+			<p> Implementado em Python, oferece uma interface por linha de comando para renovar os empréstimos na biblioteca da UFRJ.</p>
+
+			<h2>Instalação:</h2>
+			<pre>$ git clone <a href="https://github.com/pedromxavier/minerva">repo</a>
+$ cd minerva
+$ python3 setup.py install</pre>
+		
+			<p>A instalação pode demandar privilégios de admnistrador. Isso requer o uso do comando <code>sudo</code> em sistemas Unix ou executar o prompt de comando como administrador no Windows.</p>
+
+			<h2>Uso:</h2>
+			<ul>
+				<li>Linux, OSx:</li>
+				<pre>$ minerva [...]</pre>
+				<li>Windows:</li>
+				<pre>> python -m minerva [...]</pre>
+			</ul>
+			As opções são:
+			</ul>
+			<ul>
+				<li>Renovar os livros:<pre>minerva [login] [senha]</pre></li>
+				<li>Renovar e armazenar as credenciais:<pre>minerva -c [login] [senha]</pre> </li>
+				<li>Renovar os livros das credenciais armazenadas:<pre>minerva -r</pre> </li>
+			</ul>
+		</div>
+
+		<div class="event">
+			<a class="link" href="#wordartex">Word<span class="latex">A<sup>r</sup>T<sub>e</sub>X</span> <l>&#128279;</l></a>
+
+			<p> Um pacote para <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> que permite inserir em documentos pdf o clássico layout de títulos WordArt, presente no Word 97-2003.
+			</p>
+
+			<h2>Uso:</h2>
+			<pre>\usepackage{wordartex}</pre>
+		</div>
+
+		<div class="event">
+			<a class="link" href="#brafman-assembly">Brafman-Assembly <l>&#128279;</l></a>
+
+			<p> Um pequeno compilador conforme a linguagem das notas de aula de Sistemas Digitais, ministradas pelo prof. Brafman.
+			</p>
+		</div>
+	</div>
+
+	<footer>
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="window.toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+	</footer>
+
+	</body>
+
+	<script type="module">
+		import {initColorScheme} from  "../js/color-mode.js";
+		// Add as window property
+		initColorScheme();
+	</script>
+</html>

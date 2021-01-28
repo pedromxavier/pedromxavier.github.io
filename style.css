@@ -69,10 +69,6 @@
   --suploz-color: gold;
 }
 
-html {
-  display: block !important;
-}
-
 body.fade {
   /* Color transition */
   -webkit-transition: background-color 500ms linear;
@@ -352,4 +348,8 @@ p {
 
 .MathJax { 
   font-size: 1.2em !important;
+}
+
+html { /*At the end of the file*/
+  display: block !important;
 }

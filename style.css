@@ -69,22 +69,28 @@
   --suploz-color: gold;
 }
 
-body.fade {
-  /* Color transition */
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
-}
-
 body {
   background-color: var(--body-backgroud-color);
   color: var(--body-color);
+  /* Color transition */
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
   font-family: Monospace;
   text-align: justify;
   text-justify: inter-word;
   font-size: 14px;
   line-height: 24px;
   height: 100%;
+}
+
+body.fade {
+  /* Color transition */
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 footer{
@@ -350,6 +356,6 @@ p {
   font-size: 1.2em !important;
 }
 
-html { /*At the end of the file*/
+html.ready{ /*At the end of the file*/
   display: block !important;
 }

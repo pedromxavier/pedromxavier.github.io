@@ -356,6 +356,6 @@ p {
   font-size: 1.2em !important;
 }
 
-html.ready{ /*At the end of the file*/
+html.ready { /*At the end of the file*/
   display: block !important;
 }

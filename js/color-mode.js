@@ -22,7 +22,7 @@ function setColorScheme(cookie=null) {
 
 function setLightMode() {
     window.colorScheme = "light";
-    document.documentElement.className = "light-mode";
+    document.documentElement.className = "light-mode ready";
     saveColorScheme();
 }
 
@@ -32,7 +32,7 @@ function setLightIcon() {
 
 function setDarkMode() {
     window.colorScheme = "dark";
-    document.documentElement.className = "dark-mode";
+    document.documentElement.className = "dark-mode ready";
     saveColorScheme();
 }
 

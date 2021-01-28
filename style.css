@@ -69,6 +69,10 @@
   --suploz-color: gold;
 }
 
+html {
+  display: block;
+}
+
 body.fade {
   /* Color transition */
   -webkit-transition: background-color 500ms linear;

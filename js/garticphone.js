@@ -42,7 +42,7 @@ function loadPictures(path, index_path, element) {
     let html = [];
     for (let i = 0; i < index.length; i++) {
         let [file_path, file_date] = index[i].split(' ');
-        console.log(`Loading ${path}/${file_path}`);
+        console.log(`Loading ${BASE_PATH}/${path}/${file_path}`);
         html.push(loadPicture(`${path}/${file_path}`, timeConverter(file_date)));
     }
     element.innerHTML = html.join(`

@@ -1,13 +1,15 @@
+var BASE_PATH = "https://pedromxavier.githu.io/garticphone";
+
 function readTextFile(file) {
     var text = null;
     var rawFile = new XMLHttpRequest();
-    console.log(`GET ${file}`);
-    rawFile.open("GET", `${file}`, true);
+    console.log(`GET ${BASE_PATH}/${file}`);
+    rawFile.open("GET", `${BASE_PATH}/${file}`, true);
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 text = rawFile.responseText;
-                console.log(`GOT ${file}`);
+                console.log(`GOT ${BASE_PATH}/${file}`);
             }
         }
     }

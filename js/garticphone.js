@@ -8,8 +8,8 @@ function readTextFile(file) {
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
-                text = rawFile.responseText;
-                console.log(`GOT ${BASE_PATH}/${file}`);
+                var text = rawFile.responseText;
+                console.log(text);
             }
         }
     }
@@ -42,7 +42,6 @@ function loadPictures(path, index_path, element) {
     let html = [];
     for (let i = 0; i < index.length; i++) {
         let [file_path, file_date] = index[i].split(' ');
-        console.log(`Loading ${BASE_PATH}/${path}/${file_path}`);
         html.push(loadPicture(`${path}/${file_path}`, timeConverter(file_date)));
     }
     element.innerHTML = html.join(`

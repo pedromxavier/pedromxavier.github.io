@@ -1,11 +1,13 @@
 function readTextFile(file) {
-    let text = null;
+    var text = null;
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, true);
+    console.log(`GET ${file}`);
+    rawFile.open("GET", `${file}`, true);
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 text = rawFile.responseText;
+                console.log(`GOT ${file}`);
             }
         }
     }

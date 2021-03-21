@@ -6,8 +6,9 @@ function timeConverter(UNIX_timestamp) {
 
 function readPictureIndex() {
     var rawFile = new XMLHttpRequest();
-    console.log(`${window.location.href}/pictures/pictures.index`)
-    rawFile.open("GET", `${window.location.href}/pictures/pictures.index`, true);
+    var fileUrl = `${window.location.href}/pictures/pictures.index`.replace('//', '/');
+    console.log(`GET ${fileUrl}`);
+    rawFile.open("GET", fileUrl, true);
     rawFile.onreadystatechange = function () {
         let text = null;
         if (rawFile.readyState === 4) {

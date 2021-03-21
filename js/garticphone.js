@@ -1,15 +1,16 @@
 function readTextFile(file) {
+    let text = null;
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
+    rawFile.open("GET", file, true);
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
-                return rawFile.responseText;
+                text = rawFile.responseText;
             }
         }
     }
     rawFile.send(null);
-    return null;
+    return text;
 }
 
 function timeConverter(UNIX_timestamp) {
@@ -24,6 +25,7 @@ function timeConverter(UNIX_timestamp) {
 }
 
 function loadPictures(path, index_path, element) {
+    console.log(`Reading ${index_path}.`);
     let text = readTextFile(index_path);
     if (text === null) {
         return

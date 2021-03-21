@@ -28,8 +28,10 @@ function loadPictures(path, index_path, element) {
     console.log(`Reading ${index_path}.`);
     let text = readTextFile(index_path);
     if (text === null) {
+        console.log('Reading FAILED.')
         return
     }
+    console.log('Reading OK.')
 
     let index = text.split('\n');
 

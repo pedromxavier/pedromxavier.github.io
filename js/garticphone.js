@@ -1,4 +1,4 @@
-var BASE_PATH = "https://pedromxavier.githu.io/garticphone";
+var BASE_PATH = "https://pedromxavier.github.io/garticphone";
 
 function readTextFile(file) {
     var text = null;

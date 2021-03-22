@@ -137,6 +137,12 @@ center {
   border-image-source: url('https://pedromxavier.github.io/garticphone/border.png');
   width: max-content;
   height: max-content;
+  padding: 20px 20px 16px 20px;
+}
+
+.picture {
+  display: block;
+  margin: auto;
 }
 
 .picture p.metal {

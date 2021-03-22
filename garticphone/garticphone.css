@@ -142,7 +142,7 @@ center {
 
 .picture {
   display: block;
-  margin: auto;
+  margin: 3cm auto;
 }
 
 .picture p.metal {
@@ -152,7 +152,7 @@ center {
   padding-left: 20pt;
   padding-right: 20pt;
   height: 80px;
-  border-radius: .5em;
+  border-radius: 0;
   background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
     -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
     -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
@@ -161,5 +161,4 @@ center {
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
     hsl(0,0%,70%)100%);
-  margin: 20px auto;
 }

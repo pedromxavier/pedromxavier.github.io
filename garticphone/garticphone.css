@@ -135,9 +135,11 @@ center {
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   border-image-source: url('https://pedromxavier.github.io/garticphone/border.png');
+  width: max-content;
+  height: max-content;
 }
 
-.frame p.metal {
+.picture p.metal {
   font: bold 2.7em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   font-size: 3em;
   width: max-content;
@@ -153,4 +155,5 @@ center {
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
     hsl(0,0%,70%)100%);
+  margin: 20px 40px auto auto;
 }

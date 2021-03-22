@@ -6,7 +6,7 @@ function timeConverter(UNIX_timestamp) {
 
 function readPictureIndex() {
     var rawFile = new XMLHttpRequest();
-    var fileUrl = `${window.location.href}/pictures/pictures.index`;
+    var fileUrl = `${window.location.href}/pictures.index`;
     fileUrl = fileUrl.replace(/^(\/\/)/g, '/');
     fileUrl = fileUrl.replace(/([^:])(\/\/)/g, '$1/');
     console.log(`GET ${fileUrl}`);

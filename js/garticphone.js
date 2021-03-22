@@ -51,7 +51,7 @@ function buildPicture(path, date) {
     <div class="picture">
         <frame>
             <img alt="" src="${path}"></img>
-            <p class="metal linear">${date}</p>
+            <p class="metal">${date}</p>
         </frame>
     </div>
     `;

@@ -1,5 +1,7 @@
 function timeConverter(UNIX_timestamp) {
-    var a = new Date(~~(Number.parseFloat(UNIX_timestamp) * 1000));
+    var time = ~~Number.parseFloat(UNIX_timestamp);
+    console.log(`TIMESTAMP ${time}`);
+    var a = new Date(time * 1000);
     var months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     return `${a.getDate()} de ${months[a.getMonth()]} de ${a.getFullYear()}.`;
 }

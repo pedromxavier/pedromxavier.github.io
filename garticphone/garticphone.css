@@ -158,6 +158,6 @@ center {
     
     linear-gradient(180deg, hsl(0,0%,78%)  0%, 
     gold          47%, 
-    hsl(0,0%,78%) 53%,
-    goldenrod    100%);
+    goldenrod 53%,
+    hsl(0,0%,78%)    100%);
 }

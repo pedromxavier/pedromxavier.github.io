@@ -122,7 +122,7 @@ center {
   margin: auto;
 }
 
-frame {
+.frame {
   display: block;
   border-radius: 4px;
   box-shadow: 
@@ -137,7 +137,7 @@ frame {
   border-image-source: url('https://pedromxavier.github.io/garticphone/border.png');
 }
 
-frame p.metal {
+.frame p.metal {
   font: bold 2.7em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   font-size: 3em;
   width: max-content;

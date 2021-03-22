@@ -49,10 +49,10 @@ function buildPictures(index_text) {
 function buildPicture(path, date) {
     return `
     <div class="picture">
-        <frame>
+        <div class="frame">
             <img alt="" src="${path}"></img>
             <p class="metal">${date}</p>
-        </frame>
+        </div>
     </div>
     `;
 }

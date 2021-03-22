@@ -38,7 +38,7 @@ function buildPictures(index_text) {
     let html = [];
     for (let i = 0; i < index.length; i++) {
         let [file_path, file_date] = index[i].split(' ');
-        html.push(loadPicture(`./pictures/${file_path}`, timeConverter(file_date)));
+        html.push(buildPicture(`./pictures/${file_path}`, timeConverter(file_date)));
     }
     document.getElementById("pictures").innerHTML = html.join(`
     `);

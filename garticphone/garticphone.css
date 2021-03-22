@@ -1,13 +1,22 @@
 center {
-    margin: auto;
+  margin: auto;
 }
 
-img {
-    display: block;
-    border-radius: 4px;
-    box-shadow: 
-      -2px -2px 1px rgba(0,0,0,0.5) inset,
-      20px 4px 10px rgba(0,0,0,0.35), 
-      40px 8px 10px rgba(0,0,0,0.15);   
-    margin: 0 auto;
+frame {
+  display: block;
+  border-radius: 4px;
+  box-shadow: 
+    -2px -2px 1px rgba(0,0,0,0.5) inset,
+    20px 4px 10px rgba(0,0,0,0.35), 
+    40px 8px 10px rgba(0,0,0,0.15);   
+  margin: 0 auto;
+}
+
+frame p {
+  border-style: ridge;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
 }

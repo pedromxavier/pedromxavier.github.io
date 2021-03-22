@@ -149,7 +149,11 @@ frame {
 }
 
 frame p.metal {
+  font: bold 2.7em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   font-size: 3em;
+  width: max-content;
+  padding-left: 20pt;
+  padding-right: 20pt;
   height: 80px;
   border-radius: .5em;
   background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),

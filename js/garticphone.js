@@ -1,6 +1,6 @@
 function timeConverter(UNIX_timestamp) {
     var time = ~~Number.parseFloat(UNIX_timestamp);
-    console.log(`TIMESTAMP ${time}`);
+    //console.log(`TIMESTAMP ${time}`);
     var a = new Date(time * 1000);
     var months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     return `${a.getDate()} de ${months[a.getMonth()]} de ${a.getFullYear()}.`;
@@ -11,7 +11,7 @@ function readPictureIndex() {
     var fileUrl = `${window.location.href}/pictures.index`;
     fileUrl = fileUrl.replace(/^(\/\/)/g, '/');
     fileUrl = fileUrl.replace(/([^:])(\/\/)/g, '$1/');
-    console.log(`GET ${fileUrl}`);
+    // console.log(`GET ${fileUrl}`);
     rawFile.open("GET", fileUrl, true);
     rawFile.onreadystatechange = function () {
         let text = null;
@@ -31,10 +31,10 @@ function loadPictures() {
 
 function buildPictures(index_text) {
     if (index_text === null) {
-        console.log('Reading FAILED.')
-        return
+        // console.log('Reading FAILED.')
+        return;
     }
-    console.log('Reading OK.')
+    // console.log('Reading OK.')
 
     let index = index_text.split('\n');
     let html = [];

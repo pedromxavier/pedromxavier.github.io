@@ -21,23 +21,43 @@
         "links" : [
             {   
                 "title" : "Zoom A", 
-                "link": "#"
+                "link": "https://zoom.us/j/92387012530?pwd=SnlhdnExSGJ3NG9Fd2laSzhWQXJtZz09"
             },
             {   
                 "title" : "Zoom B", 
-                "link": "#"
+                "link": "https://zoom.us/j/99369658499?pwd=VTZacE80OWRhYUI1Q2c5RklUQlJWQT09"
+            },
+            {   
+                "title" : "Page", 
+                "link": "https://sites.google.com/im.ufrj.br/new-teaching/refer%C3%AAncias"
             }
         ]
     },
     {
         "title" : "Redes II",
         "time" : "Seg, Qua: 10h - 12h",
-        "teacher" : "Luiz Henrique Maciel",
+        "teacher" : "Luis Henrique Maciel",
         "links" : [
             {   
                 "title" : "Meets", 
-                "link": "#"
+                "link": "https://meet.google.com/lookup/bohe63ykaq"
+            },
+            {   
+                "title" : "Page", 
+                "link": "https://www.gta.ufrj.br/ensino/eel879/"
+            }
+        ]
+    },
+    {
+        "title" : "Empreendedorismo",
+        "time" : "Sex: 13h30 - 16h30",
+        "teacher" : "Aline Brufato",
+        "links" : [
+            {   
+                "title" : "Meets", 
+                "link": "https://meet.google.com/idk-twkg-gkw"
             }
         ]
     }
+
 ]

@@ -55,7 +55,7 @@ function buildMeets(path) {
     loadJSON(path, function( data ) {
         document.getElementById('workarea').innerHTML = `
             <div class="position">
-                <h2>2020.1</h2>
+                <h2>2020.2</h2>
             </div>
             ${template( data )}
         `;

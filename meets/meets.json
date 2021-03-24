@@ -1,42 +1,42 @@
 [
     {
-        "title" : "Geometria Diferencial",
-        "time" : "Ter, Qui: 8h - 10h",
-        "teacher" : "Walcy Santos",
+        "title" : "Programação Avançada",
+        "time" : "Seg, Qua: 17h - 19h",
+        "teacher" : "Claudio Miceli",
         "links" : [
             {   
                 "title" : "Meets", 
-                "link": "https://meet.google.com/tci-moth-ddh"
+                "link": "https://meet.google.com/lookup/d25ygzrn32"
             },
             {   
                 "title" : "Class", 
-                "link": "https://classroom.google.com/u/0/c/MTcyNjc4OTIzMDQ1"
+                "link": "#"
             }
         ]
     },
     {
-        "title" : "Redes Complexas",
-        "time" : "Ter, Qui: 15h - 17h",
-        "teacher" : "Daniel Ratton",
+        "title" : "Álgebra Linear III",
+        "time" : "Ter, Qui: 13h - 15h",
+        "teacher" : "Amilcar Pacheco",
+        "links" : [
+            {   
+                "title" : "Zoom A", 
+                "link": "#"
+            },
+            {   
+                "title" : "Zoom B", 
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "title" : "Redes II",
+        "time" : "Seg, Qua: 10h - 12h",
+        "teacher" : "Luiz Henrique Maciel",
         "links" : [
             {   
                 "title" : "Meets", 
-                "link": "https://meet.google.com/cww-nswv-kqg"
-            },
-            {   
-                "title" : "Page", 
-                "link": "https://www.cos.ufrj.br/~daniel/rc/"
-            }
-        ]
-    },
-    {
-        "title" : "Química Experimental",
-        "time" : "Qua: 13h - 17h",
-        "teacher" : "Eliane D'Elia",
-        "links" : [
-            {   
-                "title" : "Teams", 
-                "link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWYzNGU2Y2UtZWE3ZS00ZTllLTg2MWQtOWIyOWVlYjBhOTU3%40thread.v2/0?context=%7b%22Tid%22%3a%22cdf8d8b4-d76f-47c9-aa10-10d297701c82%22%2c%22Oid%22%3a%226a218f81-1af5-4824-a832-2fca8e0dddc1%22%7d"
+                "link": "#"
             }
         ]
     }

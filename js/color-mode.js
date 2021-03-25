@@ -1,8 +1,8 @@
-import {getCookie, setCookie} from "./cookies.js";
+import { getCookie, setCookie } from "./cookies.js";
 
 window.colorScheme = "light"; // Default
 
-function setColorScheme(cookie=null) {
+function setColorScheme(cookie = null) {
     if (cookie !== null && cookie != undefined) {
         if (cookie['color_scheme'] == 'dark') {
             setDarkMode();
@@ -41,7 +41,7 @@ function setDarkIcon() {
 }
 
 function saveColorScheme() {
-    let json = {"color_scheme": window.colorScheme};
+    let json = { "color_scheme": window.colorScheme };
     setCookie(json, 1);
 }
 
@@ -52,7 +52,7 @@ function toggleColorScheme() {
     } else if (window.colorScheme == "light") {
         setDarkIcon();
         setDarkMode();
-    }   
+    }
 }
 
 function loadColorScheme() {
@@ -85,4 +85,4 @@ function initColorScheme() {
     document.body.className = "fade";
 }
 
-export {toggleColorScheme, loadColorScheme, initColorScheme};
+export { toggleColorScheme, loadColorScheme, initColorScheme };

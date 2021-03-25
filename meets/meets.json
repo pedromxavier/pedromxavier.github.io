@@ -15,6 +15,21 @@
         ]
     },
     {
+        "title" : "Qualidade de Software",
+        "time" : "Ter, Qui: 10h - 12h",
+        "teacher" : "Toacy Cavalcante",
+        "links" : [
+            {   
+                "title" : "Meets", 
+                "link": "https://meet.google.com/abb-chfj-yoc"
+            },
+            {   
+                "title" : "Moodle", 
+                "link": "https://moodle.cos.ufrj.br/"
+            }
+        ]
+    },
+    {
         "title" : "Álgebra Linear III",
         "time" : "Ter, Qui: 13h - 15h",
         "teacher" : "Amilcar Pacheco",

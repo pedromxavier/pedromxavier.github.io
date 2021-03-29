@@ -1,82 +1,92 @@
 [
     {
-        "title" : "Programação Avançada",
-        "time" : "Seg, Qua: 17h - 19h",
-        "teacher" : "Claudio Miceli",
-        "links" : [
-            {   
-                "title" : "Meets", 
+        "title": "Programação Avançada",
+        "time": "Seg, Qua: 17h - 19h",
+        "teacher": "Claudio Miceli",
+        "links": [
+            {
+                "title": "Meets",
                 "link": "https://meet.google.com/lookup/d25ygzrn32"
             },
-            {   
-                "title" : "Class", 
+            {
+                "title": "Class",
                 "link": "#"
             }
         ]
     },
     {
-        "title" : "Qualidade de Software",
-        "time" : "Ter, Qui: 10h - 12h",
-        "teacher" : "Toacy Cavalcante",
-        "links" : [
-            {   
-                "title" : "Meets", 
+        "title": "Qualidade de Software",
+        "time": "Ter, Qui: 10h - 12h",
+        "teacher": "Toacy Cavalcante",
+        "links": [
+            {
+                "title": "Meets",
                 "link": "https://meet.google.com/abb-chfj-yoc"
             },
-            {   
-                "title" : "Moodle", 
+            {
+                "title": "Moodle",
                 "link": "https://moodle.cos.ufrj.br/"
             }
         ]
     },
     {
-        "title" : "Álgebra Linear III",
-        "time" : "Ter, Qui: 13h - 15h",
-        "teacher" : "Amilcar Pacheco",
-        "links" : [
-            {   
-                "title" : "Zoom A", 
+        "title": "Monitoria",
+        "time": "Seg: 14h - 17h",
+        "teacher": "Pedroca",
+        "links": [
+            {
+                "title": "Meets",
+                "link": "https://meet.google.com/jsd-frab-xhr"
+            }
+        ]
+    },
+    {
+        "title": "Álgebra Linear III",
+        "time": "Ter, Qui: 13h - 15h",
+        "teacher": "Amilcar Pacheco",
+        "links": [
+            {
+                "title": "Zoom A",
                 "link": "https://zoom.us/j/92387012530?pwd=SnlhdnExSGJ3NG9Fd2laSzhWQXJtZz09"
             },
-            {   
-                "title" : "Zoom B", 
+            {
+                "title": "Zoom B",
                 "link": "https://zoom.us/j/99369658499?pwd=VTZacE80OWRhYUI1Q2c5RklUQlJWQT09"
             },
-            {   
-                "title" : "Zoom C", 
+            {
+                "title": "Zoom C",
                 "link": "https://zoom.us/j/95381119374?pwd=MmZJd0lYNkd2Z0VyWFgrSTZqWkpxQT09"
             },
-            {   
-                "title" : "Page", 
+            {
+                "title": "Page",
                 "link": "https://sites.google.com/im.ufrj.br/new-teaching/refer%C3%AAncias"
             }
         ]
     },
     {
-        "title" : "Redes II",
-        "time" : "Seg, Qua: 10h - 12h",
-        "teacher" : "Luis Henrique Maciel",
-        "links" : [
-            {   
-                "title" : "Meets", 
+        "title": "Redes II",
+        "time": "Seg, Qua: 10h - 12h",
+        "teacher": "Luis Henrique Maciel",
+        "links": [
+            {
+                "title": "Meets",
                 "link": "https://meet.google.com/lookup/bohe63ykaq"
             },
-            {   
-                "title" : "Page", 
+            {
+                "title": "Page",
                 "link": "https://www.gta.ufrj.br/ensino/eel879/"
             }
         ]
     },
     {
-        "title" : "Empreendedorismo",
-        "time" : "Sex: 13h30 - 16h30",
-        "teacher" : "Aline Brufato",
-        "links" : [
-            {   
-                "title" : "Meets", 
+        "title": "Empreendedorismo",
+        "time": "Sex: 13h30 - 16h30",
+        "teacher": "Aline Brufato",
+        "links": [
+            {
+                "title": "Meets",
                 "link": "https://meet.google.com/idk-twkg-gkw"
             }
         ]
     }
-
 ]

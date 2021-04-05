@@ -64,7 +64,7 @@ function NextLine() {
 
     let day = zfill(String(d.getDate()), 2);
     let mon = zfill(String(d.getMonth() + 1), 2);
-    return `<li> ${day}/${month} [<a href="${MEET_LINK}">meet</a>] <span>?</span> ?</li>`
+    return `<li> ${day}/${mon} [<a href="${MEET_LINK}">meet</a>] <span>?</span> ?</li>`
 }
 
 function ListPowers(path) {

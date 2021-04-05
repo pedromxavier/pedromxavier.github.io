@@ -44,7 +44,7 @@ function ListLines(array) {
         html.push(`<li> \
             ${date} \
             [<a href="${link}">link</a>] \
-            [<a href="${slides}"</a>] \
+            [<a href="${slides}">slides</a>] \
             <span>${author}</span> \
             ${title} \
             </li>

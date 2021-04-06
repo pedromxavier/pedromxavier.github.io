@@ -37,15 +37,22 @@
     {
         "date": "22/03",
         "link": "https://drive.google.com/file/d/1sHcJmPqCsFI6tgdcZ7nCLCswrJHSOpr2/view?usp=sharing",
-        "slides": "#",
+        "slides": "https://prezi.com/view/4xcgVnavWcRzUC8PtVYc/",
         "author": "Brunold",
         "title": "Miojo"
     },
     {
         "date": "29/03",
         "link": "https://drive.google.com/file/d/11kHVq4OYB-5ShbPLZUeecRWlEjpYCzAl/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/iagão_29-03.pdf",
         "author": "Iago",
         "title": "Otimização Imperial"
+    },
+    {
+        "date": "05/04",
+        "link": "https://drive.google.com/file/d/1YlnuBeuu2nR-oRw9uEn_kSquP4X-azHJ/view?usp=sharing",
+        "slides": "./static/preodk_05-04.pdf",
+        "author": "Pedroca",
+        "title": "Shaders"
     }
 ]

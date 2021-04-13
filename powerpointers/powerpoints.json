@@ -39,7 +39,7 @@
         "link": "https://drive.google.com/file/d/1sHcJmPqCsFI6tgdcZ7nCLCswrJHSOpr2/view?usp=sharing",
         "slides": "https://prezi.com/view/4xcgVnavWcRzUC8PtVYc/",
         "author": "Brunold",
-        "title": "Miojo"
+        "title": "Um novo modelo de negócio"
     },
     {
         "date": "29/03",
@@ -57,9 +57,9 @@
     },
     {
         "date": "12/04",
-        "link": "#",
-        "slides": "./static/pessoa_12-04.pptx",
+        "link": "https://drive.google.com/file/d/1zPYGzjoGwsWMDJMjdSK4KpcxdN6sqx64/view?usp=sharing",
+        "slides": "./static/pessoa_12-04.pdf",
         "author": "Pessoa",
-        "title": "?"
+        "title": "Banco de Dados"
     }
 ]

@@ -2,35 +2,35 @@
     {
         "date": "15/02",
         "link": "https://drive.google.com/file/d/1D6SX5mlcyuqrfSCNLUiyWIpYDd_CLcqE/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/pedroca_15_02.pdf",
         "author": "Pedroca",
         "title": "Judô"
     },
     {
         "date": "22/02",
         "link": "https://drive.google.com/file/d/1etdMo3OpTP8xQZUuWYWdCXH1HogYgGwS/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/iago_22_02.pdf",
         "author": "Iagão",
         "title": "Telecomunicações"
     },
     {
         "date": "01/03",
         "link": "https://drive.google.com/file/d/1812gIfgA1gBVCs9W-YtGNeK6CeqncWtT/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/brunin_01_03.pdf",
         "author": "Brunold",
         "title": "Astrologia"
     },
     {
         "date": "08/03",
         "link": "https://drive.google.com/file/d/1oAMYWf3VfR9RxVrD5mX-hEtHutSLuVnf/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/caverinha_08_03.pdf",
         "author": "Caveira",
         "title": "Origami"
     },
     {
         "date": "15/03",
         "link": "https://drive.google.com/file/d/1nk26lpdkHX2eqWXLB97smJMfMdoDV8hX/view?usp=sharing",
-        "slides": "#",
+        "slides": "./static/predo_15_03.pdf",
         "author": "Pedroca",
         "title": "I.A. no Cinema"
     },

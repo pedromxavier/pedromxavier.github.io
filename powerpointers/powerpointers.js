@@ -58,21 +58,29 @@ function zfill(s, n = 2) {
     return s; 
 }
 
-function NextLine() {
+function NextLine(array) {
     var d = new Date();
     d.setDate(d.getDate() + (1 + 7 - d.getDay()) % 7);
-
     let day = zfill(String(d.getDate()), 2);
     let mon = zfill(String(d.getMonth() + 1), 2);
-    return `<li> ${day}/${mon} [<a href="${MEET_LINK}">meet</a>] <span>?</span> ?</li>`
+
+    let date = `${day}/${mon}`
+
+    for (let i = 0; i < array.length; i++) {
+        let data = array[i];
+        if (data.date !== undefined && data.date === date) {
+            return ""
+        }
+    }
+    return `<li> ${date} [<a href="${MEET_LINK}">meet</a>] <span>?</span> ?</li>`
 }
 
 function ListPowers(path) {
-    loadJSON(path, function (data) {
+    loadJSON(path, function (array) {
         document.getElementById('powerpoints').innerHTML = `
             <ul>
-                ${ListLines(data)}
-                ${NextLine()}
+                ${ListLines(array)}
+                ${NextLine(array)}
             </ul>
         `;
     }, function (error) {

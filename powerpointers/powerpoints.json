@@ -54,5 +54,12 @@
         "slides": "./static/preodk_05-04.pdf",
         "author": "Pedroca",
         "title": "Shaders"
+    },
+    {
+        "date": "12/04",
+        "link": "#",
+        "slides": "./static/pessoa_12-04.pptx",
+        "author": "Pessoa",
+        "title": "?"
     }
 ]

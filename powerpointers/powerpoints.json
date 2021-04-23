@@ -61,5 +61,14 @@
         "slides": "./static/pessoa_12-04.pdf",
         "author": "Pessoa",
         "title": "Banco de Dados"
+    },
+    {
+        "date": "19/04",
+        "link": "https://drive.google.com/file/d/1fhpX58jEN4Pkbp_f9yxAxRvy6aQbM0VQ/view?usp=sharing",
+        "slides": "./static/turano_19_04.pdf",
+        "author": "Turano",
+        "title": "Biodiversidade"
     }
+
+    
 ]

@@ -17,7 +17,28 @@
         "links": [
             {
                 "title": "Meets",
-                "link": "#"
+                "link": "https://meet.google.com/mpr-ktex-did"
+            }
+        ]
+    },
+    {
+        "title": "BIM",
+        "time": "Ter, Qui: 8h - 10h",
+        "teacher": "José Luis Menegotto",
+        "links": [
+            {
+                "title": "Meets",
+                "link": "https://mail.google.com"
+            }
+        ]
+    },
+    {
+        "title": "Antropologia Cultural",
+        "time": "Qua: 18h - 21h40",
+        "teacher": "Julia O'Donnell",
+        "links": [
+            {
+                "title": "Meets", "link": "https://meet.google.com/pop-chex-yca"
             }
         ]
     }

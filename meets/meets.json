@@ -18,6 +18,10 @@
             {
                 "title": "Meets",
                 "link": "https://meet.google.com/mpr-ktex-did"
+            },
+            {
+                "title": "Page",
+                "link": "https://www.cos.ufrj.br/~daniel/sd/"
             }
         ]
     },
@@ -39,6 +43,16 @@
         "links": [
             {
                 "title": "Meets", "link": "https://meet.google.com/pop-chex-yca"
+            }
+        ]
+    },
+    {
+        "title": "Trabalho do Futuro",
+        "time": "Seg: 15h30 - 17h",
+        "teacher": "Francisco Moura Duarte",
+        "links": [
+            {
+                "title": "Zoom", "link": "https://us02web.zoom.us/j/83279772937?pwd=QzZKOVRtbHl0TFV2bmxMYVZXeG1Gdz09"
             }
         ]
     }

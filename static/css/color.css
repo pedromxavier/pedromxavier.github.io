@@ -1,0 +1,18 @@
+:root {
+    /* Colors */
+    --bg-color: #fff7df;
+    --fg-color: black;
+
+    --A-color: #389826;
+    --B-color: #4063d8;
+    --C-color: #9558b2;
+    --D-color: #cb3c33;
+
+    /* Font */
+    --font-size-tiny: 10pt;
+    --font-size-small: 12pt;
+    --font-size-normal: 20pt;
+    --font-size-large: 32pt;
+    --font-size-huge: 48pt;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="dark-mode" style="display: none;">
+	<head> 
+		<title>Tapete de folhas</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+
+		<link type="text/css" rel="stylesheet" href="../style.css">
+		<script type="text/javascript" src="../js/phrase.js"></script>
+		<script type="module">
+			import {loadColorScheme, toggleColorScheme} from  "../js/color-mode.js";
+			// Call load
+			loadColorScheme();
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+
+	<!-- SIDENAV -->
+	<div id=container>
+		<center>
+		  <h1 id=name>Tapete de folhas</h1>
+		  <p id=randomphrase></p>
+		</center>
+	
+		<div id=leftright>
+		  <div id=left>
+			<center>
+			  <img id=headshot src="../photos/pedro.png"><br/>
+			  <div id=links>
+				<p><a href="../index.html">home</a></p>
+				<p><a href="http://github.com/pedromxavier" target="_blank">github</a></p>
+				<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8611762T6" target="_blank">lattes</a></p>
+				<p><a href="../contato/">contato</a></p>
+				<p><a href="../monitoria/">monitoria</a></p>
+				<p><a href="../poesia/">poesia</a></p>
+			  </div>
+			</center>
+		  	</div>
+	
+		  	<div id=right>
+				
+			</div>
+	
+		</div>
+	</div>
+
+		<div id=container>
+			<h1 id=sec>Táxi</h1>
+			Assim que me mudei para o Rio de Janeiro, namorava uma garota do Recife. As passagens eram baratas na época e eu costumava ir para lá a cada mês. Minha família também morava lá. Chegava do aeroporto, ia encontrá-la e, quase acabando a madrugada, seguia a para casa dos meus pais. Nessa hora, chamava sempre um táxi pelo aplicativo e em pelo menos umas cinco dessas vezes, quem atendeu o pedido foi Eduardo Golden. Já na primeira disse: <br />
+			&#8212; Além aqui do carro, eu vendo perfumes. Dá uma olhada nesse catálogo aí. &#8212; Apontando para o porta-luvas. <br />
+			&#8212; Legal &#8212; falei por educação. Infelizmente, continuou: <br />
+			&#8212; Eu vendo plano de celular também, duzentos giga por mês. <br />
+			&#8212; Duzentos? <br />
+			&#8212; Dá para ver Netflix na praia. <br />
+			&#8212; Ah, quando eu vou à praia prefiro nem levar celular. <br />
+			&#8212; É só quatrocentos reais a mensalidade. <br />
+			&#8212; Que absurdo, minha família toda junta não paga isso. <br />
+			&#8212; Mas se você indicar alguém pelo cupom, você ganha duzentos reais de desconto. Com dois amigos você já tem o serviço de graça. No terceiro, você já está ganhando duzentos. Limpo. &#8212; Eu não disse nada.<br />
+			&#8212; Você tem três amigos né? &#8212; Queria dizer que não. Fui puxando outros assuntos para não ter que entrar no mérito de não ter nenhum interesse em esquemas de pirâmide.
+			Nas vezes seguintes, seria a mesma ladainha: Um produto qualquer, preços exorbitantes e uma promoção condicionada ao número de amigos. Alguém que entra nessa rapidamente fica sem nenhum.
+			&#8212; 
+
+
+		</div>
+
+		<div id=container>
+			<h1 id=sec>Derivada</h1>
+			
+			$$ \partial^{\alpha} f(t) = \mathcal{F}^{-1} \left\{ (i \omega)^\alpha \mathcal{F} \left\{ f\right\} (\omega) \right\} $$
+		</div>
+
+		<div id=container>
+			<h1 id=sec>Title</h1>
+		</div>
+
+		<!--
+		<div id=container>
+			<h1 id=sec>Title</h1>
+		</div>
+		-->
+
+	<footer>
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="window.toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+	</footer>
+
+	</body>
+
+	<script type="module">
+		import {initColorScheme} from  "../js/color-mode.js";
+		// Add as window property
+		initColorScheme();
+	</script>
+
+	<script type="text/javascript">
+		randomPhrase();
+	</script>
+</html>

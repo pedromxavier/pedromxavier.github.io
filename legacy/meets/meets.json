@@ -1,0 +1,59 @@
+[
+    {
+        "title": "Gestão do Conhecimento",
+        "time": "Qua: 8h - 12h",
+        "teacher": "Marcos Cavalcanti",
+        "links": [
+            {
+                "title": "Zoom",
+                "link": "https://us02web.zoom.us/j/84248641281?pwd=T2c0cnM1aFdlYjk5bGtITGZQUUlTZz09#success"
+            }
+        ]
+    },
+    {
+        "title": "Sistemas Distribuídos",
+        "time": "Ter, Qui: 10h - 12h",
+        "teacher": "Daniel Ratton",
+        "links": [
+            {
+                "title": "Meets",
+                "link": "https://meet.google.com/mpr-ktex-did"
+            },
+            {
+                "title": "Page",
+                "link": "https://www.cos.ufrj.br/~daniel/sd/"
+            }
+        ]
+    },
+    {
+        "title": "BIM",
+        "time": "Ter, Qui: 8h - 10h",
+        "teacher": "José Luis Menegotto",
+        "links": [
+            {
+                "title": "Meets",
+                "link": "https://mail.google.com"
+            }
+        ]
+    },
+    {
+        "title": "Antropologia Cultural",
+        "time": "Qua: 18h - 21h40",
+        "teacher": "Julia O'Donnell",
+        "links": [
+            {
+                "title": "Meets", "link": "https://meet.google.com/pop-chex-yca"
+            }
+        ]
+    },
+    {
+        "title": "Trabalho do Futuro",
+        "time": "Seg: 15h30 - 17h",
+        "teacher": "Francisco Moura Duarte",
+        "links": [
+            {
+                "title": "Zoom", "link": "https://us02web.zoom.us/j/83279772937?pwd=QzZKOVRtbHl0TFV2bmxMYVZXeG1Gdz09"
+            }
+        ]
+    }
+]

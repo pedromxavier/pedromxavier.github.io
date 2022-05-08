@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="dark-mode" style="display: none;">
+	<head> 
+		<title>Home</title>
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script type="module">
+			import {loadColorScheme, toggleColorScheme} from  "./js/color-mode.js";
+			// Call load
+			loadColorScheme();
+			// Add as window property
+			window.toggleColorScheme = toggleColorScheme;
+		</script>
+    </head>
+
+    <body>
+
+	<!-- SIDENAV -->
+	<div id=container>
+		<center>
+		  <h1 id=name>Pedro Maciel Xavier</h1>
+		</center>
+	
+		<div id=leftright>
+		  <div id=left>
+			<center>
+			  <img id=headshot src="../photos/pedro.png"><br/>
+			  <div id=links>
+				<p><a href="./">home</a></p>
+				<p><a href="http://github.com/pedromxavier" target="_blank">github</a></p>
+				<p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8611762T6" target="_blank">lattes</a></p>
+				<p><a href="./contato/">contato</a></p>
+				<p><a href="./monitoria/">monitoria</a></p>
+				<p><a href="./projetos/">projetos</a></p>
+				<p><a href="./poesia/">poesia</a></p>
+			  </div>
+			</center>
+		  </div>
+	
+		  <div id=right>
+			<p>Hallo! Mein name ist Pedro und ich studiere Computer und Information Ingenieurschaft an der Bundesuniversität von Rio de Janeiro (ECI/UFRJ). Ich finde super eine Webseite besitzen. Als ich ein Kind war, nur ofizielle Institutionen eine Seite haben können, wie Unternehmen und Spieleseiten.</p>
+			<p>Aussehen, Pedro aus der Vergangenheit, wo geht du!</p>
+			<p>Atualmente, faço parte da diretoria do <a href="https://gremio-eci.github.io">Grêmio de ECI</a>.</p>
+		  </div>
+	
+		</div>
+	</div>
+
+	<div id=container class="timeline">
+		<h1 id=sec>2021</h1>
+		<ol>
+			<li><b>Kalender ausschneiden und zusammenbauen: </b> Im Dodekaeder-Format, Bereit zum Drucken und Wichtige Daten planen.<br />
+			[<a href="https://github.com/pedromxavier/calendar">repo</a>]
+			</li>
+		</ol>
+	</div>
+
+	<div id=container class="timeline">
+		<h1 id=sec>2020</h1>
+		<ol>
+			<li><b>Artikel: </b> P. M. Xavier, M. De Gregorio, F. M. França, and P. M. Lima, <i>“Detection of elementary particles with the WiSARD n-tuple classifier,”</i> in Proc. Eur. Symp. Artif. Neural Netw. Comput. Intell. Mach. Learn. (ESANN), 2020, pp. 643–648.<br />
+				[<a href="https://www.esann.org/proceedings/2020">ereignis</a>]
+			</li>
+			<li><b>Der Zweite Programmiersprache</b>: Ein Kurs über Musik, Noten und Programmiersprachen bei <a href="https://cyberespaco.github.io">Cyberespaço A2A</a>.<br />
+				[<a href="https://cyberespaco.github.io/#acervo">link</a>]
+				[<a href="https://github.com/pedromxavier/cyber">repo</a>]
+			</li>
+		</ol>
+	</div>
+
+	<div id=container class="timeline">
+		<h1 id=sec>2019</h1>
+		<ol>
+			<li><b>Palestra sobre Computação Quântica</b> no <a href="http://www.im.ufrj.br/index.php/noticias-e-eventos/eventos/event/145-Encontros%20matem%C3%A1ticos">Encontros Matemáticos</a><br />
+				[<a href="../files/cartaz_EM_CQ.jpg">cartaz</a>]
+				[<a href="https://github.com/pedromxavier/EM/raw/master/CQ/cq.pdf">slides</a>]
+			</li>
+			<li><b>Projeto de Telecomunicações usando LoRa</b>: comunicação a cerca de 700m com dispositivos de baixo custo.<br />
+				[<a href="../files/telecom_lora.pdf">relatório</a>]
+				[<a href="../files/lora.pdf">slides</a>]
+			</li>
+			<li><b>O Sistema Solar</b>: Trabalho final de Computação Gráfica.<br />
+				[<a href="https://pedromxavier.github.io/EEL882/Trabalho3/">link</a>]
+			</li>
+		</ol>
+	</div>
+
+	<div id="container" class="timeline">
+		<h1 id=sec>2018</h1>
+		<ol>
+			<li><b>Renove os livros da biblioteca da UFRJ automaticamente!</b><br />
+				[<a href="https://github.com/pedromxavier/minerva">repo</a>]
+			</li>
+		</ol>
+	</div>
+
+	<footer>
+		&copy; Rio de Janeiro, 2021 <br />
+		<a style="cursor: pointer;" onclick="window.toggleColorScheme();"><i id="colorscheme-button"></i> Modo Noturno</a>
+	</footer>
+
+	</body>
+
+	<script type="module">
+		import {initColorScheme} from  "../js/color-mode.js";
+		// Add as window property
+		initColorScheme();
+	</script>
+</html>

@@ -1,0 +1,23 @@
+:root {
+    /* Chord */
+    --chord-color: #003c8a9c;
+}
+
+.light-mode:root {
+    /* Chord */
+    --chord-color: #003c8a9c;
+}
+
+.dark-mode:root {
+    /* Chord */
+    --chord-color: #ffee00d7;
+}
+
+.cifra {
+    font-family: monospace;
+    white-space: pre;
+}
+
+.cifra c {
+    color: var(--chord-color);
+}

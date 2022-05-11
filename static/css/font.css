@@ -1,0 +1,8 @@
+:root {
+    /* Font */
+    --font-size-tiny: 9pt;
+    --font-size-small: 12pt;
+    --font-size-normal: 20pt;
+    --font-size-large: 32pt;
+    --font-size-huge: 48pt;
+}

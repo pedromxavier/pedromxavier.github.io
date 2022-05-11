@@ -1,70 +1,84 @@
+@import url(font.css);
 @import url(color.css);
 
-@namespace svg url(http://www.w3.org/2000/svg);
-/* Necessary to select only SVG <a> elements, and not also HTML's. See warning below */
+html {
+    text-align: center;
+}
 
 body {
     width: 100%;
     padding: 0;
-    margin: 0;
-    overflow: visible;
-}
-
-svg {
-    width: 100%;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
     background-color: var(--bg-color);
 }
 
-svg|a:link {
-    cursor: pointer;
+header {
+    text-align: center;
+    text-anchor: middle;
+    font-size: var(--font-size-huge);
+    font-family:'Times New Roman', Times, serif;
 }
 
-svg|g#profile text {
+svg#profile, svg#abstract, svg.bubble, svg#footer {
+    position: absolute;
+    overflow: visible;
+}
+
+svg#profile, svg.bubble, svg#footer {
+    width: 200px;
+    height: 200px;
+}
+
+svg#abstract {
+    width: 300px;
+    height: 100px;
+}
+
+svg#profile text {
     color: var(--fg-color);
     font-size: var(--font-size-small);
     font-family: Arial, Helvetica, sans-serif;
     text-anchor: start;
 }
 
-svg|g#abstract text {
+svg#abstract > text a {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+svg#abstract > text {
     color: var(--fg-color);
     font-size: var(--font-size-small);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     text-anchor: start;
 }
 
-/* Cell A */
-svg|g#github path {
+svg.bubble > a > path {
     fill: var(--bg-color);
     stroke: var(--fg-color);
     stroke-width: 2px;
     stroke-linejoin: bevel;
 }
 
-svg|g#github > a:hover > path {
-    fill: var(--A-color);
+svg.bubble > a > text {
+    text-anchor: middle;
+    alignment-baseline: middle;
 }
 
-svg|g#github text {
+svg.bubble#github > a > text {
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Cell B */
-svg|g#blog path {
-    fill: var(--bg-color);
-    stroke: var(--fg-color);
-    stroke-width: 2px;
-    stroke-linejoin: bevel;
+svg.bubble#github > a:hover > path {
+    fill: var(--github-color);
 }
 
-svg|g#blog a:hover path {
-    fill: var(--B-color);
-}
-
-svg|g#blog text {
+svg.bubble#blog > a > text {
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: Helvetica, Arial, sans-serif;
@@ -73,89 +87,123 @@ svg|g#blog text {
     text-transform: uppercase;
 }
 
-svg|g#about path {
-    fill: var(--bg-color);
-    stroke: var(--fg-color);
-    stroke-width: 2px;
-    stroke-linejoin: bevel;
+svg.bubble#blog > a:hover > path {
+    fill: var(--blog-color);
 }
 
-svg|g#about a:hover path {
-    fill: var(--C-color);
-}
-
-svg|g#about text {
+svg.bubble#about > a > text {
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Cell D */
-svg|g#research path {
-    fill: var(--bg-color);
-    stroke: var(--fg-color);
-    stroke-width: 2px;
-    stroke-linejoin: bevel;
+svg.bubble#about > a:hover > path {
+    fill: var(--about-color);
 }
 
-svg|g#research a:hover path {
-    fill: var(--D-color);
-}
-
-svg|g#research text {
+svg.bubble#research > a > text {
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: 'Brush Script MT', cursive;
-    text-transform: none;
 }
 
-svg|text {
-    text-anchor: middle;
-    alignment-baseline: middle;
+svg.bubble#research > a:hover > path {
+    fill: var(--research-color);
 }
 
-svg|g#footer text{
-    font-size: var(--font-size-small);
+svg.bubble#contact > a > text {
+    color: var(--fg-color);
+    font-size: var(--font-size-large);
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+}
+
+svg.bubble#contact > a:hover > path {
+    fill: var(--contact-color);
+}
+
+svg.bubble#projects > a > text {
+    color: var(--fg-color);
+    font-size: var(--font-size-large);
+    font-family: serif; 
+    text-transform: lowercase;
+}
+
+svg.bubble#projects > a:hover > path {
+    fill: var(--projects-color);
+}
+
+svg.bubble#home > a:hover > path {
+    fill: var(--home-color);
+}
+
+svg.bubble#home > a > text {
+    color: var(--fg-color);
+    font-size: var(--font-size-large);
+	font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+	font-style: italic;
+    text-transform: uppercase;
+}
+
+svg#footer > text > textPath {
+    color: var(--fg-color);
+    font-size: var(--font-size-tiny);
     font-family: Arial, Helvetica, sans-serif;
+    text-anchor: start;
 }
 
-svg|g#header text{
-    text-anchor: end;
-    font-size: var(--font-size-huge);
-    font-family:'Times New Roman', Times, serif;
+svg#footer > text {
+    color: var(--fg-color);
+    font-size: var(--font-size-tiny);
+    font-family: Arial, Helvetica, sans-serif;
+    text-anchor: middle;
 }
 
 /* Responsiveness ~ Default */
-svg|g#header {
-    transform: translate(800.0px, 50.0px);
+svg#profile {
+    left: calc(50% + 85px); 
+    top: 75px;
 }
 
-svg|g#profile {
-    transform: translate(600.0px, 80.0px);
+svg#abstract {
+    left: calc(50% - 265px);
+    top: 85px;
 }
 
-svg|g#abstract {
-    transform: translate(250.0px, 100.0px);
+svg.bubble#github {
+    left: calc(50% - 300px);
+    top: 150px;
 }
 
-svg|g#github {
-    transform: translate(200.0px, 175.0px);
+svg.bubble#blog {
+    left: calc(50% + 70px);
+    top: 260px;
 }
 
-svg|g#blog {
-    transform: translate(540.0px, 250.0px);
-}   
-
-svg|g#about {
-    transform: translate(320.0px, 350.0px);
+svg.bubble#about {
+    left: calc(50% - 140px);
+    top: 315px;
 }
 
-svg|g#research {
-    transform: translate(550.0px, 420.0px);
+svg.bubble#projects {
+    left: calc(50% - 100px);
+    top: 540px;
 }
 
-svg|g#footer {
-    transform: translate(50%, 95%);
+svg.bubble#research {
+    left: calc(50% - 305px);
+    top: 455px;
+}
+
+svg.bubble#contact {
+    left: calc(50% + 95px);
+    top: 450px;
+}
+
+svg#footer {
+    left: calc(50% - 100px);
+    top: 700px;
 }
 
 /* Responsiveness ~ Switch */

@@ -201,6 +201,16 @@ svg.bubble#contact {
     top: 450px;
 }
 
+svg.bubble#home {
+    left: calc(50% - 500px);
+    top: -50px;
+}
+
+svg.bubble.cdiv#home {
+    left: calc(50% - 100px);
+    top: 300px;
+}
+
 svg#footer {
     left: calc(50% - 100px);
     top: 700px;

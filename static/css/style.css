@@ -3,135 +3,182 @@
 
 html {
     text-align: center;
-}
-
-body {
-    width: 100%;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: scroll;
     background-color: var(--bg-color);
 }
 
+body {
+    width: 600px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
+    display: inline-block;
     text-align: center;
     text-anchor: middle;
     font-size: var(--font-size-huge);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-svg#profile, svg#abstract, svg.bubble, svg#footer {
-    position: absolute;
+header > p {
+    float: left;
+    width: 320px;
+    display: block;
+    text-align: justify;
+    align-self: flex-start;
+    color: var(--fg-color);
+    font-size: var(--font-size-small);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header > p > a {
+    color: var(--fg-color);
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header > svg {
+    display: block;
+    float: right;
+    width: 200px;
+    height: 200px;
     overflow: visible;
 }
 
-svg#profile, svg.bubble, svg#footer {
-    width: 200px;
-    height: 200px;
-}
-
-svg#abstract {
-    width: 300px;
-    height: 100px;
-}
-
-svg#profile text {
+header > svg text {
     color: var(--fg-color);
     font-size: var(--font-size-small);
     font-family: Arial, Helvetica, sans-serif;
     text-anchor: start;
 }
 
-svg#abstract > text a {
-    font-weight: bold;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+section {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: inline-block;
+    text-align: center;
 }
 
-svg#abstract > text {
-    color: var(--fg-color);
-    font-size: var(--font-size-small);
-    font-family: 'Times New Roman', Times, serif;
-    text-anchor: start;
-}
-
-svg.bubble > a > path {
-    fill: var(--bg-color);
-    stroke: var(--fg-color);
-    stroke-width: 2px;
-    stroke-linejoin: bevel;
-}
-
-svg.bubble > a > text {
-    text-anchor: middle;
-    alignment-baseline: middle;
-}
-
-svg.bubble#github > a > text {
+section > a {
+    display: inline-block;
+    position: absolute;
     color: var(--fg-color);
     font-size: var(--font-size-large);
+    text-align: center;
+    line-height: 400px;
+    width: 400px;
+    height: 400px;
+    text-decoration: none;
+    /* background-color: blueviolet; */
+}
+
+section > a#github {
+    top: -200px;
+    left: -100px;
     font-family: 'Times New Roman', Times, serif;
+    clip-path: path('M100 170L165 270L290 250L300 170L210 150Z');
 }
 
-svg.bubble#github > a:hover > path {
-    fill: var(--github-color);
+section > a#github:hover {
+    background-color: var(--github-color);
 }
 
-svg.bubble#blog > a > text {
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
+section > a#blog {
+    top: -120px;
+    left: 210px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
-    text-transform: uppercase;
+    clip-path: path('M100 170L150 250L230 230L360 200L180 150Z');
 }
 
-svg.bubble#blog > a:hover > path {
-    fill: var(--blog-color);
+section > a#blog:hover {
+    background-color: var(--blog-color);
 }
 
-svg.bubble#about > a > text {
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
+section > a#about {
+    top: -100px;
+    left: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    clip-path: path('M100 200L170 260L230 260L280 200L210 120Z');
 }
 
-svg.bubble#about > a:hover > path {
-    fill: var(--about-color);
+section > a#about:hover {
+    background-color: var(--about-color);
 }
 
-svg.bubble#research > a > text {
+section > a#research {
+    top: 0px;
+    left: -100px;
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: 'Brush Script MT', cursive;
+    clip-path: path('M180 150L200 140L220 150L110 170L100 230L280 250L300 220L290 170Z');
 }
 
-svg.bubble#research > a:hover > path {
-    fill: var(--research-color);
+section > a#research:hover {
+    background-color: var(--research-color);
 }
 
-svg.bubble#contact > a > text {
+section > a#projects {
+    top: 50px;
+    left: 120px;
+    color: var(--fg-color);
+    font-size: var(--font-size-large);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: lowercase;
+    clip-path: path('M170 110L160 160L100 220L300 230L240 150L230 100Z');
+}
+
+section > a#projects:hover {
+    background-color: var(--projects-color);
+}
+
+section > a#contact{
+    top: -10px;
+    left: 280px;
     color: var(--fg-color);
     font-size: var(--font-size-large);
     font-family: 'Courier New', Courier, monospace;
     text-transform: lowercase;
+    clip-path: path('M110 160L110 210L290 250L290 180Z');
 }
 
-svg.bubble#contact > a:hover > path {
-    fill: var(--contact-color);
+section > a#contact:hover{
+    background-color: var(--contact-color);
 }
 
-svg.bubble#projects > a > text {
+footer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+footer > svg {
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+}
+
+footer > svg > text {
     color: var(--fg-color);
-    font-size: var(--font-size-large);
-    font-family: serif; 
-    text-transform: lowercase;
+    font-size: var(--font-size-tiny);
+    font-family: Arial, Helvetica, sans-serif;
+    text-anchor: middle;
 }
 
-svg.bubble#projects > a:hover > path {
-    fill: var(--projects-color);
+footer > svg > text > textPath {
+    color: var(--fg-color);
+    font-size: var(--font-size-tiny);
+    font-family: Arial, Helvetica, sans-serif;
+    text-anchor: start;
 }
+
+/* 
 
 svg.bubble#home > a:hover > path {
     fill: var(--home-color);
@@ -146,89 +193,12 @@ svg.bubble#home > a > text {
     text-transform: uppercase;
 }
 
-svg#footer > text > textPath {
-    color: var(--fg-color);
-    font-size: var(--font-size-tiny);
-    font-family: Arial, Helvetica, sans-serif;
-    text-anchor: start;
-}
-
-svg#footer > text {
-    color: var(--fg-color);
-    font-size: var(--font-size-tiny);
-    font-family: Arial, Helvetica, sans-serif;
-    text-anchor: middle;
-}
-
-/* Responsiveness ~ Default */
-svg#profile {
-    left: calc(50% + 85px); 
-    top: 75px;
-}
-
-svg#abstract {
-    left: calc(50% - 265px);
-    top: 85px;
-}
-
-svg.bubble#github {
-    left: calc(50% - 300px);
-    top: 150px;
-}
-
-svg.bubble#blog {
-    left: calc(50% + 70px);
-    top: 260px;
-}
-
-svg.bubble#about {
-    left: calc(50% - 140px);
-    top: 315px;
-}
-
-svg.bubble#projects {
-    left: calc(50% - 100px);
-    top: 540px;
-}
-
-svg.bubble#research {
-    left: calc(50% - 305px);
-    top: 455px;
-}
-
-svg.bubble#contact {
-    left: calc(50% + 95px);
-    top: 450px;
-}
-
-svg.bubble#home {
-    left: calc(50% - 500px);
-    top: -50px;
-}
-
-svg.bubble.cdiv#home {
-    left: calc(50% - 100px);
-    top: 300px;
-}
-
-svg#footer {
-    left: calc(50% - 100px);
-    top: 700px;
-}
-
-/* Responsiveness ~ Switch */
-@media (max-width: 320px) {
-
-}
-@media (max-width: 480px) {
-
-}
-@media (max-width: 600px) {
-
-}
-@media (max-width: 768px) {
-
-}
 @media (max-width: 900px) {
-    
-}
+    /* :root {
+        --font-size-tiny: 12pt;
+        --font-size-small: 20pt;
+        --font-size-normal: 32pt;
+        --font-size-large: 48pt;
+        --font-size-huge: 64pt;
+    } 
+} */

@@ -6,89 +6,44 @@
 	</head>
 
 	<body>
-		<header id="header">Pedro Maciel Xavier</header>
-
-		<svg id="profile" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-				<path id="profile-path" d="M200 30L200 160L180 200L60 200L10 150L0 40L30 0L180 0Z"/>
-				<mask id="profile-mask">
-					<use href="#profile-path" fill="#ffffff" />
-				</mask>
-			</defs>
-			<image mask="url(#profile-mask)" href="/static/img/profile.jpg" height="200" width="200"/>
-			<text dy="-3px">
-				<textPath href="#profile-path">
-					Buenos Aires, apr 2022
-				</textPath>
-			</text>
-		</svg>
-
-		<!-- 300 x 200 -->
-		<svg id="abstract" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-				<path id="abstract-path" d="M0 0H300M0 20H300M0 40H300M0 60H300M0 80H300M0 100H300M0 120H300M0 140H300M0 160H300M0 180H300" />
-			</defs>
-			<text>
-				<textPath href="#abstract-path">
-					Computer and Information Engineering & Maths almostgraduate at <a href="https://ufrj.br">UFRJ</a>. Open-source culture, blitz chess, roda de choro enthusiast. Research Intern at <a href="https://psr-inc.com">PSR Energy Inc.</a>
-				</textPath>
-			</text>
-		</svg>
-
-		<!-- 200 x 200 -->
-		
-		<svg id="github" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="https://github.com/pedromxavier">
-				<path d="M0 70L65 170L190 150L200 70L110 50Z" />
-				<text x="100" y="100">GitHub</text>
-			</a>
-		</svg>
-
-		<svg id="blog" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="/blog/">
-				<path d="M0 70L50 150L130 130L260 100L80 50Z" />
-				<text x="100" y="100">Blog</text>
-			</a>
-		</svg>
-
-		<svg id="about" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="/about/">
-				<path d="M0 100L70 160L130 160L180 100L110 20Z" />
-				<text x="100" y="100">About</text>
-			</a>
-		</svg>
-
-		<svg id="research" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="/research/">
-				<path d="M80 50L100 40L120 50L10 70L0 130L180 150L200 120L190 70Z" />
-				<text x="100" y="100">Research</text>
-			</a>
-		</svg>
-
-		<svg id="contact" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="/contact/">
-				<path d="M10 60L10 110L190 150L190 80Z" />
-				<text x="100" y="100">Contact</text>
-			</a>
-		</svg>
-
-		<svg id="projects" class="bubble" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<a href="/projects/">
-				<path d="M70 10L60 60L0 120L 200 130L140 50L130 0Z" />
-				<text x="100" y="100">Projects</text>
-			</a>
-		</svg>
-
-		<svg id="footer" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-				<path id="footer-path" d="M100 50L200 100L100 150L0 100Z" />
-			</defs>
-			<text>
-				<textPath href="#footer-path">
-					&copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier
-				</textPath>
-			</text>
-			<text x="100" y="100">Rio de Janeiro, 2022</text>
-		</svg>
+		<header>
+			<span>Pedro Maciel Xavier</span>
+			<p>Computer and Information Engineering & Maths almostgraduate at <a href="https://ufrj.br">UFRJ</a>. Open-source culture, blitz chess, roda de choro enthusiast. Research Intern at <a href="https://psr-inc.com">PSR Energy Inc.</a></p>
+			<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="profile-path" d="M200 30L200 160L180 200L60 200L10 150L0 40L30 0L180 0Z"/>
+					<mask id="profile-mask">
+						<use href="#profile-path" fill="#ffffff" />
+					</mask>
+				</defs>
+				<image mask="url(#profile-mask)" href="/static/img/profile.jpg" height="200" width="200"/>
+				<text dy="-3px">
+					<textPath href="#profile-path">
+						Buenos Aires, apr 2022
+					</textPath>
+				</text>
+			</svg>
+		</header>
+		<section>
+			<a id="github" href="https://github.com/pedromxavier">GitHub</a>
+			<a id="blog" href="/blog/">Blog</a>
+			<a id="about" href="/about/">About</a>
+			<a id="research" href="/research/">Research</a>
+			<a id="projects" href="/projects/">Projects</a>
+			<a id="contact" href="/contact/">Contact</a>
+		</section>
+		<footer>
+			<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="footer-path" d="M100 50L200 100L100 150L0 100Z" />
+				</defs>
+				<text>
+					<textPath href="#footer-path">
+						&copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier &copy; Pedro Maciel Xavier
+					</textPath>
+				</text>
+				<text x="100" y="100">Rio de Janeiro, 2022</text>
+			</svg>
+		</footer>
 	</body>
 </html>

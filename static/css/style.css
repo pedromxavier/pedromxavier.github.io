@@ -14,6 +14,8 @@ body {
 }
 
 header {
+    width: 100%;
+    position: relative;
     display: inline-block;
     text-align: center;
     text-anchor: middle;
@@ -21,14 +23,42 @@ header {
     font-family: 'Times New Roman', Times, serif;
 }
 
+header > a {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    color: var(--fg-color);
+    font-size: var(--font-size-large);
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    
+}
+
+header > a#home {
+    top: -60px;
+    left: -100px;
+    font-style: italic;
+	font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    clip-path: path('M30 80L40 120L160 140L170 60Z');
+}
+
+header > a#home:hover {
+    background-color: var(--home-color);
+}
+
 header > p {
+    color: var(--fg-color);
     float: left;
     width: 320px;
+    margin: 0;
     display: block;
-    text-align: justify;
-    align-self: flex-start;
-    color: var(--fg-color);
     font-size: var(--font-size-small);
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -66,6 +96,7 @@ section {
 section > a {
     display: inline-block;
     position: absolute;
+    z-index: 1;
     color: var(--fg-color);
     font-size: var(--font-size-large);
     text-align: center;
@@ -114,8 +145,6 @@ section > a#about:hover {
 section > a#research {
     top: 0px;
     left: -100px;
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
     font-family: 'Brush Script MT', cursive;
     clip-path: path('M180 150L200 140L220 150L110 170L100 230L280 250L300 220L290 170Z');
 }
@@ -127,8 +156,6 @@ section > a#research:hover {
 section > a#projects {
     top: 50px;
     left: 120px;
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform: lowercase;
     clip-path: path('M170 110L160 160L100 220L300 230L240 150L230 100Z');
@@ -141,8 +168,6 @@ section > a#projects:hover {
 section > a#contact{
     top: -10px;
     left: 280px;
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
     font-family: 'Courier New', Courier, monospace;
     text-transform: lowercase;
     clip-path: path('M110 160L110 210L290 250L290 180Z');
@@ -179,19 +204,6 @@ footer > svg > text > textPath {
 }
 
 /* 
-
-svg.bubble#home > a:hover > path {
-    fill: var(--home-color);
-}
-
-svg.bubble#home > a > text {
-    color: var(--fg-color);
-    font-size: var(--font-size-large);
-	font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif;
-	font-style: italic;
-    text-transform: uppercase;
-}
 
 @media (max-width: 900px) {
     /* :root {

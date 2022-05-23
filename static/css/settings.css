@@ -1,0 +1,102 @@
+:root {
+    /* Colors */
+    --color-bg: #fefee4ff;
+    --color-fg: #000000cd;
+
+    --color-github: #389826;
+    --color-blog: #4063d8;
+    --color-about: #9558b2;
+    --color-research: #cb3c33;
+    --color-contact: #cbaf33;
+    --color-projects: #d8558e;
+    --color-home: #3faa98;
+
+    --color-link-hover: #5185ec;
+    --color-selection: #5185ec8c;
+    --color-title-selection: #3278c7;
+
+    /* Font */
+    --font-size-tiny: 9pt;
+    --font-size-small: 12pt;
+    --font-size-normal: 20pt;
+    --font-size-large: 32pt;
+    --font-size-huge: 48pt;
+
+    /* Sizes */
+    --width-body: 600px;
+    --width-header: 100%;
+    --margin-title: 0 0 25px 0;
+    --margin-header: 0 0 0 0;
+    --width-title: 100%;
+    --width-abstract: 320px;
+    --size-profile: 200px;
+    --size-cell: 400px;
+    --height-section: 360px;
+
+    /* Positioning */
+    --pos-cell: absolute;
+    --pos-top-github: -200px;
+    --pos-left-github: -100px;
+    --pos-left-blog: -120px;
+    --pos-top-blog: 210px;
+    --pos-top-about: -100px;
+    --pos-left-about: 30px;
+    --pos-top-research: 0px;
+    --pos-left-research: -100px;
+    --pos-top-projects: 50px;
+    --pos-left-projects: 120px;
+    --pos-top-contact: -10px;
+    --pos-left-contact: 280px;
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --width-body: 90%;
+        --pos-cell: static;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --width-body: 800px;
+        --size-profile: 400px;
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    :root {
+        /* Font */
+        --font-size-tiny: 12pt;
+        --font-size-small: 20pt;
+        --font-size-normal: 32pt;
+        --font-size-large: 54pt;
+        --font-size-huge: 100pt;
+
+        /* Sizes */
+        --width-body: 1700px;
+        --margin-title: 0 0 75px 0;
+        --width-abstract: 1000px;
+        --size-profile: 500px;
+        --size-cell: 720px;
+        --height-section: 800px;
+
+        /* Positioning */
+        --pos-top-about: -500px;
+        --pos-left-about: -130px;
+
+        --pos-top-blog: -450px;
+        --pos-left-blog: 320px;
+
+        --pos-top-contact: -300px;
+        --pos-left-contact: 20px;
+        
+        --pos-top-github: -220px;
+        --pos-left-github: 580px;
+        
+        --pos-top-projects: -83px;
+        --pos-left-projects: 288px;
+
+        --pos-top-research: 25px;
+        --pos-left-research: 700px;
+    }
+}

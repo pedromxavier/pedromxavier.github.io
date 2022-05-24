@@ -31,10 +31,14 @@
     --width-abstract: 320px;
     --size-profile: 200px;
     --size-cell: 400px;
+    --size-cell-home: 200px;
     --height-section: 360px;
+    --width-places: 50%;
 
     /* Positioning */
     --pos-cell: absolute;
+    --pos-top-home: -60px;
+    --pos-left-home: -100px;
     --pos-top-github: -200px;
     --pos-left-github: -100px;
     --pos-left-blog: -120px;
@@ -81,6 +85,9 @@
         --height-section: 800px;
 
         /* Positioning */
+        --pos-top-home: 0px;
+        --pos-left-home: 0px;
+
         --pos-top-about: -500px;
         --pos-left-about: -130px;
 
@@ -89,10 +96,10 @@
 
         --pos-top-contact: -300px;
         --pos-left-contact: 20px;
-        
+
         --pos-top-github: -220px;
         --pos-left-github: 580px;
-        
+
         --pos-top-projects: -83px;
         --pos-left-projects: 288px;
 

@@ -1,0 +1,25 @@
+<svg id="profile" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">
+            svg {
+                overflow: visible;
+            }
+            text {
+                color: var(--color-fg);
+                font-size: 12pt;
+                font-family: Arial, Helvetica, sans-serif;
+                text-anchor: start;
+            }
+        </style>
+        <path id="profile-path" d="M200 30L200 160L180 200L60 200L10 150L0 40L30 0L180 0Z"/>
+        <mask id="profile-mask">
+            <use href="#profile-path" fill="#fff" />
+        </mask>
+    </defs>
+    <image mask="url(#profile-mask)" href="/static/img/profile.jpg" height="200" width="200"/>
+    <text dy="-3px">
+        <textPath href="#profile-path">
+            Buenos Aires, apr 2022
+        </textPath>
+    </text>
+</svg>

@@ -29,33 +29,6 @@ span#title {
     font-family: 'Times New Roman', Times, serif;
 }
 
-header>a {
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    color: var(--color-fg);
-    font-size: var(--font-size-large);
-    text-align: center;
-    line-height: 200px;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-}
-
-header>a#home {
-    top: -60px;
-    left: -100px;
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    clip-path: polygon(7.5% 20.0%, 10.0% 30.0%, 40.0% 35.0%, 42.5% 15.0%);
-}
-
-header>a#home:hover {
-    background-color: var(--color-home);
-}
-
 p#abstract {
     color: var(--color-fg);
     float: left;
@@ -83,7 +56,7 @@ p#abstract>a:hover {
     background-color: var(--color-link-hover);
 }
 
-svg#profile {
+object#profile {
     display: block;
     float: right;
     width: var(--size-profile);
@@ -91,11 +64,8 @@ svg#profile {
     overflow: visible;
 }
 
-svg#profile text {
-    color: var(--color-fg);
-    font-size: var(--font-size-tiny);
-    font-family: Arial, Helvetica, sans-serif;
-    text-anchor: start;
+object#places {
+    width: var(--width-places);
 }
 
 section {
@@ -104,6 +74,10 @@ section {
     height: var(--height-section);
     display: inline-block;
     text-align: center;
+}
+
+section > p {
+    font-size: var(--font-size-normal);
 }
 
 a.cell {
@@ -117,6 +91,24 @@ a.cell {
     width: var(--size-cell);
     height: var(--size-cell);
     text-decoration: none;
+}
+
+a.cell#home {
+    top: var(--pos-top-home);
+    left: var(--pos-top-home);
+    font-style: italic;
+    font-weight: bold;
+    width: var(--size-cell-home);
+    height: var(--size-cell-home);
+    line-height: var(--size-cell-home);
+    font-size: var(--font-size-normal);
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(15% 40%, 20% 60%, 80% 70%, 85% 30%);
+}
+
+a.cell#home:hover {
+    background-color: var(--color-home);
 }
 
 a.cell#github {

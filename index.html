@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
 		<title>Home</title>
 		<link rel="stylesheet" href="/static/css/style.css">
@@ -7,30 +9,17 @@
 
 	<body>
 		<header>
-			<span>Pedro Maciel Xavier</span>
-			<p>Computer and Information Engineering & Maths almostgraduate at <a href="https://ufrj.br">UFRJ</a>. Open-source culture, blitz chess, roda de choro enthusiast. Research Intern at <a href="https://psr-inc.com">PSR Energy Inc.</a></p>
-			<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="profile-path" d="M200 30L200 160L180 200L60 200L10 150L0 40L30 0L180 0Z"/>
-					<mask id="profile-mask">
-						<use href="#profile-path" fill="#ffffff" />
-					</mask>
-				</defs>
-				<image mask="url(#profile-mask)" href="/static/img/profile.jpg" height="200" width="200"/>
-				<text dy="-3px">
-					<textPath href="#profile-path">
-						Buenos Aires, apr 2022
-					</textPath>
-				</text>
-			</svg>
+			<span id="title">Pedro Maciel Xavier</span>
+			<p id="abstract">Computer and Information Engineering & Maths almostgraduate at <a href="https://ufrj.br">UFRJ</a>. Open-source culture, blitz chess, roda de choro enthusiast. Research Intern at <a href="https://psr-inc.com">PSR Energy Inc.</a></p>
+			<object id="profile" data="/static/img/profile.svg" type="image/svg+xml"></object>
 		</header>
 		<section>
-			<a id="github" href="https://github.com/pedromxavier">GitHub</a>
-			<a id="blog" href="/blog/">Blog</a>
-			<a id="about" href="/about/">About</a>
-			<a id="research" href="/research/">Research</a>
-			<a id="projects" href="/projects/">Projects</a>
-			<a id="contact" href="/contact/">Contact</a>
+			<a class="cell" id="github" href="https://github.com/pedromxavier">GitHub</a>
+			<a class="cell" id="blog" href="/blog/">Blog</a>
+			<a class="cell" id="about" href="/about/">About</a>
+			<a class="cell" id="research" href="/research/">Research</a>
+			<a class="cell" id="projects" href="/projects/">Projects</a>
+			<a class="cell" id="contact" href="/contact/">Contact</a>
 		</section>
 		<footer>
 			<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

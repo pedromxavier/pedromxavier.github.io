@@ -62,8 +62,43 @@
 
 @media only screen and (min-width: 1024px) {
     :root {
-        --width-body: 800px;
-        --size-profile: 400px;
+        /* Font */
+        --font-size-tiny: 12pt;
+        --font-size-small: 20pt;
+        --font-size-normal: 24pt;
+        --font-size-large: 36pt;
+        --font-size-huge: 72pt;
+
+        /* Sizes */
+        --width-body: 900px;
+        --margin-title: 0 0 50px 0;
+        --width-abstract: 500px;
+        --size-profile: 360px;
+        --size-cell: 500px;
+        --height-section: 300px;
+
+        /* Positioning */
+        --pos-top-home: 0px;
+        --pos-left-home: 0px;
+
+        --pos-top-about: -300px;
+        --pos-left-about: -130px;
+
+        --pos-top-blog: -350px;
+        --pos-left-blog: 100px;
+
+        --pos-top-contact: -200px;
+        --pos-left-contact: 120px;
+
+        --pos-top-github: -160px;
+        --pos-left-github: 500px;
+
+        --pos-top-projects: -80px;
+        --pos-left-projects: 288px;
+
+        --pos-top-research: -50px;
+        --pos-left-research: -100px;
+        
     }
 }
 

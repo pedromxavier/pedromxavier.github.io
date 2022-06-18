@@ -103,7 +103,7 @@ a.cell#home-x {
     position: relative;
 }
 
-a.cell#home a.cell#home-x {
+a.cell#home, a.cell#home-x {
     font-style: italic;
     font-weight: bold;
     width: var(--size-cell-home);
@@ -115,7 +115,7 @@ a.cell#home a.cell#home-x {
     clip-path: polygon(15% 40%, 20% 60%, 80% 70%, 85% 30%);
 }
 
-a.cell#home:hover a.cell#home-x:hover {
+a.cell#home:hover, a.cell#home-x:hover {
     background-color: var(--color-home);
 }
 

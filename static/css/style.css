@@ -76,7 +76,7 @@ section {
     text-align: center;
 }
 
-section > p {
+section>p {
     font-size: var(--font-size-normal);
 }
 
@@ -186,24 +186,45 @@ footer {
     width: 100%;
     display: inline-block;
     text-align: center;
-}
-
-footer>svg {
-    width: 200px;
-    height: 200px;
-    overflow: visible;
-}
-
-footer>svg>text {
-    color: var(--color-fg);
-    font-size: var(--font-size-tiny);
     font-family: Arial, Helvetica, sans-serif;
-    text-anchor: middle;
+    font-size: var(--font-size-tiny);
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
 }
 
-footer>svg>text>textPath {
-    color: var(--color-fg);
-    font-size: var(--font-size-tiny);
+footer::before {
+    content: var(--data-city) ", " var(--data-year) " © " var(--data-author);
+}
+
+note {
+    display: inline-block;
+    padding: 0.5cm;
+}
+
+note:hover {
+    background-color: var(--color-note);
+}
+
+note>span {
+    display: block;
+    font-size: var(--font-size-normal);
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-anchor: start;
+    font-style: italic;
+}
+
+email {
+    font-size: var(--font-size-small);
+    font-family: cursive;
+    display: block;
+    float: left;
+}
+
+at {
+    font-style: italic;
+}
+
+at::before {
+    content: "😎";
 }

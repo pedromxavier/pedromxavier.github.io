@@ -10,6 +10,7 @@
     --color-contact: #cbaf33;
     --color-projects: #d8558e;
     --color-home: #3faa98;
+    --color-note: #3faa9885;
 
     --color-link-hover: #5185ec;
     --color-selection: #5185ec8c;
@@ -51,6 +52,10 @@
     --pos-left-projects: 120px;
     --pos-top-contact: -10px;
     --pos-left-contact: 280px;
+
+    --data-year: "2022";
+    --data-city: "Rio de Janeiro";
+    --data-author: "Pedro Maciel Xavier";
 }
 
 @media only screen and (max-width: 800px) {
@@ -98,7 +103,7 @@
 
         --pos-top-research: -50px;
         --pos-left-research: -100px;
-        
+
     }
 }
 

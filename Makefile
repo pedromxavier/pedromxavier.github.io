@@ -63,6 +63,8 @@ endef
 
 all: pages posts stylesheets static feed
 
+site: pages posts stylesheets static
+
 unpublished: all unposts
 
 clean: clean-cache clean-build

@@ -1,5 +1,8 @@
+#
 desktop.ini
 
+# VSCode
 .vscode
 
-*.key
+# Build directory
+build/

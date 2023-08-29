@@ -8,17 +8,12 @@ cache   = cache
 build   = build
 
 # The important files
-posts-src    := $(wildcard $(content)/posts/*)
-posts-result := $(patsubst $(content)/posts/%.md.lhs,$(build)/posts/%/index.html,$(posts-src))
-posts-result := $(patsubst $(content)/posts/%.md,$(build)/posts/%/index.html,$(posts-result))
-
-# For yet unpublished posts
-unposts-src    := $(wildcard $(content)/unposts/*)
-unposts-result := $(patsubst $(content)/unposts/%.md.lhs,$(build)/posts/%/index.html,$(unposts-src))
-unposts-result := $(patsubst $(content)/unposts/%.md,$(build)/posts/%/index.html,$(unposts-result))
+blog-src    := $(wildcard $(content)/blog/*)
+blog-result := $(patsubst $(content)/blog/%.md.lhs,$(build)/blog/%/index.html,$(blog-src))
+blog-result := $(patsubst $(content)/blog/%.md,$(build)/blog/%/index.html,$(blog-result))
 
 # All additional pages go here
-pages-names  = about masters posts
+pages-names  = about
 pages-result = $(addprefix $(build)/,$(addsuffix /index.html,$(pages-names)) \
                  index.html 404.html)
 
@@ -26,7 +21,7 @@ css-src    = $(wildcard css/*.css)
 css-result = $(addprefix $(build)/,$(css-src))
 
 static-src    = $(shell find static/ -type f)
-static-result = $(patsubst %.tex,%.svg,$(addprefix $(build)/, $(static-src:static/%=%)))
+static-result = $(patsubst %.tex,%.svg,$(addprefix $(build)/static/, $(static-src:static/%=%)))
 
 # Dependency-only
 filters   = $(wildcard filters/*)
@@ -61,11 +56,11 @@ endef
 
 .PHONY: all clean serve watch clean-cache clean-build deploy
 
-all: pages posts stylesheets static feed
+all: pages blog stylesheets static feed
 
-site: pages posts stylesheets static
+site: pages blog stylesheets static
 
-unpublished: all unposts
+unpublished: all unblog
 
 clean: clean-cache clean-build
 
@@ -87,25 +82,17 @@ deploy:
 	scripts/deploy
 
 #########
-# Posts #
+# blog #
 #########
 
-.PHONY: posts unposts
+.PHONY: blog
 
-posts:   $(posts-result)
-unposts: $(unposts-result)
+blog: $(blog-result)
 
-$(build)/posts/%/index.html: $(content)/posts/%.md $(DEPENDENCIES)
+$(build)/blog/%/index.html: $(content)/blog/%.md $(DEPENDENCIES)
 	$(call generate_post,"$<","$@",markdown)
 
-$(build)/posts/%/index.html: $(content)/posts/%.md.lhs $(DEPENDENCIES)
-	$(call generate_post,"$<","$@",markdown+lhs)
-
-
-$(build)/posts/%/index.html: $(content)/unposts/%.md $(DEPENDENCIES)
-	$(call generate_post,"$<","$@",markdown)
-
-$(build)/posts/%/index.html: $(content)/unposts/%.md.lhs $(DEPENDENCIES)
+$(build)/blog/%/index.html: $(content)/blog/%.md.lhs $(DEPENDENCIES)
 	$(call generate_post,"$<","$@",markdown+lhs)
 
 ###############
@@ -126,7 +113,7 @@ $(build)/404.html: $(content)/404.html   $(DEPENDENCIES)
 	$(shell [ ! -d $(@D) ] && mkdir -p $(@D))
 	$(PANDOC) --defaults=pandoc.yaml \
 	   -f html -o "$@" "$<" \
-	   -M title:'Are you lost?'
+	   -M title:'CDIV'
 
 $(build)/%/index.html: $(content)/%.md   $(DEPENDENCIES)
 	$(call generate_page,"$<","$@",markdown,'')
@@ -154,7 +141,7 @@ static: $(static-result)
 # Convert tikz images to svg
 $(build)/%.svg: static/%.tex
 	$(shell [ ! -d $(@D) ] && mkdir -p $(@D))
-	scripts/tex2svg "$<" "$@"
+	scripts/tex-to-svg "$<" "$@"
 
 # Minimize svg files
 $(build)/%.svg: static/%.svg
@@ -163,6 +150,6 @@ $(build)/%.svg: static/%.svg
 	scripts/svg-minify "$<" "$@"
 
 # For {img,video,font,data}
-$(build)/%: static/%
+$(build)/static/%: static/%
 	$(shell [ ! -d $(@D) ] && mkdir -p $(@D))
 	cp "$<" "$@"

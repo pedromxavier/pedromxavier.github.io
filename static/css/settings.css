@@ -19,7 +19,7 @@
     /* Font */
     --font-size-tiny: 9pt;
     --font-size-small: 12pt;
-    --font-size-normal: 20pt;
+    --font-size-normal: 14pt;
     --font-size-large: 32pt;
     --font-size-huge: 48pt;
 
@@ -70,7 +70,7 @@
         /* Font */
         --font-size-tiny: 12pt;
         --font-size-small: 20pt;
-        --font-size-normal: 24pt;
+        --font-size-normal: 16pt;
         --font-size-large: 36pt;
         --font-size-huge: 72pt;
 

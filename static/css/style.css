@@ -243,9 +243,6 @@ footer::before {
 note {
     display: inline-block;
     padding: 0.5cm;
-}
-
-note:hover {
     background-color: var(--color-note);
 }
 
@@ -259,7 +256,7 @@ note>span {
 
 email {
     font-size: var(--font-size-small);
-    font-family: cursive;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     display: block;
     float: left;
 }
@@ -273,44 +270,63 @@ at::before {
 }
 
 button {
-    appearance: auto;
-    text-rendering: auto;
-    letter-spacing: normal;
+    font-size: var(--font-size-small);
     display: inline-block;
     text-align: center;
-    align-items: flex-start;
-    box-sizing: border-box;
+    vertical-align: middle;
     writing-mode: horizontal-tb !important;
-    margin: 0;
-    padding-block: 1px;
-    padding-inline: 6px;
     border-width: 0;
+    margin: 0;
 }
 
-button.alpha {
-    background-color: var(--color-button-alpha);
+.stealth {
+    background-color: var(--color-stealth);
 }
 
-button.alpha:hover {
-    background-color: var(--color-button-alpha-hover);
+.stealth-hover {
+    background-color: var(--color-stealth-hover);
 }
 
-button.beta {
-    background-color: var(--color-button-beta);
+.alpha {
+    background-color: var(--color-alpha);
 }
 
-button.beta:hover {
-    background-color: var(--color-button-beta-hover);
+.alpha:hover {
+    background-color: var(--color-alpha-hover);
 }
 
-button.gamma {
-    background-color: var(--color-button-gamma);
+.beta {
+    background-color: var(--color-beta);
 }
 
-button.gamma:hover {
-    background-color: var(--color-button-gamma-hover);
+.beta:hover {
+    background-color: var(--color-beta-hover);
+}
+
+.gamma {
+    background-color: var(--color-gamma);
+}
+
+.gamma:hover {
+    background-color: var(--color-gamma-hover);
+}
+
+.delta {
+    background-color: var(--color-delta);
+}
+
+.delta:hover {
+    background-color: var(--color-delta-hover);
 }
 
 td {
     padding: 0 15px;
+}
+
+span.clip {
+    cursor: grab;
+}
+
+span.clip:active {
+    cursor: grabbing;
 }

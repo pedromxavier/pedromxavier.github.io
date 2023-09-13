@@ -16,14 +16,20 @@
     --color-selection: #5185ec8c;
     --color-title-selection: #3278c7;
 
-    --color-button-alpha: #5185ec8c;
-    --color-button-alpha-hover: #3278c7ff;
+    --color-alpha: #5185ec8c;
+    --color-alpha-hover: #3278c7ff;
 
-    --color-button-beta: #3faa9885;
-    --color-button-beta-hover: #3faa98;
+    --color-beta: #3faa9885;
+    --color-beta-hover: #3faa98;
 
-    --color-button-gamma: #d8558e8d;
-    --color-button-gamma-hover: #d8558e;
+    --color-gamma: #d8558e8d;
+    --color-gamma-hover: #d8558e;
+
+    --color-delta: #cbaf338d;
+    --color-delta-hover: #cbaf33;
+
+    --color-stealth: #ffffff00;
+    --color-stealth-hover: #ffffff3c;
 
     /* Font */
     --font-size-tiny: 9pt;

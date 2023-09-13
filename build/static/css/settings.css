@@ -16,19 +16,10 @@
     --color-selection: #5185ec8c;
     --color-title-selection: #3278c7;
 
-    --color-button-alpha: #5185ec8c;
-    --color-button-alpha-hover: #3278c7ff;
-
-    --color-button-beta: #3faa9885;
-    --color-button-beta-hover: #3faa98;
-
-    --color-button-gamma: #d8558e8d;
-    --color-button-gamma-hover: #d8558e;
-
     /* Font */
     --font-size-tiny: 9pt;
     --font-size-small: 12pt;
-    --font-size-normal: 14pt;
+    --font-size-normal: 20pt;
     --font-size-large: 32pt;
     --font-size-huge: 48pt;
 
@@ -79,7 +70,7 @@
         /* Font */
         --font-size-tiny: 12pt;
         --font-size-small: 20pt;
-        --font-size-normal: 16pt;
+        --font-size-normal: 24pt;
         --font-size-large: 36pt;
         --font-size-huge: 72pt;
 

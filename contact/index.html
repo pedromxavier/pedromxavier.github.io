@@ -6,6 +6,17 @@
 <head>
 	<title>Contact</title>
 	<link rel="stylesheet" href="/static/css/style.css">
+	<script type="text/javascript">
+		function copyToClipboard(display_element, content) {
+			navigator.clipboard.writeText(content);
+			
+			display_element.innerHTML = "✅";
+			
+			setTimeout(() => {display_element.innerHTML = "📋"}, 3000);
+
+			return;
+		}
+	</script>
 </head>
 
 <body>
@@ -16,18 +27,32 @@
 	<section>
 		<note class="note-violet">
 			<span>E-MAIL</span>
-			<br>
-			<email>pmacielx<at>purdue edu</at>
-			</email>
-			<br>
-			<email>pedrox<at>cos ufrj br</at>
-			</email>
-			<br>
-			<email>pedroxavier<at>psr-inc com</at>
-			</email>
-			<br>
-			<email>pedromxavier<at>poli ufrj br</at>
-			</email>
+			<table>
+				<tr>
+					<td>
+						<email>pmacielx<at>purdue edu</at></email>
+					</td>
+					<td>
+						<button onclick="copyToClipboard(this, `pmacielx`.concat(`@`, `purdue`, `.`, `edu`);">📋</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<email>pedrox<at>cos ufrj br</at></email>
+					</td>
+					<td>
+						<button onclick="copyToClipboard(this, `pedrox`.concat(`@`, `cos`, `.`, `ufrj`, `.`, `br`);">📋</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<email>pedroxavier<at>psr-inc com</at></email>
+					</td>
+					<td>
+						<button onclick="copyToClipboard(this, `pedroxavier`.concat(`@`, `psr`, `-`, `inc`, `.`, `com`);">📋</button>
+					</td>
+				</tr>
+			</table>
 		</note>
 	</section>
 	<footer></footer>

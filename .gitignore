@@ -1,5 +1,17 @@
+# Windows
 desktop.ini
 
+# Visual Studio Code
 .vscode
 
-*.key
+# Artifact folders
+cache
+build
+pandoc-log.json
+
+# Not ready to commit
+content/unposts
+
+# Workflow
+.direnv
+.envrc

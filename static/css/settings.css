@@ -9,6 +9,7 @@
     --color-research: #cb3c33;
     --color-contact: #cbaf33;
     --color-projects: #d8558e;
+    --color-teaching: #55d8d490;
     --color-home: #3faa98;
     --color-note: #3faa9885;
 
@@ -35,12 +36,14 @@
     --font-size-tiny: 9pt;
     --font-size-small: 12pt;
     --font-size-normal: 14pt;
+    --font-size-big: 24pt;
     --font-size-large: 32pt;
     --font-size-huge: 48pt;
 
     /* Sizes */
     --width-body: 600px;
     --width-header: 100%;
+    --height-header: 120px;
     --margin-title: 0 0 25px 0;
     --margin-header: 0 0 0 0;
     --width-title: 100%;
@@ -51,24 +54,7 @@
     --height-section: 360px;
     --width-places: 50%;
 
-    /* Positioning */
-    --pos-cell: absolute;
-    --pos-top-home: -60px;
-    --pos-left-home: -100px;
-    --pos-top-github: -200px;
-    --pos-left-github: -100px;
-    --pos-left-blog: -120px;
-    --pos-top-blog: 210px;
-    --pos-top-about: -100px;
-    --pos-left-about: 30px;
-    --pos-top-research: 0px;
-    --pos-left-research: -100px;
-    --pos-top-projects: 50px;
-    --pos-left-projects: 120px;
-    --pos-top-contact: -10px;
-    --pos-left-contact: 280px;
-
-    --data-year: "2022";
+    --data-year: "2024";
     --data-city: "Rio de Janeiro";
     --data-author: "Pedro Maciel Xavier";
 }
@@ -96,29 +82,6 @@
         --size-profile: 360px;
         --size-cell: 500px;
         --height-section: 300px;
-
-        /* Positioning */
-        --pos-top-home: 0px;
-        --pos-left-home: 0px;
-
-        --pos-top-about: -300px;
-        --pos-left-about: -130px;
-
-        --pos-top-blog: -350px;
-        --pos-left-blog: 100px;
-
-        --pos-top-contact: -200px;
-        --pos-left-contact: 120px;
-
-        --pos-top-github: -160px;
-        --pos-left-github: 500px;
-
-        --pos-top-projects: -80px;
-        --pos-left-projects: 288px;
-
-        --pos-top-research: -50px;
-        --pos-left-research: -100px;
-
     }
 }
 
@@ -138,27 +101,5 @@
         --size-profile: 500px;
         --size-cell: 720px;
         --height-section: 800px;
-
-        /* Positioning */
-        --pos-top-home: 0px;
-        --pos-left-home: 0px;
-
-        --pos-top-about: -500px;
-        --pos-left-about: -130px;
-
-        --pos-top-blog: -450px;
-        --pos-left-blog: 320px;
-
-        --pos-top-contact: -300px;
-        --pos-left-contact: 20px;
-
-        --pos-top-github: -220px;
-        --pos-left-github: 580px;
-
-        --pos-top-projects: -83px;
-        --pos-left-projects: 288px;
-
-        --pos-top-research: 25px;
-        --pos-left-research: 700px;
     }
 }

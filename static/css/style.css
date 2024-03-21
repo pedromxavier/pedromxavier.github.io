@@ -14,15 +14,57 @@ body {
 
 header {
     width: 100%;
-    position: relative;
-    display: inline-block;
+    display: grid;
     text-align: center;
     text-anchor: middle;
     margin: var(--margin-header);
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: var(--height-header);
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
 }
 
-span#title {
+header.home {
     display: block;
+}
+
+header > a#home {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: var(--height-header);
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--color-fg);
+    font-size: var(--font-size-big);
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header > a#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: transparent;
+    clip-path: polygon(0% 38.5%, 5.28% 63.16%, 79.08% 81.39%, 86.53% 19.09%);
+}
+
+header > a#home:hover::before {
+    background-color: var(--color-home);
+}
+
+header > span#title {
+    grid-column: 2;
+    grid-row: 1;
     margin: var(--margin-title);
     width: var(--width-title);
     font-size: var(--font-size-huge);
@@ -30,11 +72,11 @@ span#title {
 }
 
 p#abstract {
+    grid-column: 1;
+    grid-row: 1 / 3;
     color: var(--color-fg);
-    float: left;
     width: var(--width-abstract);
     margin: 0;
-    display: block;
     font-size: var(--font-size-normal);
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
@@ -56,9 +98,9 @@ p#abstract>a:hover {
     background-color: var(--color-link-hover);
 }
 
-object#profile {
-    display: block;
-    float: right;
+object#profile-picture {
+    grid-column: 3;
+    grid-row: 1 / 3;
     width: var(--size-profile);
     height: var(--size-profile);
     overflow: visible;
@@ -69,125 +111,187 @@ object#places {
 }
 
 section {
-    position: relative;
     width: 100%;
-    height: var(--height-section);
-    display: inline-block;
+    display: block;
     text-align: center;
+}
+
+section.home {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
 }
 
 section>p {
     font-size: var(--font-size-normal);
 }
 
-a.cell {
-    display: inline-block;
-    position: var(--pos-cell);
-    z-index: 1;
+headline {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 150px;
+}
+
+headline#about {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+headline#blog {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+headline#contact {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+headline#research {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+headline#projects {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+headline#github {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+headline#teaching {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+
+headline > a {
+    text-align: center;
+    position: relative;
+    background: none;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    display: block;
+    z-index: 0;
     text-align: center;
     color: var(--color-fg);
     font-size: var(--font-size-large);
-    line-height: var(--size-cell);
-    width: var(--size-cell);
-    height: var(--size-cell);
     text-decoration: none;
 }
 
-a.cell#home {
-    top: var(--pos-top-home);
-    left: var(--pos-top-home);
+
+headline > a::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
 }
 
-a.cell#home-x {
-    display: inline-block;
-    position: relative;
+headline > p {
+    grid-column: 1;
+    grid-row: 2 / 2;
 }
 
-a.cell#home, a.cell#home-x {
-    font-style: italic;
-    font-weight: bold;
-    width: var(--size-cell-home);
-    height: var(--size-cell-home);
-    line-height: var(--size-cell-home);
-    font-size: var(--font-size-normal);
-    font-family: 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    clip-path: polygon(15% 40%, 20% 60%, 80% 70%, 85% 30%);
-}
-
-a.cell#home:hover, a.cell#home-x:hover {
-    background-color: var(--color-home);
-}
-
-a.cell#github {
-    top: var(--pos-top-github);
-    left: var(--pos-left-github);
-    font-family: 'Times New Roman', Times, serif;
-    clip-path: polygon(25.0% 42.5%, 41.25% 67.5%, 72.5% 62.5%, 75.0% 42.5%, 52.5% 37.0%);
-
-}
-
-a.cell#github:hover {
-    background-color: var(--color-github);
-}
-
-a.cell#blog {
-    top: var(--pos-top-blog);
-    left: var(--pos-left-blog);
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    clip-path: polygon(25.0% 42.5%, 37.5% 62.5%, 57.5% 57.5%, 90.0% 50.0%, 45.0% 37.5%);
-}
-
-a.cell#blog:hover {
-    background-color: var(--color-blog);
-}
-
-a.cell#about {
-    top: var(--pos-top-about);
-    left: var(--pos-left-about);
+headline > a#about {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    clip-path: polygon(25.0% 50.0%, 42.5% 65.0%, 57.5% 65.0%, 70.0% 50.0%, 52.5% 30.0%);
 }
 
-a.cell#about:hover {
+headline > a#about::before {
+    clip-path: polygon(20.21% 40.66%, 26.77% 94.65%, 74.72% 94.65%, 80.96% 40.66%, 50.59% 4.49%);
+}
+
+headline > a#about:hover::before {
     background-color: var(--color-about);
 }
 
-a.cell#research {
-    top: var(--pos-top-research);
-    left: var(--pos-left-research);
-    font-family: 'Brush Script MT', cursive;
-    clip-path: polygon(45.0% 37.5%, 50.0% 35.0%, 55.0% 37.5%, 27.5% 42.5%, 25.0% 57.5%, 70.0% 62.5%, 75.0% 55.0%, 72.5% 42.5%);
+headline > a#blog {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
-a.cell#research:hover {
+headline > a#blog::before {
+    clip-path: polygon(13.29% 46.12%, 36.64% 100%, 99.01% 45.15%, 40.12% 0.97%);
+}
+
+headline > a#blog:hover::before {
+    background-color: var(--color-blog);
+}
+
+headline > a#contact {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+}
+
+headline > a#contact::before {
+    clip-path: polygon(15.6% 4.81%, 22.46% 95.53%, 82.93% 95.53%, 78.03% 4.81%);
+}
+
+headline > a#contact:hover::before {
+    background-color: var(--color-contact);
+}
+
+headline > a#github {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+headline > a#github::before {
+    clip-path: polygon(11.88% 14.72%, 13.81% 97.73%, 82.53% 98.72%, 91.04% 17.34%, 52.98% 0%);
+}
+
+headline > a#github:hover::before {
+    background-color: var(--color-github);
+}
+
+headline > a#research {
+    font-family: 'Brush Script MT', cursive;
+}
+
+headline > a#research::before {
+    clip-path: polygon(39.93% 7.97%, 49.45% 0%, 58.68% 9.12%, 13.34% 30.22%, 18.6% 96.12%, 46.76% 99.07%, 76.77% 95.19%, 85.59% 51.74%, 80.07% 30.22%);
+}
+
+headline > a#research:hover::before {
     background-color: var(--color-research);
 }
 
-a.cell#projects {
-    top: var(--pos-top-projects);
-    left: var(--pos-left-projects);
+headline > a#projects {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: lowercase;
-    clip-path: polygon(42.5% 27.5%, 40.0% 40.0%, 25.0% 55.0%, 75.0% 57.5%, 60.0% 37.5%, 57.5% 25.0%);
 }
 
-a.cell#projects:hover {
+headline > a#projects::before {
+    clip-path: polygon(40.18% 0%, 38.66% 35.21%, 15.67% 90.07%, 84.81% 94.98%, 64.24% 36.81%, 60.33% 1.61%);
+}
+
+headline > a#projects:hover::before {
     background-color: var(--color-projects);
 }
 
-a.cell#contact {
-    top: var(--pos-top-contact);
-    left: var(--pos-left-contact);
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: lowercase;
-    clip-path: polygon(27.5% 40.0%, 27.5% 52.5%, 72.5% 62.5%, 72.5% 45.0%);
+
+
+headline > a#teaching {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
 }
 
-a.cell#contact:hover {
-    background-color: var(--color-contact);
+headline > a#teaching::before {
+    clip-path: polygon(30.61% 22.94%, 3.35% 45.3%, 3.35% 87.32%, 30.61% 66.31%, 65.23% 87.32%, 99.86% 66.31%, 98.41% 22.13%, 64.58% 45.33%);
+}
+
+headline > a#teaching:hover::before {
+    background-color: var(--color-teaching);
 }
 
 section > project {
@@ -216,15 +320,6 @@ section > project:nth-child(odd) > img {
     float: left;
 }
 
-
-
-section > project#toqubo > span {
-    font-size: var(--font-size-large);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-}
-
 footer {
     width: 100%;
     display: inline-block;
@@ -237,7 +332,7 @@ footer {
 }
 
 footer::before {
-    content: var(--data-city) ", " var(--data-year) " © " var(--data-author);
+    content: var(--data-city) ", 2020-" var(--data-year) " © " var(--data-author);
 }
 
 note {

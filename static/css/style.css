@@ -114,6 +114,7 @@ section {
     width: 100%;
     display: block;
     text-align: center;
+    margin-bottom: var(--margin-section);
 }
 
 section.home {
@@ -339,6 +340,7 @@ note {
     display: inline-block;
     padding: 0.5cm;
     background-color: var(--color-note);
+    border: 3px solid var(--color-note);
 }
 
 note>span {
@@ -347,6 +349,17 @@ note>span {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+}
+
+note>table {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+note>table:last-child{
+    margin-bottom: auto;
 }
 
 email {
@@ -424,4 +437,43 @@ span.clip {
 
 span.clip:active {
     cursor: grabbing;
+}
+
+a.clip {
+    text-decoration: none;
+    cursor: grab;
+}
+
+a.clip:active {
+    cursor: grabbing;
+}
+
+table > caption {
+    caption-side: bottom;
+}
+
+/* Special */
+
+table#horoscope {
+    width: 200px;
+    border: 3pt solid var(--color-fg);
+    display: block;
+    text-align: center;
+    color: var(--color-fg);
+    margin: auto;
+}
+
+table#horoscope>thead>tr>th {
+    padding: 0 15px;
+    font-size: var(--font-size-normal);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table#horoscope>tbody>tr>td {
+    padding: 0 15px;
+    font-size: var(--font-size-normal);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }

@@ -9,10 +9,10 @@
 	<script type="text/javascript">
 		function copyToClipboard(display_element, content) {
 			navigator.clipboard.writeText(content);
-			
+
 			display_element.innerHTML = "✅";
-			
-			setTimeout(() => {display_element.innerHTML = "📋"}, 3000);
+
+			setTimeout(() => { display_element.innerHTML = "📋" }, 3000);
 
 			return;
 		}
@@ -28,30 +28,48 @@
 		<note class="note">
 			<span>E-MAIL</span>
 			<table>
-				<tr>
-					<td>	
-						<email>
-							<span class="clip" onclick="copyToClipboard(this, `pmacielx`.concat(`@`, `purdue`, `.`, `edu`));">📋</span>
-							pmacielx<at>purdue edu</at>
-						</email>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<email>
-							<span class="clip" onclick="copyToClipboard(this, `pedrox`.concat(`@`, `cos`, `.`, `ufrj`, `.`, `br`));">📋</span>
-							pedrox<at>cos ufrj br</at>
-						</email>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<email>
-							<span class="clip" onclick="copyToClipboard(this, `pedroxavier`.concat(`@`, `psr`, `-`, `inc`, `.`, `com`));">📋</span>
-							pedroxavier<at>psr-inc com</at>
-						</email>
-					</td>
-				</tr>
+				<tbody>
+					<tr>
+						<td>
+							<email>
+								<span class="clip"
+									onclick="copyToClipboard(this, `pmacielx`.concat(`@`, `purdue`, `.`, `edu`));">📋</span>
+								pmacielx<at>purdue edu</at>
+							</email>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<email>
+								<span class="clip"
+									onclick="copyToClipboard(this, `pedrox`.concat(`@`, `cos`, `.`, `ufrj`, `.`, `br`));">📋</span>
+								pedrox<at>cos ufrj br</at>
+							</email>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<email>
+								<span class="clip"
+									onclick="copyToClipboard(this, `pedroxavier`.concat(`@`, `psr`, `-`, `inc`, `.`, `com`));">📋</span>
+								pedroxavier<at>psr-inc com</at>
+							</email>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span>LINKEDIN</span>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<email>
+								<a class="clip" href="https://linkedin.com/in/pedro-maciel-xavier" target="_blank">↗️</a>
+								pedro-maciel-xavier
+							</email>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</note>
 	</section>

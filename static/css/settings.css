@@ -11,7 +11,7 @@
     --color-projects: #d8558e;
     --color-teaching: #55d8d490;
     --color-home: #3faa98;
-    --color-note: #3faa9885;
+    --color-note: #fff80024;
 
     --color-link-hover: #5185ec;
     --color-selection: #5185ec8c;
@@ -52,6 +52,7 @@
     --size-cell: 400px;
     --size-cell-home: 200px;
     --height-section: 360px;
+    --margin-section: 40px;
     --width-places: 50%;
 
     --data-year: "2024";

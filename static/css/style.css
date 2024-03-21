@@ -463,7 +463,7 @@ table#horoscope {
     margin: auto;
 }
 
-table#horoscope>thead>tr>th {
+table#horoscope > thead > tr > th {
     padding: 0 15px;
     font-size: var(--font-size-normal);
     font-family: Arial, Helvetica, sans-serif;
@@ -471,9 +471,10 @@ table#horoscope>thead>tr>th {
     text-transform: uppercase;
 }
 
-table#horoscope>tbody>tr>td {
+table#horoscope > tbody > tr > td {
     padding: 0 15px;
     font-size: var(--font-size-normal);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     text-align: center;
 }

@@ -2,6 +2,7 @@
     /* Colors */
     --color-bg: #fefee4ff;
     --color-fg: #000000cd;
+    --color-mg: #00000082;
 
     --color-github: #389826;
     --color-blog: #4063d8;
@@ -71,7 +72,7 @@
     :root {
         /* Font */
         --font-size-tiny: 12pt;
-        --font-size-small: 20pt;
+        --font-size-small: 14pt;
         --font-size-normal: 16pt;
         --font-size-large: 36pt;
         --font-size-huge: 72pt;

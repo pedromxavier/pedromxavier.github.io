@@ -28,7 +28,7 @@ header.home {
     display: block;
 }
 
-header > a#home {
+header>a#home {
     display: inline-block;
     vertical-align: middle;
     line-height: var(--height-header);
@@ -46,7 +46,7 @@ header > a#home {
     background-color: transparent;
 }
 
-header > a#home::before {
+header>a#home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -58,17 +58,17 @@ header > a#home::before {
     clip-path: polygon(0% 38.5%, 5.28% 63.16%, 79.08% 81.39%, 86.53% 19.09%);
 }
 
-header > a#home:hover::before {
+header>a#home:hover::before {
     background-color: var(--color-home);
 }
 
-header > span#title {
+header>span#title {
     grid-column: 2;
     grid-row: 1;
     margin: var(--margin-title);
     width: var(--width-title);
-    font-size: var(--font-size-huge);
     font-family: 'Times New Roman', Times, serif;
+    font-size: var(--font-size-huge);
 }
 
 p#abstract {
@@ -86,7 +86,25 @@ p#abstract {
     background-color: var(--color-selection);
 }
 
-p#abstract>a {
+ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color-fg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+a {
     color: var(--color-fg);
     font-style: italic;
     font-weight: bold;
@@ -94,7 +112,7 @@ p#abstract>a {
     text-decoration: none;
 }
 
-p#abstract>a:hover {
+a:hover {
     background-color: var(--color-link-hover);
 }
 
@@ -157,7 +175,7 @@ headline#research {
 
 headline#projects {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 headline#github {
@@ -171,22 +189,26 @@ headline#teaching {
 }
 
 
-headline > a {
-    text-align: center;
+headline>a {
+    display: block;
     position: relative;
-    background: none;
     grid-column: 1;
     grid-row: 1 / 2;
-    display: block;
     z-index: 0;
-    text-align: center;
     color: var(--color-fg);
+    background: none;
     font-size: var(--font-size-large);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
     text-decoration: none;
 }
 
+headline>a:hover, door>a:hover {
+    background-color: transparent;
+}
 
-headline > a::before {
+headline>a::before {
     content: "";
     position: absolute;
     background-color: transparent;
@@ -197,127 +219,128 @@ headline > a::before {
     z-index: -10;
 }
 
-headline > p {
+headline>p {
     grid-column: 1;
     grid-row: 2 / 2;
 }
 
-headline > a#about {
+headline>a#about {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-headline > a#about::before {
+headline>a#about::before {
     clip-path: polygon(20.21% 40.66%, 26.77% 94.65%, 74.72% 94.65%, 80.96% 40.66%, 50.59% 4.49%);
 }
 
-headline > a#about:hover::before {
+headline>a#about:hover::before {
     background-color: var(--color-about);
 }
 
-headline > a#blog {
+headline>a#blog {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
 }
 
-headline > a#blog::before {
+headline>a#blog::before {
     clip-path: polygon(13.29% 46.12%, 36.64% 100%, 99.01% 45.15%, 40.12% 0.97%);
 }
 
-headline > a#blog:hover::before {
+headline>a#blog:hover::before {
     background-color: var(--color-blog);
 }
 
-headline > a#contact {
+headline>a#contact {
     font-family: 'Courier New', Courier, monospace;
     text-transform: lowercase;
 }
 
-headline > a#contact::before {
+headline>a#contact::before {
     clip-path: polygon(15.6% 4.81%, 22.46% 95.53%, 82.93% 95.53%, 78.03% 4.81%);
 }
 
-headline > a#contact:hover::before {
+headline>a#contact:hover::before {
     background-color: var(--color-contact);
 }
 
-headline > a#github {
+headline>a#github {
     font-family: 'Times New Roman', Times, serif;
 }
 
-headline > a#github::before {
+headline>a#github::before {
     clip-path: polygon(11.88% 14.72%, 13.81% 97.73%, 82.53% 98.72%, 91.04% 17.34%, 52.98% 0%);
 }
 
-headline > a#github:hover::before {
+headline>a#github:hover::before {
     background-color: var(--color-github);
 }
 
-headline > a#research {
+headline>a#research {
     font-family: 'Brush Script MT', cursive;
 }
 
-headline > a#research::before {
+headline>a#research::before {
     clip-path: polygon(39.93% 7.97%, 49.45% 0%, 58.68% 9.12%, 13.34% 30.22%, 18.6% 96.12%, 46.76% 99.07%, 76.77% 95.19%, 85.59% 51.74%, 80.07% 30.22%);
 }
 
-headline > a#research:hover::before {
+headline>a#research:hover::before {
     background-color: var(--color-research);
 }
 
-headline > a#projects {
+headline>a#projects {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: lowercase;
 }
 
-headline > a#projects::before {
+headline>a#projects::before {
     clip-path: polygon(40.18% 0%, 38.66% 35.21%, 15.67% 90.07%, 84.81% 94.98%, 64.24% 36.81%, 60.33% 1.61%);
 }
 
-headline > a#projects:hover::before {
+headline>a#projects:hover::before {
     background-color: var(--color-projects);
 }
 
 
 
-headline > a#teaching {
+headline>a#teaching {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
     text-transform: capitalize;
 }
 
-headline > a#teaching::before {
+headline>a#teaching::before {
     clip-path: polygon(30.61% 22.94%, 3.35% 45.3%, 3.35% 87.32%, 30.61% 66.31%, 65.23% 87.32%, 99.86% 66.31%, 98.41% 22.13%, 64.58% 45.33%);
 }
 
-headline > a#teaching:hover::before {
+headline>a#teaching:hover::before {
     background-color: var(--color-teaching);
 }
 
-section > project {
+section>project {
     display: inline-block;
     position: relative;
 }
 
-section > project > span {
+section>project>span {
     display: block;
 }
 
-section > project:nth-child(odd) > p, section > project:nth-child(odd) > span {
+section>project:nth-child(odd)>p,
+section>project:nth-child(odd)>span {
     display: block;
     float: left;
 }
 
-section > project:nth-child(odd) > img {
+section>project:nth-child(odd)>img {
     float: right;
 }
 
-section > project:nth-child(even) > p {
+section>project:nth-child(even)>p {
     float: right;
 }
 
-section > project:nth-child(odd) > img {
+section>project:nth-child(odd)>img {
     float: left;
 }
 
@@ -358,7 +381,7 @@ note>table {
     margin-bottom: 20px;
 }
 
-note>table:last-child{
+note>table:last-child {
     margin-bottom: auto;
 }
 
@@ -448,11 +471,11 @@ a.clip:active {
     cursor: grabbing;
 }
 
-table > caption {
+table>caption {
     caption-side: bottom;
 }
 
-/* Special */
+/* Special: Horoscope */
 
 table#horoscope {
     width: 200px;
@@ -463,7 +486,7 @@ table#horoscope {
     margin: auto;
 }
 
-table#horoscope > thead > tr > th {
+table#horoscope>thead>tr>th {
     padding: 0 15px;
     font-size: var(--font-size-normal);
     font-family: Arial, Helvetica, sans-serif;
@@ -471,10 +494,121 @@ table#horoscope > thead > tr > th {
     text-transform: uppercase;
 }
 
-table#horoscope > tbody > tr > td {
+table#horoscope>tbody>tr>td {
     padding: 0 15px;
     font-size: var(--font-size-normal);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
+}
+
+/* Special: Timeline */
+
+timeline {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+timeline>period {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+timeline>period h1 {
+    display: block;
+    font-size: var(--font-size-big);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+timeline>period>details {
+    display: block;
+    text-align: left;
+}
+
+timeline>period>details summary {
+    font-size: var(--font-size-normal);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+timeline>period>details h3 {
+    display: block;
+    font-size: var(--font-size-small);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+timeline>period>h1 {
+    text-align: left;
+}
+
+timeline>period {
+    border-bottom: 2px solid var(--color-fg);
+}
+
+timeline>period:last-child {
+    border-bottom: none;
+}
+
+/* Special: Door */
+
+door {
+    display: block;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/* Special: Songtab */
+
+songtab {
+    display: inline-block;
+    white-space: pre;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+subsection {
+    display: block;
+    grid-column: 2;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+subsection h1 {
+    margin-bottom: 20px;
+}
+
+subsection details {
+    margin-bottom: 20px;
+}
+
+subsection details > summary {
+    font-size: var(--font-size-small);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+subsection details > p, subsection details > li {
+    font-size: var(--font-size-tiny);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    margin: 0;
 }

@@ -82,6 +82,10 @@ p#abstract {
     font-family: 'Times New Roman', Times, serif;
 }
 
+p {
+    text-align: justify;
+}
+
 ::selection {
     background-color: var(--color-selection);
 }
@@ -150,7 +154,7 @@ section>p {
 headline {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 150px;
+    grid-template-rows: 50px 100px;
 }
 
 headline#about {
@@ -454,20 +458,17 @@ td {
     padding: 0 15px;
 }
 
-span.clip {
-    cursor: grab;
-}
-
-span.clip:active {
-    cursor: grabbing;
-}
-
-a.clip {
+.clip {
     text-decoration: none;
+    font-style: normal;
     cursor: grab;
 }
 
-a.clip:active {
+.clip:hover {
+    background-color: transparent;
+}
+
+.clip:active {
     cursor: grabbing;
 }
 
@@ -497,7 +498,7 @@ table#horoscope>thead>tr>th {
 table#horoscope>tbody>tr>td {
     padding: 0 15px;
     font-size: var(--font-size-normal);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     font-weight: bold;
     text-align: center;
 }
@@ -567,7 +568,7 @@ timeline>period:last-child {
 /* Special: Door */
 
 door {
-    display: block;
+    display: none;
     grid-column: 2;
     grid-row: 4;
 }

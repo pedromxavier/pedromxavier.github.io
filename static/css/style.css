@@ -12,6 +12,23 @@ body {
     margin-right: auto;
 }
 
+figure {
+    max-width: 80%;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-size: var(--font-size-small);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
 header {
     width: 100%;
     display: grid;
@@ -567,10 +584,13 @@ timeline>period:last-child {
 
 /* Special: Door */
 
-door {
-    display: none;
+door#door {
     grid-column: 2;
     grid-row: 4;
+}
+
+#door-link {
+    display: none;
 }
 
 /* Special: Songtab */

@@ -1,0 +1,41 @@
+# Compilation parameters
+template: templates/default.html
+standalone: true
+self-contained: false
+writer: html5
+
+metadata:
+  author-meta: Iago Leal
+  lang: en
+  bibliography: refs.bib
+  csl: chicago-fullnote-bibliography-with-ibid.csl
+
+variables:
+  github:    https://github.com/iagoleal
+  site:      https://iagoleal.com
+  site-repo: https://github.com/iagoleal/iagoleal.github.io
+
+citeproc: true
+
+# Log boilerplate
+verbosity: WARNING
+
+# Styling
+strip-comments:  true
+highlight-style: kate
+
+html-math-method:
+  method: katex
+
+reference-links: false
+# block, section, or document
+reference-location: document
+
+fail-if-warnings: false
+
+filters:
+- filters/figure.lua
+- filters/wc.lua
+- filters/date.lua
+- filters/post-list.lua
+- filters/url.lua

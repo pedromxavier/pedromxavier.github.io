@@ -1,0 +1,50 @@
+/* Special: Poem */
+poem, prose {
+    display: block;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-fg);
+    width: 400px;
+}
+
+poem > h2, prose > h2 {
+    font-size: var(--font-size-big);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+poem > span, prose > span {
+    display: block;
+    font-size: var(--font-size-tiny);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: lowercase;
+    font-style: normal;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+poem > text, prose > text {
+    display: inline-block;
+    font-size: var(--font-size-tiny);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+poem > text {
+    white-space: pre-line;
+    text-wrap: wrap;
+}
+
+prose > text {
+    margin-top: 20px;
+}

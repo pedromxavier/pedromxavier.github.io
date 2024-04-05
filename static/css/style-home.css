@@ -1,8 +1,55 @@
-/* Special: Door */
+header.home-header {
+    display: block;
+}
 
+/* Profile */
+
+.home-profile {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 58% 38%;
+    /* grid-template-rows: var(--size-profile); */
+    column-gap: 4%;
+    grid-auto-flow: row;
+}
+
+.home-profile > p.profile-abstract {
+    grid-row: 1;
+    grid-column: 1;
+    color: var(--color-fg);
+    width: 100%;
+    margin: 0;
+    font-size: var(--font-size-normal);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-profile > object#profile-picture {
+    grid-row: 1;
+    grid-column: 2;
+    width: var(--size-profile);
+    height: var(--size-profile);
+    overflow: visible;
+}
+
+/* Special: Door */
 door#door {
     grid-column: 2;
     grid-row: 3;
+
+    height: var(--door-height);
+}
+
+door#door > a#door-link {
+    cursor: grab;
+}
+
+door#door > a#door-link:active {
+    cursor: grabbing;
+}
+
+door#door>a#door-link:hover {
+    background-color: transparent;
 }
 
 #door-link {
@@ -10,160 +57,128 @@ door#door {
 }
 
 /* Cards */
-headline {
-    margin: auto;
-}
-
-headline#about {
+card#about {
     grid-column: 1;
     grid-row: 2;
 }
 
-headline#blog {
+card#blog {
     grid-column: 2;
     grid-row: 2;
 }
 
-headline#contact {
+card#contact {
     grid-column: 1;
     grid-row: 3;
 }
 
-headline#research {
+card#research {
     grid-column: 1;
     grid-row: 4;
 }
 
-headline#projects {
+card#projects {
     grid-column: 2;
     grid-row: 4;
 }
 
-headline#github {
+card#github {
     grid-column: 3;
     grid-row: 3;
 }
 
-headline#teaching {
+card#teaching {
     grid-column: 3;
     grid-row: 4;
 }
 
-headline>a {
-    display: block;
-    position: relative;
-    z-index: 0;
-    color: var(--color-fg);
-    background: none;
-    font-size: var(--font-size-large);
-    font-weight: normal;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-}
-
-headline>a:hover, door>a:hover {
-    background-color: transparent;
-}
-
-headline>a::before {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-}
-
-headline>a#about {
+card#about>a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-headline>a#about::before {
+card#about>a::before {
     clip-path: polygon(20.21% 40.66%, 26.77% 94.65%, 74.72% 94.65%, 80.96% 40.66%, 50.59% 4.49%);
 }
 
-headline>a#about:hover::before {
+card#about>a:hover::before {
     background-color: var(--color-about);
 }
 
-headline>a#blog {
+card#blog>a {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
 }
 
-headline>a#blog::before {
+card#blog>a::before {
     clip-path: polygon(13.29% 46.12%, 36.64% 100%, 99.01% 45.15%, 40.12% 0.97%);
 }
 
-headline>a#blog:hover::before {
+card#blog>a:hover::before {
     background-color: var(--color-blog);
 }
 
-headline>a#contact {
+card#contact>a {
     font-family: 'Courier New', Courier, monospace;
     text-transform: lowercase;
 }
 
-headline>a#contact::before {
+card#contact>a::before {
     clip-path: polygon(15.6% 4.81%, 22.46% 95.53%, 82.93% 95.53%, 78.03% 4.81%);
 }
 
-headline>a#contact:hover::before {
+card#contact>a:hover::before {
     background-color: var(--color-contact);
 }
 
-headline>a#github {
+card#github>a {
     font-family: 'Times New Roman', Times, serif;
 }
 
-headline>a#github::before {
+card#github>a::before {
     clip-path: polygon(11.88% 14.72%, 13.81% 97.73%, 82.53% 98.72%, 91.04% 17.34%, 52.98% 0%);
 }
 
-headline>a#github:hover::before {
+card#github>a:hover::before {
     background-color: var(--color-github);
 }
 
-headline>a#research {
+card#research>a {
     font-family: 'Brush Script MT', cursive;
 }
 
-headline>a#research::before {
+card#research>a::before {
     clip-path: polygon(39.93% 7.97%, 49.45% 0%, 58.68% 9.12%, 13.34% 30.22%, 18.6% 96.12%, 46.76% 99.07%, 76.77% 95.19%, 85.59% 51.74%, 80.07% 30.22%);
 }
 
-headline>a#research:hover::before {
+card#research>a:hover::before {
     background-color: var(--color-research);
 }
 
-headline>a#projects {
+card#projects>a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: lowercase;
 }
 
-headline>a#projects::before {
+card#projects>a::before {
     clip-path: polygon(40.18% 0%, 38.66% 35.21%, 15.67% 90.07%, 84.81% 94.98%, 64.24% 36.81%, 60.33% 1.61%);
 }
 
-headline>a#projects:hover::before {
+card#projects>a:hover::before {
     background-color: var(--color-projects);
 }
 
-headline>a#teaching {
+card#teaching>a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
     text-transform: capitalize;
 }
 
-headline>a#teaching::before {
+card#teaching>a::before {
     clip-path: polygon(30.61% 22.94%, 3.35% 45.3%, 3.35% 87.32%, 30.61% 66.31%, 65.23% 87.32%, 99.86% 66.31%, 98.41% 22.13%, 64.58% 45.33%);
 }
 
-headline>a#teaching:hover::before {
+card#teaching>a:hover::before {
     background-color: var(--color-teaching);
 }

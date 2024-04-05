@@ -13,25 +13,13 @@
     --color-teaching: #55d8d490;
     --color-home: #3faa98;
     --color-note: #fff80024;
+    --color-music: #4055b2;
+    --color-text: #984f23;
+    --color-movies: #951233;
 
     --color-link-hover: #5185ec;
     --color-selection: #5185ec8c;
     --color-title-selection: #3278c7;
-
-    --color-alpha: #5185ec8c;
-    --color-alpha-hover: #3278c7ff;
-
-    --color-beta: #3faa9885;
-    --color-beta-hover: #3faa98;
-
-    --color-gamma: #d8558e8d;
-    --color-gamma-hover: #d8558e;
-
-    --color-delta: #cbaf338d;
-    --color-delta-hover: #cbaf33;
-
-    --color-stealth: #ffffff00;
-    --color-stealth-hover: #ffffff3c;
 
     /* Font */
     --font-size-tiny: 9pt;
@@ -42,7 +30,13 @@
     --font-size-huge: 48pt;
 
     /* Sizes */
-    --width-body: 600px;
+    --door-height: 200px;
+
+    --footer-margin: 4vh;
+    --section-margin: 4vh;
+
+    --body-width: 600px;
+
     --width-header: 100%;
     --height-header: 120px;
     --margin-title: 0 0 25px 0;
@@ -53,7 +47,6 @@
     --size-cell: 400px;
     --size-cell-home: 200px;
     --height-section: 360px;
-    --margin-section: 40px;
     --width-places: 50%;
 
     --data-year: "2024";
@@ -63,7 +56,7 @@
 
 @media only screen and (max-width: 800px) {
     :root {
-        --width-body: 90%;
+        --body-width: 90%;
         --pos-cell: static;
     }
 }
@@ -78,7 +71,7 @@
         --font-size-huge: 72pt;
 
         /* Sizes */
-        --width-body: 900px;
+        --body-width: 900px;
         --margin-title: 0 0 50px 0;
         --width-abstract: 500px;
         --size-profile: 360px;
@@ -97,7 +90,7 @@
         --font-size-huge: 100pt;
 
         /* Sizes */
-        --width-body: 1700px;
+        --body-width: 1700px;
         --margin-title: 0 0 75px 0;
         --width-abstract: 1000px;
         --size-profile: 500px;

@@ -6,10 +6,53 @@ html {
 }
 
 body {
-    width: var(--width-body);
+    width: var(--body-width);
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+/* Cards */
+card {
+    margin: auto;
+}
+
+card>a {
+    display: block;
+    position: relative;
+    z-index: 0;
+    color: var(--color-fg);
+    background: none;
+    font-size: var(--font-size-large);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+card>a:hover {
+    background-color: transparent;
+}
+
+card>a::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+/* Cardboard */
+.cardboard{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    margin: var(--section-margin) auto;
 }
 
 figure {
@@ -39,10 +82,6 @@ header {
     grid-template-rows: var(--height-header);
     grid-auto-flow: row;
     grid-row-gap: 10px;
-}
-
-header.home {
-    display: block;
 }
 
 header>a#home {
@@ -88,17 +127,6 @@ header>span#title {
     font-size: var(--font-size-huge);
 }
 
-p#abstract {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    color: var(--color-fg);
-    width: var(--width-abstract);
-    margin: 0;
-    font-size: var(--font-size-normal);
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 p {
     text-align: justify;
 }
@@ -137,14 +165,6 @@ a:hover {
     background-color: var(--color-link-hover);
 }
 
-object#profile-picture {
-    grid-column: 3;
-    grid-row: 1 / 3;
-    width: var(--size-profile);
-    height: var(--size-profile);
-    overflow: visible;
-}
-
 object#places {
     width: var(--width-places);
 }
@@ -154,14 +174,6 @@ section {
     display: block;
     text-align: center;
     margin-bottom: var(--margin-section);
-}
-
-section.home {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 175px 150px 150px 150px;
-    grid-auto-flow: row;
-    grid-row-gap: 10px;
 }
 
 section>p {
@@ -203,6 +215,7 @@ footer {
     font-size: var(--font-size-tiny);
     font-weight: bold;
     font-style: italic;
+    margin: var(--footer-margin) auto;
     color: #000;
 }
 
@@ -259,46 +272,6 @@ button {
     writing-mode: horizontal-tb !important;
     border-width: 0;
     margin: 0;
-}
-
-.stealth {
-    background-color: var(--color-stealth);
-}
-
-.stealth-hover {
-    background-color: var(--color-stealth-hover);
-}
-
-.alpha {
-    background-color: var(--color-alpha);
-}
-
-.alpha:hover {
-    background-color: var(--color-alpha-hover);
-}
-
-.beta {
-    background-color: var(--color-beta);
-}
-
-.beta:hover {
-    background-color: var(--color-beta-hover);
-}
-
-.gamma {
-    background-color: var(--color-gamma);
-}
-
-.gamma:hover {
-    background-color: var(--color-gamma-hover);
-}
-
-.delta {
-    background-color: var(--color-delta);
-}
-
-.delta:hover {
-    background-color: var(--color-delta-hover);
 }
 
 td {
@@ -451,56 +424,4 @@ subsection details > p, subsection details > li {
     font-weight: normal;
     text-align: justify;
     margin: 0;
-}
-
-/* Special: Poem */
-
-poem, prose {
-    display: block;
-    text-align: left;
-    margin: auto;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--color-fg);
-    width: 400px;
-}
-
-poem > h2, prose > h2 {
-    font-size: var(--font-size-big);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-poem > span, prose > span {
-    display: block;
-    font-size: var(--font-size-tiny);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    text-transform: lowercase;
-    font-style: normal;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-}
-
-poem > text, prose > text {
-    display: inline-block;
-    font-size: var(--font-size-tiny);
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    text-align: justify;
-    padding: 0;
-    margin: 0;
-}
-
-poem > text {
-    white-space: pre-line;
-    text-wrap: wrap;
-}
-
-prose > text {
-    margin-top: 20px;
 }

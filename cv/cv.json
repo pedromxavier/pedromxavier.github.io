@@ -1,0 +1,21 @@
+{
+    "start" : "01/01/2016",
+    "events" : [
+        {
+            "name" : "Joined UFRJ",
+            "description" : "",
+            "image-src" : "/static/img/ufrj-logo.svg",
+            "date" : "01/04/2016",
+            "next" : {
+
+            }
+        },
+        {
+            "name" : "Joined Purdue",
+            "description" : "",
+            "image-src" : "/static/img/purdue-logo.svg",
+            "date" : "19/08/2024",
+            "next" : true
+        }
+    ]
+}

@@ -4,9 +4,12 @@
 <head>
   <title>Pedro's Curriculum Vitæ</title>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="3; url=/static/doc/cv_en.pdf" />
+  <!-- <meta http-equiv="refresh" content="3; url=/static/doc/cv_en.pdf" /> -->
   <link rel="stylesheet" href="/static/css/style.css" />
-  <link rel="canonical" href="/static/doc/cv_en.pdf" />
+  <link rel="stylesheet" href="/static/css/style-cv.css" />
+  <!-- <link rel="canonical" href="/static/doc/cv_en.pdf" /> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script> -->
+  <script src="/static/js/p5.min.js"></script>
 </head>
 
 <body>
@@ -14,11 +17,79 @@
     <span id="title">Curriculum Vitæ</span>
   </header>
 
-  <section>
+  <!-- <section>
     <p>If you are not redirected automatically, click <a href="/static/doc/cv_en.pdf">here</a> to access the file.</p>
-  </section>
+  </section> -->
 
-  <footer></footer>
+  <div id="cv">
+    <event>
+      <img height="200px" src="/static/img/ufrj-logo.svg">
+      <span>apr '16 </span>
+    </event>
+    <br>
+    <event>
+      <img height="200px" src="/static/img/ufrj-logo.svg">
+      <span>feb '18 Started Computer Engineering and Mathematics</span>
+    </event>
+    <br>
+  </div>
+
+  <div id="timeline"></div>
+
+  <footer>
+
+  </footer>
+
+  <script type="text/javascript">
+    function setup() {
+      let root   = select("#timeline");
+      let width  = root.width
+      let height = 300
+      let canvas = createCanvas(width, height);
+
+      root.child(canvas);
+
+      x = 0;
+      X = [];
+
+      for (let i = 2016; i <= 2024; i++) {
+        X.push(i)
+      }
+
+      N = X.length;
+    }
+  
+    function draw() {
+      clear();
+
+      // Draw arrow
+      stroke('black');
+      strokeWeight(3);
+
+      line(0, height / 2, width, height / 2);
+
+      for (let i = 0; i < N; i ++) {
+        let xi = (i + 1) * width / N
+        let yi = height/2
+
+        strokeWeight(3);
+        line(xi, yi + 10, xi, yi - 10)
+
+        strokeWeight(1);
+        text(`${X[i]}`, xi + 5, yi + 15)
+      }
+      
+      stroke('red');
+      strokeWeight(2);
+      line(x, 0, x, height);
+    }
+
+    function mouseWheel(event) {
+      x = x + event.delta
+      x = max(x, 0)
+      x = min(x, width)
+    }
+  </script>
 </body>
 
 </html>

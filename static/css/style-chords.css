@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --color-chord: #0a0c85;
+}
+
+songtab {
+    display: inline-block;
+    white-space: pre;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+songtab > c {
+    color: var(--color-chord);
+    font-weight: bold;
+}

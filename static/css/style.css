@@ -385,15 +385,6 @@ timeline>period:last-child {
     border-bottom: none;
 }
 
-/* Special: Songtab */
-
-songtab {
-    display: inline-block;
-    white-space: pre;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 subsection {
     display: block;
     grid-column: 2;

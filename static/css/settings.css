@@ -4,6 +4,8 @@
     --color-fg: #000000cd;
     --color-mg: #00000082;
 
+    --color-title: #800020ff;
+
     --color-github: #389826;
     --color-blog: #4063d8;
     --color-about: #9558b2;
@@ -68,7 +70,7 @@
         --font-size-small: 14pt;
         --font-size-normal: 16pt;
         --font-size-large: 36pt;
-        --font-size-huge: 72pt;
+        --font-size-huge: 50pt;
 
         /* Sizes */
         --body-width: 900px;

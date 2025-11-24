@@ -421,6 +421,10 @@ subsection details > p, subsection details > li {
     margin: 0;
 }
 
+[tooltip]{
+    text-decoration: underline;
+}
+
 [tooltip]:hover::after {
     display: block;
     position: absolute;

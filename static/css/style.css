@@ -421,10 +421,12 @@ subsection details > p, subsection details > li {
     margin: 0;
 }
 
-tooltip {
-    visibility: hidden;
-}
-
-:hover > tooltip {
-    visibility: visible;
+[tooltip]:hover::after {
+    display: block;
+    position: absolute;
+    content: attr(tooltip);
+    border: 2px solid var(--color-fg);
+    background: var(--color-bg);
+    max-width: 500px;
+    padding: .5em;
 }

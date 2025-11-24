@@ -13,7 +13,7 @@ header.home-header {
     grid-auto-flow: row;
 }
 
-.home-profile > p.profile-abstract {
+p.profile-abstract {
     grid-row: 1;
     grid-column: 1;
     color: var(--color-fg);
@@ -24,7 +24,7 @@ header.home-header {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.home-profile > object#profile-picture {
+object.profile-picture {
     grid-row: 1;
     grid-column: 2;
     width: var(--size-profile);

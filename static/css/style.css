@@ -123,9 +123,7 @@ header>span#title {
     grid-row: 1;
     margin: var(--margin-title);
     width: var(--width-title);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
     text-transform: capitalize;
     font-size: var(--font-size-huge);
     /* font-weight: bold; */
@@ -421,4 +419,12 @@ subsection details > p, subsection details > li {
     font-weight: normal;
     text-align: justify;
     margin: 0;
+}
+
+tooltip {
+    visibility: hidden;
+}
+
+:hover > tooltip {
+    visibility: visible;
 }

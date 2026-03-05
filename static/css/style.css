@@ -123,7 +123,7 @@ header>span#title {
     grid-row: 1;
     margin: var(--margin-title);
     width: var(--width-title);
-    font-family: 'Garamond', 'Times New Roman', Times, serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     text-transform: capitalize;
     font-size: var(--font-size-huge);
     /* font-weight: bold; */

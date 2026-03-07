@@ -1,0 +1,19 @@
+.sparkle {
+    background: #000;
+    position: fixed;
+    display: block;
+    height: 0;
+    width:  0;
+    margin: 0 0;
+    content: '';
+    clip-path: polygon(
+         50%   0%,
+         65%  35%,
+        100%  50%,
+         65%  65%,
+         50% 100%,
+         35%  65%,
+          0%  50%,
+         35%  35% 
+    );
+}

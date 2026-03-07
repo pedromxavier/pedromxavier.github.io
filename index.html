@@ -7,6 +7,8 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="/static/css/style.css">
 	<link rel="stylesheet" href="/static/css/style-home.css">
+	<link rel="stylesheet" href="/static/css/cursor.css">
+    <script type="text/javascript" src="/static/js/cursor.js"></script>
 </head>
 
 <body>
@@ -24,8 +26,8 @@
 			<br>
 			<b><i>Previously</i></b>,
 			Research Intern in Public Healthcare at <a href="https://www.iff.fiocruz.br/">IFF/Fiocruz</a>;
-			Researcher &amp; Developer at <a href="https://psr-inc.com">PSR Energy Inc</a>;
-			Research Intern in Analog Optimization at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>.
+			Researcher &amp; Developer at <a href="https://psr-inc.com">PSR Energy</a>;
+			Research Intern in Analog Optimization at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research UK</a>.
 		</p>
 
 		<object class="profile-picture" data="/static/img/profile.svg" type="image/svg+xml"></object>
@@ -46,104 +48,6 @@
 			<a href="/contact/">Contact</a>
 			<span>How to reach me</span>
 		</card>
-
-		<!-- -->
-		<door id="door">
-			<a href="/~/" id="door-link">
-				<svg fill="#000000" height="200" width="200" version="1.1" id="door" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-500 -500 1000 1000" xml:space="preserve">
-
-					<style>
-						#door .door-open {
-							visibility: hidden;
-						}
-
-						#door .door-closed {
-							visibility: visible;
-						}
-
-						#door:hover .door-open {
-							visibility: visible;
-						}
-
-						#door:hover .door-closed {
-							visibility: hidden;
-						}
-
-						.door {
-							stroke: var(--color-fg);
-							stroke-width: 20px;
-							stroke-linejoin: round;
-						}
-
-						.frame {
-							stroke: var(--color-fg);
-							stroke-width: 20px;
-							stroke-linejoin: round;
-						}
-					</style>
-
-					<defs>
-						<path id="door-frame" d="
-							M    0 -450
-							C    0 -450  250 -350  250 -100
-							L  250  350
-							L -250  350
-							L -250 -100
-							C -250 -100 -250 -350    0 -450
-							Z
-							" />
-
-						<mask id="door-mask">
-							<use href="#door-frame" x="0" y="0" fill="#fff" stroke="#000" />
-						</mask>
-
-						<pattern id="door-pattern" patternUnits="userSpaceOnUse" viewBox="0,0,10,10" width="6%"
-							height="6%">
-							<polygon fill="var(--color-fg)" stroke="var(--color-fg)"
-								points="0,0 3,2 4,4 6,4 7,2 10,0 8,3 6,4 6,6 8,7 10,10 7,8 6,6 4,6 3,8 0,10 2,7 4,6 4,4 2,3" />
-						</pattern>
-					</defs>
-
-					<image mask="url(#door-mask)" href="/static/img/wallpaper.png" x="-500" y="-500" width="100%"
-						height="100%" />
-
-					<use href="#door-frame" x="0" y="0" class="frame door-open" fill="none" stroke="var(--color-fg)" />
-					<use href="#door-frame" x="0" y="0" class="frame door-closed" fill="var(--color-bg)"
-						stroke="var(--color-fg)" />
-
-					<path class="door door-closed" fill="url(#door-pattern)" d="
-						M    0  350
-						L    0 -450
-						C    0 -450 -250 -350 -250 -100
-						L -250  350
-						Z
-						" />
-					<path class="door door-closed" fill="url(#door-pattern)" d="
-						M    0  350
-						L    0 -450
-						C    0 -450  250 -350  250 -100
-						L  250  350
-						Z
-						" />
-					<path class="door door-open" fill="url(#door-pattern)" d="
-							M -450 -450
-							C -450 -450 -250 -350 -250 -100
-							L -250  350
-							L -450  350
-							Z
-							" />
-					<path class="door door-open" fill="url(#door-pattern)" d="
-							M  450 -450
-							C  450 -450  250 -350  250 -100
-							L  250  350
-							L  450  350
-							Z
-							" />
-				</svg>
-			</a>
-		</door>
-		<!-- -->
 
 		<card id="research">
 			<a id="research" href="/research/">Research</a>
@@ -169,6 +73,7 @@
 	<footer></footer>
 </body>
 
+<!--
 <script type="text/javascript">
 	let door = document.getElementById("door");
 
@@ -184,5 +89,8 @@
 		{ once: true },
 	);
 </script>
+-->
+
+<script type="text/javascript"> cursor(); </script>
 
 </html>

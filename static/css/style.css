@@ -13,7 +13,7 @@ body {
 
 /* Cards */
 card {
-    margin: auto;
+    /* margin: auto; */
 }
 
 card>a {
@@ -55,6 +55,7 @@ card>a::before {
     grid-auto-rows: max-content;
     margin: 0 auto;
     margin-bottom: calc(2 * var(--section-margin));
+    justify-items: center;
 }
 
 figure {

@@ -179,3 +179,40 @@ card#teaching>a::before {
 card#teaching>a:hover::before {
     background-color: var(--color-teaching);
 }
+
+@media only screen and (max-width: 800px) { /* Cell Phone */
+    card#about {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    card#blog {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    card#contact {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    card#research {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    card#projects {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    card#github {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    card#teaching {
+        grid-column: 2;
+        grid-row: 7;
+    }
+}

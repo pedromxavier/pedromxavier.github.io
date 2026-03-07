@@ -34,9 +34,6 @@ object.profile-picture {
 
 /* Special: Door */
 door#door {
-    grid-column: 2;
-    grid-row: 3;
-
     height: var(--door-height);
 }
 
@@ -59,37 +56,37 @@ door#door>a#door-link:hover {
 /* Cards */
 card#about {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
 }
 
 card#blog {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
 }
 
 card#contact {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 card#research {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-card#projects {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-card#github {
     grid-column: 3;
     grid-row: 3;
 }
 
-card#teaching {
+card#projects {
     grid-column: 3;
-    grid-row: 4;
+    grid-row: 2;
+}
+
+card#github {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+card#teaching {
+    grid-column: 2;
+    grid-row: 3;
 }
 
 card#about>a {

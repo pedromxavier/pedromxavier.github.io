@@ -5,24 +5,37 @@
     --color-yp-ch-bg: #999999;
 }
 
-card.yp {
-    padding: 20pt;
+yellowpage {
+    display: block;
+    width: 100%;
+    padding: 1em;
     background-color: var(--color-yp-bg);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-    card.yp > ch.yp {
-        color: var(--color-yp-fg);
-        border: 2pt solid var(--color-yp-fg);
-        padding: 10pt;
-        background-color: var(--color-yp-ch-bg);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+entry {
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-template-areas: "head tail";
+    align-items: end;
+    gap: 0 .25rem;
+}
+
+    span.head {
+        grid-area: head;
+        position: relative;
+        overflow: hidden;
     }
 
-    card.yp > cl.yp {
-        display: grid;
+    span.head::after {
+        color: black;
+        display: inline-block;
+        position: absolute;
+        padding-left: .25ch;
+        content: ' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';
+        text-align: right;
     }
 
-    card.yp > cl.yp > ci.yp {
-        font-family: Arial, Helvetica, sans-serif;
+    span.tail {
+        grid-area: tail;
     }

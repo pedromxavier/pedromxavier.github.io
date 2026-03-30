@@ -32,7 +32,6 @@ function trail(e) {
         elem.style.left = `${x + dx}px` // e.pageX // + Math.round(Math.random() * j - j / 2) - 100 + 'px';
         elem.style.top  = `${y + dy}px` // (e.pageY - window.scrollY) // + Math.round(Math.random() * j - j / 2) - 100 + 'px';
         
-        
         elem.style.opacity       = opacity;
         elem.style.pointerEvents = 'none';
         

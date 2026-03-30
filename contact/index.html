@@ -7,15 +7,10 @@
 	<title>Contact</title>
 	<link rel="stylesheet" href="/static/css/style.css">
 	<link rel="stylesheet" href="/static/css/style-contact.css">
+	<script type="text/javascript" src="/static/js/baloons.js"></script>
 	<script type="text/javascript">
-		function copyToClipboard(display_element, content) {
-			navigator.clipboard.writeText(content);
-
-			display_element.innerHTML = "✅";
-
-			setTimeout(() => { display_element.innerHTML = "📋" }, 3000);
-
-			return;
+		function __email__(...args) {
+			return `${args[0]}@${args.slice(1, args.length).join(".")}`;
 		}
 	</script>
 </head>
@@ -32,19 +27,19 @@
 			<br>
 			<hr>
 			<div style="display: inline-block; width: 45%; text-align: left; vertical-align:top;">
-				<entry>
+				<entry onclick="copy_to_clipboard(event, __email__('mail', 'pedro', 'ελ'))">
 					<span class="head">mail&oast;pedro&therefore;ελ</span>
 					<span class="tail">PERSONAL</span>
 				</entry>
-				<entry>
+				<entry onclick="copy_to_clipboard(event, __email__('pmacielx', 'purdue', 'edu'))">
 					<span class="head">pmacielx&oast;purdue&therefore;edu</span>
 					<span class="tail">PURDUE</span>
 				</entry>
-				<entry>
+				<entry onclick="copy_to_clipboard(event, __email__('pedrox', 'cos', 'ufrj', 'br'))">
 					<span class="head">pedrox&oast;cos&therefore;ufrj&therefore;br</span>
 					<span class="tail">PESC/UFRJ</span>
 				</entry>
-				<entry>
+				<entry onclick="copy_to_clipboard(event, __email__('pedromxavier', 'poli', 'ufrj', 'br'))">
 					<span class="head">pedromxavier&oast;poli&therefore;ufrj&therefore;br</span>
 					<span class="tail">POLI/UFRJ</span>
 				</entry>
@@ -73,5 +68,7 @@
 
 	<footer></footer>
 </body>
+
+<script type="text/javascript"> baloons(); </script>
 
 </html>
